@@ -25,8 +25,8 @@ const LandingPage: React.FC<LandingPageProps> = ({ neighborhoodId }) => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Century 21 Alpha | Casas de Luxo em {neighborhood.name}</title>
-        <meta name="description" content={`Encontre casas de alto padrão em ${neighborhood.name}. Agende seu Dia de Visitas exclusivo e conheça as melhores opções disponíveis.`} />
+        <title>Century 21 Alpha | Imóveis no {neighborhood.name}</title>
+        <meta name="description" content={`Encontre imóveis ${neighborhood.name}. Agende seu Dia de Visitas exclusivo e conheça as melhores opções disponíveis.`} />
       </Helmet>
       <Header />
       <Hero 

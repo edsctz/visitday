@@ -114,7 +114,7 @@ const PreferencesStep: React.FC<PreferencesStepProps> = ({
       <div>
         <h3 className="text-2xl font-semibold mb-2 text-[#252526]">Suas Preferências</h3>
         <p className="text-[#727273]">
-          Conte-nos mais sobre o que você busca em sua casa ideal.
+          Conte-nos mais sobre o que você busca em seu imóvel ideal.
         </p>
       </div>
 

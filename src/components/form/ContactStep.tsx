@@ -124,7 +124,7 @@ const ContactStep: React.FC<ContactStepProps> = ({
       <div>
         <h3 className="text-2xl font-semibold mb-2 text-[#252526]">Seus Dados de Contato</h3>
         <p className="text-[#727273]">
-          Preencha seus dados para que possamos entrar em contato sobre seu Dia de Visitas exclusivo.
+          Preencha seus dados para que possamos entrar em contato sobre sua Seleção de Imóveis.
         </p>
       </div>
 
