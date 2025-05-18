@@ -241,16 +241,16 @@ export const neighborhoods: Record<string, Neighborhood> = {
       }
     }
   },
-  apartamento: {
+  apartamentoalugar: {
     id: 'apartamentoalugar',
     name: 'Alphaville',
     title: 'Apartamentos para Alugar em Alphaville',
-    subtitle: 'Conheça os melhores apartamentos disponíveis e disponíveis em Alphaville',
+    subtitle: 'Conheça os melhores apartamentos disponíveis para alugar em Alphaville',
     heroImage: 'https://pages.c21alpha.com.br/wp-content/uploads/2025/05/resorttambore.webp',
     showcaseProperty: {
       image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtux1a0Ylj2go-nuQzeLudiyyYxI+5woq4tBXTqZ7Onu3Zi8LNWefe4p817Y-VOHKh6IpBe9AHPk1+f7ZcHDbabt+LZiQI8yGOrX38YpdkeFF6miRroBQN7mTpB7Wc5noXxwS9VNPZ8QilFfv9Pl9TQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAvEGLFMu0zqlYLGg-atbkyGZVA897nN8afjOqj6Ef-xOUupjo0W5ISdfZoJdM-0XUdJQn52ZWBDplWm6tfGp02ncjSdth5HCl6OzpZqtXZrYEdR-9tU52I=.jpg',
       title: 'Apartamento com 3 Quartos',
-      subtitle: 'A Venda ou Alugar',
+      subtitle: 'Vai Alugar Rápido',
       features: {
         bedrooms: 3,
         bathrooms: 3,
@@ -270,8 +270,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         step: 1000
       }
     }
-  }
-},
+  },
   resorttambore: {
     id: 'resorttambore',
     name: 'Resort Tamboré',
