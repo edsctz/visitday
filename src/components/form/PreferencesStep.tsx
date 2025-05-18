@@ -16,20 +16,27 @@ const PreferencesStep: React.FC<PreferencesStepProps> = ({
 }) => {
   const [localPreferences, setLocalPreferences] = useState(preferences);
   const [errors, setErrors] = useState({
-    suites: false,
+    quartos: false,
     minArea: false,
     maxArea: false,
+    requiredFields: false,
   });
+  const [isFormValid, setIsFormValid] = useState(false);
 
   // Update local preferences when props change
   useEffect(() => {
     setLocalPreferences(preferences);
   }, [preferences]);
 
+  // Validate form whenever localPreferences changes
+  useEffect(() => {
+    validateForm();
+  }, [localPreferences]);
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     
-    if (name === 'suites') {
+    if (name === 'quartos') {
       const numValue = value ? parseInt(value) : null;
       setLocalPreferences(prev => ({
         ...prev,
@@ -38,7 +45,7 @@ const PreferencesStep: React.FC<PreferencesStepProps> = ({
       
       setErrors(prev => ({
         ...prev,
-        suites: numValue !== null && (numValue < 1 || numValue > 10)
+        quartos: numValue !== null && (numValue < 1 || numValue > 10)
       }));
     } else if (name === 'minArea' || name === 'maxArea') {
       const numValue = value ? parseInt(value) : 0;
@@ -81,8 +88,25 @@ const PreferencesStep: React.FC<PreferencesStepProps> = ({
     onPrev();
   };
 
-  const isValid = () => {
-    return !errors.suites && !errors.minArea && !errors.maxArea;
+  const validateForm = () => {
+    // Check if required fields are filled
+    const requiredFieldsError = !localPreferences.minArea || !localPreferences.maxArea || !localPreferences.quartos;
+    
+    // Check for field-specific errors
+    const quartosError = localPreferences.quartos !== null && (localPreferences.quartos < 1 || localPreferences.quartos > 10);
+    const minAreaError = localPreferences.minArea <= 0 || (localPreferences.maxArea > 0 && localPreferences.minArea >= localPreferences.maxArea);
+    const maxAreaError = localPreferences.maxArea <= 0 || (localPreferences.minArea > 0 && localPreferences.maxArea <= localPreferences.minArea);
+    
+    // Update all errors at once
+    setErrors({
+      quartos: quartosError,
+      minArea: minAreaError,
+      maxArea: maxAreaError,
+      requiredFields: requiredFieldsError
+    });
+    
+    // Update form validity
+    setIsFormValid(!quartosError && !minAreaError && !maxAreaError && !requiredFieldsError);
   };
 
   return (
@@ -98,7 +122,7 @@ const PreferencesStep: React.FC<PreferencesStepProps> = ({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label htmlFor="minArea" className="block text-[#252526] font-medium mb-2">
-              Área Mínima (m²)
+              Área Mínima (m²) *
             </label>
             <input
               type="number"
@@ -122,7 +146,7 @@ const PreferencesStep: React.FC<PreferencesStepProps> = ({
 
           <div>
             <label htmlFor="maxArea" className="block text-[#252526] font-medium mb-2">
-              Área Máxima (m²)
+              Área Máxima (m²) *
             </label>
             <input
               type="number"
@@ -164,23 +188,24 @@ const PreferencesStep: React.FC<PreferencesStepProps> = ({
           </div>
 
           <div>
-            <label htmlFor="suites" className="block text-[#252526] font-medium mb-2">
-              Número de Suítes
+            <label htmlFor="quartos" className="block text-[#252526] font-medium mb-2">
+              Número de Quartos *
             </label>
             <input
               type="number"
-              id="suites"
-              name="suites"
+              id="quartos"
+              name="quartos"
               min="1"
               max="10"
-              value={localPreferences.suites || ''}
+              required
+              value={localPreferences.quartos || ''}
               onChange={handleInputChange}
               className={`w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-[#BEAF87] focus:border-transparent ${
-                errors.suites ? 'border-red-500' : 'border-gray-300'
+                errors.quartos ? 'border-red-500' : 'border-gray-300'
               }`}
             />
-            {errors.suites && (
-              <p className="mt-1 text-red-500 text-sm">Por favor, insira entre 1 e 10 suítes.</p>
+            {errors.quartos && (
+              <p className="mt-1 text-red-500 text-sm">Por favor, insira entre 1 e 10 quartos.</p>
             )}
           </div>
         </div>
@@ -201,6 +226,10 @@ const PreferencesStep: React.FC<PreferencesStepProps> = ({
         </div>
       </div>
 
+      {errors.requiredFields && (
+        <p className="mt-1 text-red-500 text-sm">Por favor, preencha todos os campos obrigatórios marcados com *.</p>
+      )}
+      
       <div className="flex justify-between pt-6">
         <button
           onClick={handlePrev}
@@ -210,9 +239,9 @@ const PreferencesStep: React.FC<PreferencesStepProps> = ({
         </button>
         <button
           onClick={handleNext}
-          disabled={!isValid()}
+          disabled={!isFormValid}
           className={`bg-[#BEAF87] hover:bg-[#746649] text-white font-medium py-3 px-6 rounded transition-colors duration-300 ${
-            !isValid() ? 'opacity-50 cursor-not-allowed' : ''
+            !isFormValid ? 'opacity-50 cursor-not-allowed' : ''
           }`}
         >
           Próximo Passo

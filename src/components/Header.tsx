@@ -37,13 +37,13 @@ const Header: React.FC = () => {
             onClick={() => scrollToSection('concierge')} 
             className="hover:text-[#BEAF87] transition-colors"
           >
-            Concierge Pessoal
+            Destaque
           </button>
           <button 
             onClick={() => scrollToSection('form-section')} 
             className="hover:text-[#BEAF87] transition-colors"
           >
-            Contato
+            Seleção de Imóveis
           </button>
         </nav>
 
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
                 onClick={() => scrollToSection('form-section')} 
                 className="text-white hover:text-[#BEAF87] transition-colors text-left"
               >
-                Solicite
+                Seleção de Imóveis
               </button>
             </nav>
           </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FormData } from './FormContainer';
 
 interface ContactStepProps {
@@ -21,6 +21,20 @@ const ContactStep: React.FC<ContactStepProps> = ({
     name: false,
     phone: false,
   });
+  
+  // Update local state when props change
+  useEffect(() => {
+    setLocalContact(contact);
+  }, [contact]);
+  
+  // Update parent component state when local state changes
+  useEffect(() => {
+    // Only update if the data is valid to avoid premature updates
+    if (localContact.name.trim().length >= 3 && 
+        /^\(\d{2}\)\s\d{4,5}-\d{4}$/.test(localContact.phone)) {
+      updateContact(localContact);
+    }
+  }, [localContact, updateContact]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -87,8 +101,13 @@ const ContactStep: React.FC<ContactStepProps> = ({
     setErrors(newErrors);
     
     if (nameValid && phoneValid) {
+      // Make sure to update the parent component's state with the latest contact data
       updateContact(localContact);
-      onSubmit();
+      
+      // Add a small delay to ensure state is updated before submission
+      setTimeout(() => {
+        onSubmit();
+      }, 100);
     }
   };
 
@@ -174,7 +193,7 @@ const ContactStep: React.FC<ContactStepProps> = ({
               Enviando...
             </div>
           ) : (
-            'Agendar Visitas'
+            'Receber Lista de Imóveis'
           )}
         </button>
       </div>

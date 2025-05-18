@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import { BudgetRange } from '../../types';
+
 interface BudgetStepProps {
   budget: {
     type: 'venda' | 'locacao';
@@ -8,22 +10,28 @@ interface BudgetStepProps {
   };
   updateBudget: (value: { type: 'venda' | 'locacao'; min: number; max: number; }) => void;
   onNext: () => void;
+  budgetRanges: {
+    venda: BudgetRange;
+    locacao: BudgetRange;
+  };
 }
 
-const BudgetStep: React.FC<BudgetStepProps> = ({ budget, updateBudget, onNext }) => {
+const BudgetStep: React.FC<BudgetStepProps> = ({ budget, updateBudget, onNext, budgetRanges }) => {
   const [localBudget, setLocalBudget] = useState(budget);
-  const minPossibleBudget = localBudget.type === 'venda' ? 2000000 : 10000;
-  const maxPossibleBudget = localBudget.type === 'venda' ? 15000000 : 50000;
+  const minPossibleBudget = budgetRanges[localBudget.type].min;
+  const maxPossibleBudget = budgetRanges[localBudget.type].max;
 
   useEffect(() => {
     setLocalBudget(budget);
   }, [budget]);
 
   const handleTypeChange = (type: 'venda' | 'locacao') => {
+    const min = budgetRanges[type].min;
+    const max = budgetRanges[type].max;
     const newBudget = {
       type,
-      min: type === 'venda' ? 2000000 : 10000,
-      max: type === 'venda' ? 5000000 : 20000
+      min: Math.round(min * 1.1), // 10% above min
+      max: Math.round(max * 0.9)  // 10% below max
     };
     setLocalBudget(newBudget);
     updateBudget(newBudget);
@@ -106,7 +114,7 @@ const BudgetStep: React.FC<BudgetStepProps> = ({ budget, updateBudget, onNext })
                 min={minPossibleBudget}
                 max={maxPossibleBudget}
                 value={localBudget.min}
-                step={localBudget.type === 'venda' ? 100000 : 1000}
+                step={budgetRanges[localBudget.type].step}
                 onChange={(e) => handleRangeChange(e, true)}
                 onMouseUp={handleMouseUp}
                 onTouchEnd={handleMouseUp}
@@ -121,7 +129,7 @@ const BudgetStep: React.FC<BudgetStepProps> = ({ budget, updateBudget, onNext })
                 min={minPossibleBudget}
                 max={maxPossibleBudget}
                 value={localBudget.max}
-                step={localBudget.type === 'venda' ? 100000 : 1000}
+                step={budgetRanges[localBudget.type].step}
                 onChange={(e) => handleRangeChange(e, false)}
                 onMouseUp={handleMouseUp}
                 onTouchEnd={handleMouseUp}

@@ -18,23 +18,35 @@ export interface FormData {
   };
 }
 
-const initialFormData: FormData = {
-  budget: {
-    type: 'venda',
+const getInitialFormData = (budgetRanges?: FormContainerProps['budgetRanges']): FormData => {
+  // Default values if budgetRanges is not provided
+  const defaultBudget = {
+    type: 'venda' as const,
     min: 2000000,
     max: 5000000
-  },
-  preferences: {
-    furnished: null,
-    minArea: 0,
-    maxArea: 0,
-    suites: null,
-    additionalRequests: '',
-  },
-  contact: {
-    name: '',
-    phone: '',
-  }
+  };
+
+  // If budgetRanges is provided, calculate initial budget values
+  const budget = budgetRanges ? {
+    type: 'venda' as const,
+    min: Math.round(budgetRanges.venda.min * 1.1), // 10% above min
+    max: Math.round(budgetRanges.venda.max * 0.9)  // 10% below max
+  } : defaultBudget;
+
+  return {
+    budget,
+    preferences: {
+      furnished: null,
+      minArea: 100,
+      maxArea: 500,
+      quartos: 3,
+      additionalRequests: '',
+    },
+    contact: {
+      name: '',
+      phone: '',
+    }
+  };
 };
 
 interface FormContainerProps {
@@ -55,7 +67,7 @@ interface FormContainerProps {
 
 const FormContainer: React.FC<FormContainerProps> = ({ neighborhoodName, budgetRanges }) => {
   const [currentStep, setCurrentStep] = useState(1);
-  const [formData, setFormData] = useState<FormData>(initialFormData);
+  const [formData, setFormData] = useState<FormData>(getInitialFormData(budgetRanges));
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const formSectionRef = useRef<HTMLElement>(null);
@@ -100,6 +112,15 @@ const FormContainer: React.FC<FormContainerProps> = ({ neighborhoodName, budgetR
     setIsSubmitting(true);
     
     try {
+      // Log the form data to verify contact information is present
+      console.log('Submitting form data:', formData);
+      
+      // Ensure contact data is not empty
+      if (!formData.contact.name || !formData.contact.phone) {
+        console.error('Contact information is missing:', formData.contact);
+        throw new Error('Contact information is required');
+      }
+      
       const response = await fetch('https://workflowwebhook.prospectz.com.br/webhook/c21-diavisitasintake', {
         method: 'POST',
         headers: {
@@ -140,12 +161,12 @@ const FormContainer: React.FC<FormContainerProps> = ({ neighborhoodName, budgetR
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-semibold text-center mb-4 text-[#252526]">
-            {isSuccess ? 'Solicitação Enviada com Sucesso!' : 'Agende seu Dia de Visitas'}
+            {isSuccess ? 'Solicitação Enviada com Sucesso!' : 'Vamos Encontrar seus Imóveis Perfeitos'}
           </h2>
           <p className="text-center text-[#727273] mb-12 max-w-2xl mx-auto">
             {isSuccess 
-              ? `Nossa equipe entrará em contato em breve para confirmar os detalhes do seu Dia de Visitas exclusivo em ${neighborhoodName}.` 
-              : `Conte-nos sobre suas preferências para encontrarmos as propriedades perfeitas para você em ${neighborhoodName}.`}
+              ? `Nossa equipe entrará em contato em breve para apresentar imóveis no ${neighborhoodName}.` 
+              : `Conte-nos sobre suas preferências para encontrarmos as imóveis para você no ${neighborhoodName}.`}
           </p>
           
           {!isSuccess ? (
@@ -158,6 +179,7 @@ const FormContainer: React.FC<FormContainerProps> = ({ neighborhoodName, budgetR
                     budget={formData.budget}
                     updateBudget={updateBudget}
                     onNext={handleNextStep}
+                    budgetRanges={budgetRanges}
                   />
                 )}
                 
@@ -190,10 +212,10 @@ const FormContainer: React.FC<FormContainerProps> = ({ neighborhoodName, budgetR
               </div>
               <h3 className="text-xl font-semibold mb-2 text-[#252526]">Agradecemos seu Interesse</h3>
               <p className="text-[#727273] mb-6">
-                Recebemos suas preferências e entraremos em contato em até 24 horas para agendar seu Dia de Visitas em {neighborhoodName}.
+                Recebemos suas preferências e entraremos em contato para apresentar os melhores imóveis no {neighborhoodName}.
               </p>
               <p className="font-medium text-[#BEAF87]">
-                Você está mais perto de encontrar sua casa ideal.
+                Você está mais perto de encontrar seu lar ideal.
               </p>
             </div>
           )}

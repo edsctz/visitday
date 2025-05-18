@@ -22,7 +22,7 @@ export interface FormPreferences {
   furnished: string | null;
   minArea: number;
   maxArea: number;
-  suites: number | null;
+  quartos: number | null;
   additionalRequests: string;
 }
 

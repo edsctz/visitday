@@ -22,12 +22,12 @@ export const neighborhoods: Record<string, Neighborhood> = {
       venda: {
         min: 2000000,
         max: 15000000,
-        step: 100000
+        step: 200000
       },
       locacao: {
-        min: 10000,
+        min: 15000,
         max: 50000,
-        step: 1000
+        step: 2000
       }
     }
   },
@@ -52,12 +52,12 @@ export const neighborhoods: Record<string, Neighborhood> = {
       venda: {
         min: 1800000,
         max: 12000000,
-        step: 100000
+        step: 200000
       },
       locacao: {
         min: 8000,
         max: 40000,
-        step: 1000
+        step: 2000
       }
     }
   }
