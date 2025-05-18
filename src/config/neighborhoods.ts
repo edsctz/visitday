@@ -6,7 +6,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Tamboré 11',
     title: 'Casas a Venda e Locação no Tamboré 11',
     subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
-    heroImage: 'https://pages.c21alpha.com.br/wp-content/uploads/2025/05/tambore11.webp',
+    heroImage: '/tambore11.webp',
     showcaseProperty: {
       image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1g8jMxg+T0dtO0zX7mxvwShh5mk496Yvm2c6rXchJHi7szPZuSGl4UkiqisO3qe7KB3ZvouAVlAQNJ-AB3rXZrcbSB0vAO7lB3GeL5Ge3MOxFs8mwtvxH+5Bafx7GNu9wi7AaKGsw+TZ-DCBnkAHrMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
       title: 'Casa Moderna',
@@ -36,9 +36,9 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Singular',
     title: 'Casas Novas no Condomínio Singular',
     subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
-    heroImage: 'https://pages.c21alpha.com.br/wp-content/uploads/2025/05/Singular.webp',
+    heroImage: '/Singular.webp',
     showcaseProperty: {
-      image: 'https://pages.c21alpha.com.br/wp-content/uploads/2025/05/casasingular.webp',
+      image: '/casasingular.webp',
       title: 'Casa Recém Entregue',
       subtitle: 'Excelente Local no Condomínio',
       features: {
@@ -66,7 +66,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Tamboré 3',
     title: 'Casas a Venda e Locação no Tamboré 3',
     subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
-    heroImage: 'https://pages.c21alpha.com.br/wp-content/uploads/2025/05/Tambore-3.webp',
+    heroImage: '/Tambore3.webp',
     showcaseProperty: {
       image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0REzepc+hFlr881To3glXCG3d61vNamnW2pxa3r5p7xheXjQNrM2LAn86rTTluC9p84YdF9GUV4S8khQkXoUZecPE9evTur-2PfYZRbZk1V2iQ1sxh553inWYj96F8S9xqqIK-Giye2R4bIX0JrLuBHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
       title: 'Mansão Luxuosa',
@@ -96,7 +96,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Alphaville Residencial 9',
     title: 'Casas a Venda e Locação no Residencial 9',
     subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
-    heroImage: 'https://pages.c21alpha.com.br/wp-content/uploads/2025/05/Residencial-9.webp',
+    heroImage: '/Residencial9.webp',
     showcaseProperty: {
       image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0lI8PJkxQodu+c8Y4WZhgveh7ySu4a9knawp7PRmJ+C25jOU5nU8d0l2LDKG1n1sol0ZcwHHWN3fssnSD-SB6ieB39qhiedj0zqEolLY3RW4SsLyBpc836OBMOO1XA-xBuiB6-YsiiqS7noWk1tB+VHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
       title: 'Excelente Oportunidade',
@@ -126,7 +126,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Alphaville',
     title: 'Casas a Venda em Alphaville',
     subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
-    heroImage: 'https://pages.c21alpha.com.br/wp-content/uploads/2025/05/Residencial-9.webp',
+    heroImage: '/Residencial9.webp',
     showcaseProperty: {
       image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0lI8PJkxQodu+c8Y4WZhgveh7ySu4a9knawp7PRmJ+C25jOU5nU8d0l2LDKG1n1sol0ZcwHHWN3fssnSD-SB6ieB39qhiedj0zqEolLY3RW4SsLyBpc836OBMOO1XA-xBuiB6-YsiiqS7noWk1tB+VHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
       title: 'Excelente Oportunidade',
@@ -156,7 +156,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Genesis I e II',
     title: 'Casas a Venda e Locação no Genesis 1 e 2',
     subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
-    heroImage: 'https://pages.c21alpha.com.br/wp-content/uploads/2025/05/Genesis.webp',
+    heroImage: '/Genesis.webp',
     showcaseProperty: {
       image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2d2+uxfuzUAkekHVYi+4jXa+dSK5fjAgW+ypsmG5auF+d7mTZzk6qMc8a7TClH0iKBDSfINCXdmSbJ4ZiXsdKauI2VTmmGOnBjMd-5gTmBb9T4NuSpNn0eOArLz10Q--iG1EsT0+haIXb3BB19DQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAvEGLFMu0zqlYLGg-atbkyGZVA897nN8afjOqj6Ef-xOUupjo0W5ISdfZoJdM-0XUdJQn52ZWBDplWm6tfGp02ncjSdth5HCl6OzpZqtXZrYEdR-9tU52I=.jpg',
       title: 'Casa com Vista para a Mata',
@@ -186,7 +186,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Alphaville Residencial 5',
     title: 'Casas a Venda e Locação no Residencial 5',
     subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
-    heroImage: 'https://pages.c21alpha.com.br/wp-content/uploads/2025/05/Residencial-5.webp',
+    heroImage: '/Residencial5.webp',
     showcaseProperty: {
       image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtuxxB9c5ry0kCyulIB4+JrTS97InL7eahoUvP8pSMvYny0-T5feTu8Z8Ey5zXSgHxrrU-dvMVbhApRsh3ayXwcJ28Z0F-nzayoUCSHqMeb1gQ0wAUmxJglHajXq+L6Gx1xQa0BPPb7xehZa7WO1Z2ErZHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
       title: 'Casa Pronta para Morar',
@@ -216,7 +216,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Burle Marx',
     title: 'Casas a Venda e Locação no Burle Marx',
     subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
-    heroImage: 'https://pages.c21alpha.com.br/wp-content/uploads/2025/05/Burle-Marx.webp',
+    heroImage: '/BurleMarx.webp',
     showcaseProperty: {
       image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2x51fd+xDIutMcSUoemonSm8qq3zvyZ8Ri89q--uOjpx5vuV+mb5tsVifbKIFq2qLBpe-I1BHJ9TtFDdETJUbmLJT1tsze7phTSVpVMeHt-8RkYuisM9AHocseB3gU23hqlBdb+tSfXVr7tLH91QPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAvEGLFMu0zqlYLGg-atbkyGZVA897nN8afjOqj6Ef-xOUupjo0W5ISdfZoJdM-0XUdJQn52ZWBDplWm6tfGp02ncjSdth5HCl6OzpZqtXZrYEdR-9tU52I=.jpg',
       title: 'Casa Moderna',
@@ -246,7 +246,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Alphaville',
     title: 'Apartamentos para Alugar em Alphaville',
     subtitle: 'Conheça os melhores apartamentos disponíveis para alugar em Alphaville',
-    heroImage: 'https://pages.c21alpha.com.br/wp-content/uploads/2025/05/resorttambore.webp',
+    heroImage: '/resorttambore.webp',
     showcaseProperty: {
       image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtux1a0Ylj2go-nuQzeLudiyyYxI+5woq4tBXTqZ7Onu3Zi8LNWefe4p817Y-VOHKh6IpBe9AHPk1+f7ZcHDbabt+LZiQI8yGOrX38YpdkeFF6miRroBQN7mTpB7Wc5noXxwS9VNPZ8QilFfv9Pl9TQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAvEGLFMu0zqlYLGg-atbkyGZVA897nN8afjOqj6Ef-xOUupjo0W5ISdfZoJdM-0XUdJQn52ZWBDplWm6tfGp02ncjSdth5HCl6OzpZqtXZrYEdR-9tU52I=.jpg',
       title: 'Apartamento com 3 Quartos',
@@ -276,7 +276,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Resort Tamboré',
     title: 'Apartamentos no Resort Tamboré',
     subtitle: 'Conheça os melhores apartamentos disponíveis em um dos condomínios clube mais exclusivos de Alphaville',
-    heroImage: 'https://pages.c21alpha.com.br/wp-content/uploads/2025/05/resorttambore.webp',
+    heroImage: '/resorttambore.webp',
     showcaseProperty: {
       image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtux1a0Ylj2go-nuQzeLudiyyYxI+5woq4tBXTqZ7Onu3Zi8LNWefe4p817Y-VOHKh6IpBe9AHPk1+f7ZcHDbabt+LZiQI8yGOrX38YpdkeFF6miRroBQN7mTpB7Wc5noXxwS9VNPZ8QilFfv9Pl9TQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAvEGLFMu0zqlYLGg-atbkyGZVA897nN8afjOqj6Ef-xOUupjo0W5ISdfZoJdM-0XUdJQn52ZWBDplWm6tfGp02ncjSdth5HCl6OzpZqtXZrYEdR-9tU52I=.jpg',
       title: 'Apartamento com 3 Quartos',
