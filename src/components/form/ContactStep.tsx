@@ -193,7 +193,7 @@ const ContactStep: React.FC<ContactStepProps> = ({
               Enviando...
             </div>
           ) : (
-            'Receber Lista de Imóveis'
+            'Encontrar Imóveis'
           )}
         </button>
       </div>
