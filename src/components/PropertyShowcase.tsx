@@ -11,7 +11,7 @@ interface PropertyShowcaseProps {
       bedrooms: number;
       bathrooms: number;
       area: number;
-      hasGreenView: boolean;
+      mobiliado: boolean;
     };
   };
 }
@@ -62,12 +62,10 @@ const PropertyShowcase: React.FC<PropertyShowcaseProps> = ({ neighborhoodName, p
                     <Maximize className="text-[#BEAF87]" size={24} />
                     <span className="text-[#727273]">{property.features.area}m²</span>
                   </div>
-                  {property.features.hasGreenView && (
-                    <div className="flex items-center space-x-3">
-                      <TreePine className="text-[#BEAF87]" size={24} />
-                      <span className="text-[#727273]">Vista Verde</span>
-                    </div>
-                  )}
+                  <div className="flex items-center space-x-3">
+                    <Home className="text-[#BEAF87]" size={24} />
+                    <span className="text-[#727273]">Mobiliado: {property.features.mobiliado ? 'Sim' : 'Não'}</span>
+                  </div>
                 </div>
 
                 <p className="text-[#727273] mb-8 leading-relaxed">

@@ -62,7 +62,7 @@ const GlobalPresence: React.FC = () => {
                 Padrão Internacional de Qualidade
               </h3>
               <p className="text-[#727273] mb-6">
-                Como parte da maior rede imobiliária do mundo, a Century 21 Alpha traz para Tamboré 11 as melhores práticas internacionais no mercado de luxo, combinadas com um profundo conhecimento do mercado local.
+                Como parte da maior rede imobiliária do mundo, a Century 21 Alpha traz para Alphaville as melhores práticas internacionais no mercado de luxo, combinadas com um profundo conhecimento do mercado local.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center text-[#727273]">
@@ -71,7 +71,7 @@ const GlobalPresence: React.FC = () => {
                 </li>
                 <li className="flex items-center text-[#727273]">
                   <span className="w-2 h-2 bg-[#BEAF87] rounded-full mr-3"></span>
-                  Programa global de certificação de agentes
+                  Programa global de certificação de corretores
                 </li>
                 <li className="flex items-center text-[#727273]">
                   <span className="w-2 h-2 bg-[#BEAF87] rounded-full mr-3"></span>

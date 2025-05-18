@@ -19,7 +19,6 @@ const ContactStep: React.FC<ContactStepProps> = ({
   const [localContact, setLocalContact] = useState(contact);
   const [errors, setErrors] = useState({
     name: false,
-    email: false,
     phone: false,
   });
 
@@ -38,9 +37,6 @@ const ContactStep: React.FC<ContactStepProps> = ({
     
     if (name === 'name') {
       isValid = value.trim().length >= 3;
-    } else if (name === 'email') {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      isValid = emailRegex.test(value);
     } else if (name === 'phone') {
       // Simple validation for Brazilian phone numbers
       const phoneRegex = /^\(\d{2}\)\s\d{4,5}-\d{4}$/;
@@ -80,20 +76,17 @@ const ContactStep: React.FC<ContactStepProps> = ({
   const handleSubmitForm = () => {
     // Final validation before submitting
     const nameValid = localContact.name.trim().length >= 3;
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const emailValid = emailRegex.test(localContact.email);
     const phoneRegex = /^\(\d{2}\)\s\d{4,5}-\d{4}$/;
     const phoneValid = phoneRegex.test(localContact.phone);
     
     const newErrors = {
       name: !nameValid,
-      email: !emailValid,
       phone: !phoneValid,
     };
     
     setErrors(newErrors);
     
-    if (nameValid && emailValid && phoneValid) {
+    if (nameValid && phoneValid) {
       updateContact(localContact);
       onSubmit();
     }
@@ -102,9 +95,8 @@ const ContactStep: React.FC<ContactStepProps> = ({
   const isValid = () => {
     return (
       localContact.name.trim().length >= 3 &&
-      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(localContact.email) &&
       /^\(\d{2}\)\s\d{4,5}-\d{4}$/.test(localContact.phone) &&
-      !errors.name && !errors.email && !errors.phone
+      !errors.name && !errors.phone
     );
   };
 
@@ -120,7 +112,7 @@ const ContactStep: React.FC<ContactStepProps> = ({
       <div className="space-y-6">
         <div>
           <label htmlFor="name" className="block text-[#252526] font-medium mb-2">
-            Nome Completo
+            Nome
           </label>
           <input
             type="text"
@@ -128,33 +120,13 @@ const ContactStep: React.FC<ContactStepProps> = ({
             name="name"
             value={localContact.name}
             onChange={handleInputChange}
-            placeholder="Seu nome completo"
+            placeholder="Seu nome"
             className={`w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-[#BEAF87] focus:border-transparent ${
               errors.name ? 'border-red-500' : 'border-gray-300'
             }`}
           />
           {errors.name && (
-            <p className="mt-1 text-red-500 text-sm">Por favor, insira seu nome completo.</p>
-          )}
-        </div>
-
-        <div>
-          <label htmlFor="email" className="block text-[#252526] font-medium mb-2">
-            E-mail
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={localContact.email}
-            onChange={handleInputChange}
-            placeholder="seu.email@exemplo.com"
-            className={`w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-[#BEAF87] focus:border-transparent ${
-              errors.email ? 'border-red-500' : 'border-gray-300'
-            }`}
-          />
-          {errors.email && (
-            <p className="mt-1 text-red-500 text-sm">Por favor, insira um e-mail válido.</p>
+            <p className="mt-1 text-red-500 text-sm">Por favor, insira seu nome.</p>
           )}
         </div>
 
@@ -176,18 +148,6 @@ const ContactStep: React.FC<ContactStepProps> = ({
           {errors.phone && (
             <p className="mt-1 text-red-500 text-sm">Por favor, insira um telefone válido no formato (XX) XXXXX-XXXX.</p>
           )}
-        </div>
-
-        <div className="pt-4">
-          <label className="flex items-start">
-            <input
-              type="checkbox"
-              className="mt-1 rounded border-gray-300 text-[#BEAF87] focus:ring-[#BEAF87]"
-            />
-            <span className="ml-2 text-sm text-[#727273]">
-              Concordo em receber informações sobre propriedades em Tamboré 11 e serviços da Century 21 Alpha de acordo com a <a href="#" className="text-[#517394] hover:underline">Política de Privacidade</a>.
-            </span>
-          </label>
         </div>
       </div>
 

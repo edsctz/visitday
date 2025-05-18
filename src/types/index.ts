@@ -8,7 +8,7 @@ export interface PropertyFeatures {
   bedrooms: number;
   bathrooms: number;
   area: number;
-  hasGreenView: boolean;
+  mobiliado: boolean;
 }
 
 export interface ShowcaseProperty {
@@ -19,8 +19,7 @@ export interface ShowcaseProperty {
 }
 
 export interface FormPreferences {
-  architecturalStyle: string[];
-  floors: number | null;
+  furnished: string | null;
   minArea: number;
   maxArea: number;
   suites: number | null;

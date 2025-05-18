@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import BudgetStep from './BudgetStep';
 import PreferencesStep from './PreferencesStep';
 import ContactStep from './ContactStep';
@@ -14,7 +14,6 @@ export interface FormData {
   preferences: FormPreferences;
   contact: {
     name: string;
-    email: string;
     phone: string;
   };
 }
@@ -26,16 +25,14 @@ const initialFormData: FormData = {
     max: 5000000
   },
   preferences: {
-    architecturalStyle: [],
-    floors: null,
-    minArea: 400,
-    maxArea: 600,
+    furnished: null,
+    minArea: 0,
+    maxArea: 0,
     suites: null,
     additionalRequests: '',
   },
   contact: {
     name: '',
-    email: '',
     phone: '',
   }
 };
@@ -61,6 +58,14 @@ const FormContainer: React.FC<FormContainerProps> = ({ neighborhoodName, budgetR
   const [formData, setFormData] = useState<FormData>(initialFormData);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const formSectionRef = useRef<HTMLElement>(null);
+
+  // Scroll to top of form when step changes
+  useEffect(() => {
+    if (formSectionRef.current) {
+      formSectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [currentStep]);
 
   const handleNextStep = () => {
     setCurrentStep(prev => Math.min(prev + 1, 3));
@@ -131,7 +136,7 @@ const FormContainer: React.FC<FormContainerProps> = ({ neighborhoodName, budgetR
   };
 
   return (
-    <section id="form-section" className="py-20 bg-[#F9F9F9]">
+    <section id="form-section" ref={formSectionRef} className="py-20 bg-[#F9F9F9]">
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-semibold text-center mb-4 text-[#252526]">

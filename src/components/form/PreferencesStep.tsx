@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FormData } from './FormContainer';
 
 interface PreferencesStepProps {
@@ -7,14 +7,6 @@ interface PreferencesStepProps {
   onNext: () => void;
   onPrev: () => void;
 }
-
-const architecturalStyles = [
-  { id: 'contemporaneo', label: 'Contemporâneo' },
-  { id: 'moderno', label: 'Moderno' },
-  { id: 'neoclassico', label: 'Neoclássico' },
-  { id: 'americano', label: 'Americano' },
-  { id: 'minimalista', label: 'Minimalista' },
-];
 
 const PreferencesStep: React.FC<PreferencesStepProps> = ({ 
   preferences, 
@@ -25,71 +17,58 @@ const PreferencesStep: React.FC<PreferencesStepProps> = ({
   const [localPreferences, setLocalPreferences] = useState(preferences);
   const [errors, setErrors] = useState({
     suites: false,
-    area: false,
+    minArea: false,
+    maxArea: false,
   });
 
-  const handleStyleChange = (styleId: string) => {
-    const currentStyles = [...localPreferences.architecturalStyle];
-    
-    if (currentStyles.includes(styleId)) {
-      const updatedStyles = currentStyles.filter(id => id !== styleId);
-      setLocalPreferences({
-        ...localPreferences,
-        architecturalStyle: updatedStyles
-      });
-    } else {
-      setLocalPreferences({
-        ...localPreferences,
-        architecturalStyle: [...currentStyles, styleId]
-      });
-    }
-  };
+  // Update local preferences when props change
+  useEffect(() => {
+    setLocalPreferences(preferences);
+  }, [preferences]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     
     if (name === 'suites') {
       const numValue = value ? parseInt(value) : null;
-      setLocalPreferences({
-        ...localPreferences,
+      setLocalPreferences(prev => ({
+        ...prev,
         [name]: numValue
-      });
+      }));
       
-      setErrors({
-        ...errors,
+      setErrors(prev => ({
+        ...prev,
         suites: numValue !== null && (numValue < 1 || numValue > 10)
-      });
+      }));
+    } else if (name === 'minArea' || name === 'maxArea') {
+      const numValue = value ? parseInt(value) : 0;
+      setLocalPreferences(prev => ({
+        ...prev,
+        [name]: numValue
+      }));
+      
+      // Validate min/max area
+      if (name === 'minArea') {
+        setErrors(prev => ({
+          ...prev,
+          minArea: numValue <= 0 || (localPreferences.maxArea > 0 && numValue >= localPreferences.maxArea)
+        }));
+      } else if (name === 'maxArea') {
+        setErrors(prev => ({
+          ...prev,
+          maxArea: numValue <= 0 || numValue <= localPreferences.minArea
+        }));
+      }
     } else {
-      setLocalPreferences({
-        ...localPreferences,
+      setLocalPreferences(prev => ({
+        ...prev,
         [name]: value
-      });
+      }));
     }
   };
 
-  const handleAreaChange = (e: React.ChangeEvent<HTMLInputElement>, isMin: boolean) => {
-    const value = parseInt(e.target.value);
-    if (isMin && value < localPreferences.maxArea!) {
-      setLocalPreferences(prev => ({ ...prev, minArea: value }));
-    } else if (!isMin && value > localPreferences.minArea!) {
-      setLocalPreferences(prev => ({ ...prev, maxArea: value }));
-    }
-  };
-
-  const handleAreaMouseUp = () => {
+  const handleBlur = () => {
     updatePreferences(localPreferences);
-  };
-
-  const getSliderBackground = () => {
-    const minPercent = ((localPreferences.minArea! - 200) / 800) * 100;
-    const maxPercent = ((localPreferences.maxArea! - 200) / 800) * 100;
-    
-    return {
-      background: `linear-gradient(to right, 
-        #E5E7EB 0%, #E5E7EB ${minPercent}%, 
-        #BEAF87 ${minPercent}%, #BEAF87 ${maxPercent}%, 
-        #E5E7EB ${maxPercent}%, #E5E7EB 100%)`
-    };
   };
 
   const handleNext = () => {
@@ -103,7 +82,7 @@ const PreferencesStep: React.FC<PreferencesStepProps> = ({
   };
 
   const isValid = () => {
-    return !errors.suites && !errors.area;
+    return !errors.suites && !errors.minArea && !errors.maxArea;
   };
 
   return (
@@ -116,104 +95,71 @@ const PreferencesStep: React.FC<PreferencesStepProps> = ({
       </div>
 
       <div className="space-y-6">
-        <div>
-          <label className="block text-[#252526] font-medium mb-2">
-            Estilo Arquitetônico
-          </label>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-            {architecturalStyles.map(style => (
-              <div key={style.id} className="flex items-center">
-                <input
-                  type="checkbox"
-                  id={style.id}
-                  checked={localPreferences.architecturalStyle.includes(style.id)}
-                  onChange={() => handleStyleChange(style.id)}
-                  className="sr-only"
-                />
-                <label
-                  htmlFor={style.id}
-                  className={`
-                    px-4 py-2 rounded-full border text-sm font-medium w-full text-center cursor-pointer transition-all
-                    ${localPreferences.architecturalStyle.includes(style.id)
-                      ? 'bg-[#BEAF87] border-[#BEAF87] text-white'
-                      : 'bg-white border-gray-300 text-[#727273] hover:bg-gray-50'}
-                  `}
-                >
-                  {style.label}
-                </label>
-              </div>
-            ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label htmlFor="minArea" className="block text-[#252526] font-medium mb-2">
+              Área Mínima (m²)
+            </label>
+            <input
+              type="number"
+              id="minArea"
+              name="minArea"
+              min="1"
+              value={localPreferences.minArea || ''}
+              onChange={handleInputChange}
+              onBlur={handleBlur}
+              placeholder="Ex: 200"
+              className={`w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-[#BEAF87] focus:border-transparent ${
+                errors.minArea ? 'border-red-500' : 'border-gray-300'
+              }`}
+            />
+            {errors.minArea && (
+              <p className="mt-1 text-red-500 text-sm">
+                Por favor, insira uma área mínima válida menor que a área máxima.
+              </p>
+            )}
           </div>
-        </div>
 
-        <div>
-          <label className="block text-[#252526] font-medium mb-2">
-            Área Construída (m²)
-          </label>
-          <div className="relative pt-6 pb-6">
-            <div className="relative">
-              <input
-                type="range"
-                min={200}
-                max={1000}
-                value={localPreferences.minArea}
-                step={10}
-                onChange={(e) => handleAreaChange(e, true)}
-                onMouseUp={handleAreaMouseUp}
-                onTouchEnd={handleAreaMouseUp}
-                className="absolute w-full -top-2 h-2 bg-transparent appearance-none pointer-events-none"
-                style={{
-                  zIndex: 3,
-                  '--range-color': '#BEAF87'
-                } as React.CSSProperties}
-              />
-              <input
-                type="range"
-                min={200}
-                max={1000}
-                value={localPreferences.maxArea}
-                step={10}
-                onChange={(e) => handleAreaChange(e, false)}
-                onMouseUp={handleAreaMouseUp}
-                onTouchEnd={handleAreaMouseUp}
-                className="absolute w-full -top-2 h-2 bg-transparent appearance-none pointer-events-none"
-                style={{
-                  zIndex: 4,
-                  '--range-color': '#BEAF87'
-                } as React.CSSProperties}
-              />
-              <div
-                className="absolute w-full h-2 rounded-lg top-0"
-                style={getSliderBackground()}
-              ></div>
-            </div>
-            <div className="flex justify-between mt-8">
-              <div className="text-[#252526] font-medium">
-                {localPreferences.minArea} m²
-              </div>
-              <div className="text-[#252526] font-medium">
-                {localPreferences.maxArea} m²
-              </div>
-            </div>
+          <div>
+            <label htmlFor="maxArea" className="block text-[#252526] font-medium mb-2">
+              Área Máxima (m²)
+            </label>
+            <input
+              type="number"
+              id="maxArea"
+              name="maxArea"
+              min="1"
+              value={localPreferences.maxArea || ''}
+              onChange={handleInputChange}
+              onBlur={handleBlur}
+              placeholder="Ex: 500"
+              className={`w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-[#BEAF87] focus:border-transparent ${
+                errors.maxArea ? 'border-red-500' : 'border-gray-300'
+              }`}
+            />
+            {errors.maxArea && (
+              <p className="mt-1 text-red-500 text-sm">
+                Por favor, insira uma área máxima válida maior que a área mínima.
+              </p>
+            )}
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label htmlFor="floors" className="block text-[#252526] font-medium mb-2">
-              Pisos
+            <label htmlFor="furnished" className="block text-[#252526] font-medium mb-2">
+              Mobiliado?
             </label>
             <select
-              id="floors"
-              name="floors"
-              value={localPreferences.floors || ''}
+              id="furnished"
+              name="furnished"
+              value={localPreferences.furnished || ''}
               onChange={handleInputChange}
               className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#BEAF87] focus:border-transparent"
             >
               <option value="">Indiferente</option>
-              <option value="1">1 Piso (Térrea)</option>
-              <option value="2">2 Pisos</option>
-              <option value="3">3 ou mais Pisos</option>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
             </select>
           </div>
 

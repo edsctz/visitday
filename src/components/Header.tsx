@@ -76,13 +76,13 @@ const Header: React.FC = () => {
                 onClick={() => scrollToSection('concierge')} 
                 className="text-white hover:text-[#BEAF87] transition-colors text-left"
               >
-                Concierge Pessoal
+                Destaque
               </button>
               <button 
                 onClick={() => scrollToSection('form-section')} 
                 className="text-white hover:text-[#BEAF87] transition-colors text-left"
               >
-                Contato
+                Solicite
               </button>
             </nav>
           </div>

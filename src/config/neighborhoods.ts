@@ -4,8 +4,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
   tambore11: {
     id: 'tambore11',
     name: 'Tamboré 11',
-    title: 'Seu Dia de Visitas em Tamboré 11',
-    subtitle: '3–5 imóveis selecionados a dedo, perfeitamente alinhados com o seu estilo de vida e preferências',
+    title: 'Concierge VIP: Seleção de Imóveis no Tamboré 11',
+    subtitle: '3 a 5 imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
     heroImage: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1920',
     showcaseProperty: {
       image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1280',
@@ -15,7 +15,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         bedrooms: 5,
         bathrooms: 7,
         area: 980,
-        hasGreenView: true
+        mobiliado: true
       }
     },
     budgetRanges: {
@@ -34,7 +34,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
   tambore10: {
     id: 'tambore10',
     name: 'Tamboré 10',
-    title: 'Seu Dia de Visitas em Tamboré 10',
+    title: 'Seu Dia de Visitas no Tamboré 10',
     subtitle: 'Conheça as melhores casas disponíveis em um dos condomínios mais exclusivos de Alphaville',
     heroImage: 'https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=1920',
     showcaseProperty: {
@@ -45,7 +45,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         bedrooms: 4,
         bathrooms: 6,
         area: 750,
-        hasGreenView: true
+        mobiliado: false
       }
     },
     budgetRanges: {

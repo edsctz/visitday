@@ -43,28 +43,28 @@ const Testimonials: React.FC<TestimonialsProps> = ({ neighborhoodName }) => {
       <div className="container mx-auto px-4 md:px-8">
         <h2 className="text-3xl font-semibold text-center mb-4 text-[#252526]">O Que Nossos Clientes Dizem</h2>
         <p className="text-center text-[#727273] mb-16 max-w-2xl mx-auto">
-          Depoimentos de pessoas que encontraram seu lar ideal em {neighborhoodName} com nossa assistência.
+          Depoimentos de pessoas que encontraram seu lar ideal com nossa assistência.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Testimonial 
-            quote={`O serviço de concierge da Century 21 Alpha foi excepcional. Eles selecionaram apenas casas que realmente se encaixavam no nosso estilo de vida em ${neighborhoodName}, o que economizou muito do nosso tempo.`}
+            quote={`O serviço de concierge da Century 21 Alpha foi excepcional. Eles selecionaram apenas casas que realmente se encaixavam no nosso estilo de vida, o que economizou muito do nosso tempo.`}
             author="Ana Beatriz Mendes"
-            role={`Proprietária em ${neighborhoodName}`}
+            role={`Alugou uma Casa no Tamboré`}
             image="https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=256"
             neighborhoodName={neighborhoodName}
           />
           <Testimonial 
-            quote={`Encontramos nossa casa dos sonhos em ${neighborhoodName} graças à abordagem personalizada da equipe. Eles entenderam exatamente o que procurávamos e só nos mostraram propriedades que faziam sentido.`}
+            quote={`Encontramos nossa casa graças à consultoria personalizada da Century 21. Eles entenderam exatamente o que procurávamos e só nos mostraram propriedades que faziam sentido.`}
             author="Ricardo e Camila Almeida"
-            role={`Família residente em ${neighborhoodName}`}
+            role={`Família se mudou para Residencial 10`}
             image="https://images.pexels.com/photos/3987524/pexels-photo-3987524.jpeg?auto=compress&cs=tinysrgb&w=256"
             neighborhoodName={neighborhoodName}
           />
           <Testimonial 
-            quote={`O Dia de Visitas personalizado que a Century 21 Alpha organizou para mim foi perfeito. Logo na segunda visita, eu soube que tinha encontrado meu lar em ${neighborhoodName} - sem perder tempo visitando dezenas de casas.`}
+            quote={`O Dia de Visitas personalizado que a Century 21 Alpha organizou para mim foi perfeito. Logo na segunda visita, eu soube que tinha encontrado o que buscava - sem perder tempo visitando dezenas de casas.`}
             author="Marcelo Tavares"
-            role={`Executivo e morador de ${neighborhoodName}`}
+            role={`Executivo e morador de Alphaville`}
             image="https://images.pexels.com/photos/5384445/pexels-photo-5384445.jpeg?auto=compress&cs=tinysrgb&w=256"
             neighborhoodName={neighborhoodName}
           />
