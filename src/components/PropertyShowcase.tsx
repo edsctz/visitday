@@ -22,7 +22,7 @@ const PropertyShowcase: React.FC<PropertyShowcaseProps> = ({ neighborhoodName, p
       <div className="container mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-semibold mb-4 text-[#252526]">
-            Em Destaque em {neighborhoodName}
+            Em Destaque no {neighborhoodName}
           </h2>
           <p className="text-[#727273] max-w-2xl mx-auto">
             Uma prévia do tipo de propriedade exclusiva que podemos apresentar durante seu Dia de Visitas personalizado.
@@ -34,7 +34,7 @@ const PropertyShowcase: React.FC<PropertyShowcaseProps> = ({ neighborhoodName, p
             <div className="relative h-[400px] md:h-[600px]">
               <img
                 src={property.image}
-                alt={`Mansão em ${neighborhoodName}`}
+                alt={`Imóvel em ${neighborhoodName}`}
                 className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
@@ -69,7 +69,7 @@ const PropertyShowcase: React.FC<PropertyShowcaseProps> = ({ neighborhoodName, p
                 </div>
 
                 <p className="text-[#727273] mb-8 leading-relaxed">
-                  Esta propriedade excepcional representa o padrão de qualidade que você encontrará em seu Dia de Visitas. Com acabamentos premium, vista permanente para área verde e localização privilegiada, é apenas uma das opções exclusivas que podemos apresentar com base em suas preferências.
+                  Esta propriedade excepcional representa o padrão de qualidade que você encontrará em seu Dia de Visitas. Com acabamentos premium e localização privilegiada, é apenas uma das opções exclusivas que podemos apresentar com base em suas preferências.
                 </p>
               </div>
 

@@ -25,7 +25,7 @@ const GlobalPresence: React.FC = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-semibold mb-4 text-[#252526]">
-            Presença Global, Expertise Local
+            Presença Global, Expertise em Alphaville
           </h2>
           <p className="text-[#727273] max-w-2xl mx-auto">
             Há mais de 50 anos, a Century 21 é sinônimo de excelência em imóveis de alto padrão ao redor do mundo. Nossa rede global nos permite oferecer um serviço incomparável com padrão internacional.
@@ -41,7 +41,7 @@ const GlobalPresence: React.FC = () => {
           <Stat
             icon={<Users size={32} />}
             number="150.000+"
-            label="Agentes Especializados"
+            label="Corretores Especializados"
           />
           <Stat
             icon={<Building2 size={32} />}

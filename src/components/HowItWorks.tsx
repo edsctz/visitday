@@ -29,14 +29,14 @@ const HowItWorks: React.FC<HowItWorksProps> = ({ neighborhoodName }) => {
       <div className="container mx-auto px-4 md:px-8">
         <h2 className="text-3xl font-semibold text-center mb-4 text-[#252526]">Como Funciona</h2>
         <p className="text-center text-[#727273] mb-16 max-w-2xl mx-auto">
-          Simplificamos o processo de encontrar sua casa ideal em {neighborhoodName}, oferecendo uma experiência personalizada e exclusiva.
+          Simplificamos o processo de encontrar seu imóvel ideal no {neighborhoodName}, oferecendo uma experiência personalizada e exclusiva.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <Step 
             icon={<ClipboardCheck size={32} />}
             title="Formulário"
-            description={`Conte-nos sobre suas preferências e necessidades para uma casa em ${neighborhoodName}.`}
+            description={`Conte-nos sobre suas preferências e necessidades para um imóvel no ${neighborhoodName}.`}
           />
           <Step 
             icon={<Search size={32} />}

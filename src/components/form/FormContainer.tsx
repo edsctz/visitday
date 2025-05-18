@@ -71,19 +71,36 @@ const FormContainer: React.FC<FormContainerProps> = ({ neighborhoodName, budgetR
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const formSectionRef = useRef<HTMLElement>(null);
+  const isInitialRender = useRef(true);
+  const prevStepRef = useRef(currentStep);
+  const isUserNavigation = useRef(false);
 
-  // Scroll to top of form when step changes
+  // Scroll to top of form when step changes due to user navigation
   useEffect(() => {
-    if (formSectionRef.current) {
-      formSectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // Skip scrolling on initial render
+    if (isInitialRender.current) {
+      isInitialRender.current = false;
+      prevStepRef.current = currentStep;
+      return;
     }
+    
+    // Only scroll when step changes due to user navigation
+    if (formSectionRef.current && isUserNavigation.current) {
+      formSectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      isUserNavigation.current = false;
+    }
+    
+    // Update previous step
+    prevStepRef.current = currentStep;
   }, [currentStep]);
 
   const handleNextStep = () => {
+    isUserNavigation.current = true;
     setCurrentStep(prev => Math.min(prev + 1, 3));
   };
 
   const handlePrevStep = () => {
+    isUserNavigation.current = true;
     setCurrentStep(prev => Math.max(prev - 1, 1));
   };
 

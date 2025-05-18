@@ -30,7 +30,7 @@ const BudgetStep: React.FC<BudgetStepProps> = ({ budget, updateBudget, onNext, b
     const max = budgetRanges[type].max;
     const newBudget = {
       type,
-      min: Math.round(min * 1.1), // 10% above min
+      min: Math.round(min * 1.1), // 10% after min
       max: Math.round(max * 0.9)  // 10% below max
     };
     setLocalBudget(newBudget);

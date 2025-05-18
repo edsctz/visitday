@@ -38,7 +38,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
           onClick={scrollToForm}
           className="bg-[#BEAF87] hover:bg-[#746649] text-[#121212] font-semibold py-4 px-8 rounded transition-all duration-300 shadow-lg transform hover:scale-105"
         >
-          Agende seu Dia de Visitas
+          Escolher Imóveis
         </button>
         
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
