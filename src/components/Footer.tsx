@@ -82,6 +82,7 @@ const Footer: React.FC<FooterProps> = ({ neighborhoodName }) => {
               <a href="https://www.c21alpha.com.br/sobre-nos" className="text-gray-400 hover:text-white transition-colors">Sobre Nós</a>
               <a href="https://www.c21alpha.com.br/politica-de-privacidade" className="text-gray-400 hover:text-white transition-colors">Política de Privacidade</a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">CRECI 12345-J</a>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">Century 21 Alpha é uma unidade franqueada autorizada da Century 21 Real Estate LLC. Operada por Rec Imobiliária, Assessoria e Consultoria Ltda., CNPJ 29.895.417/0001-41, sob licença de uso da marca Century 21. Todas as informações e serviços oferecidos neste site são de responsabilidade da unidade franqueada.</a>
             </div>
           </div>
         </div>
