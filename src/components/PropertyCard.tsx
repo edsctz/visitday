@@ -4,10 +4,9 @@ import { ShowcaseProperty } from '../types';
 
 interface PropertyCardProps {
   property: ShowcaseProperty;
-  listingPageUrl: string;
 }
 
-const PropertyCard: React.FC<PropertyCardProps> = ({ property, listingPageUrl }) => {
+const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
   return (
     <div className="w-full bg-white rounded-lg shadow-lg overflow-hidden">
       <div className="relative h-48">
@@ -48,7 +47,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property, listingPageUrl })
         </div>
         
         <a
-          href={listingPageUrl}
+          href={property.propertyUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="block w-full bg-[#BEAF87] hover:bg-[#746649] text-white text-center py-2 px-4 rounded font-medium transition-colors duration-300"

@@ -17,7 +17,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 5,
           area: 433,
           vagas: 4
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-moderna-piscina-tambore11'
       },
       {
         image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
@@ -28,7 +29,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 4,
           area: 380,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/residencia-espacosa-tambore11'
       },
       {
         image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
@@ -39,7 +41,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 3,
           area: 320,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/oportunidade-unica-tambore11'
       }
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/tambore11',
@@ -72,7 +75,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 5,
           area: 310,
           vagas: 3
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-recem-entregue-singular'
       },
       {
         image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
@@ -83,7 +87,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 4,
           area: 285,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-nova-acabamentos-singular'
       },
       {
         image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
@@ -94,7 +99,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 3,
           area: 260,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/oportunidade-singular'
       }
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/singular',
@@ -127,7 +133,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 6,
           area: 1080,
           vagas: 6
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/mansao-luxuosa-tambore3'
       },
       {
         image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
@@ -138,7 +145,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 5,
           area: 850,
           vagas: 4
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-alto-padrao-tambore3'
       },
       {
         image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
@@ -149,7 +157,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 4,
           area: 720,
           vagas: 3
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/residencia-premium-tambore3'
       }
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/tambore3',
@@ -182,7 +191,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 4,
           area: 345,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/excelente-oportunidade-residencial9'
       },
       {
         image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
@@ -193,7 +203,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 3,
           area: 390,
           vagas: 3
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-familiar-residencial9'
       },
       {
         image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
@@ -204,7 +215,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 3,
           area: 310,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-pronta-residencial9'
       }
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/residencial9',
@@ -237,7 +249,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 4,
           area: 345,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-venda-alphaville'
       },
       {
         image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
@@ -248,7 +261,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 5,
           area: 450,
           vagas: 3
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/residencia-alto-padrao-alphaville'
       },
       {
         image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
@@ -259,7 +273,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 3,
           area: 380,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-piscina-alphaville'
       }
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/casas-venda',
@@ -292,7 +307,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 7,
           area: 303,
           vagas: 3
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-vista-mata-genesis2'
       },
       {
         image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
@@ -303,7 +319,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 4,
           area: 280,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/residencia-exclusiva-genesis1'
       },
       {
         image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
@@ -314,7 +331,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 5,
           area: 350,
           vagas: 3
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-condominio-genesis'
       }
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/genesis',
@@ -347,7 +365,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 3,
           area: 290,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-pronta-residencial5'
       },
       {
         image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
@@ -358,7 +377,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 4,
           area: 320,
           vagas: 3
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/residencia-familiar-residencial5'
       },
       {
         image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
@@ -369,7 +389,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 3,
           area: 275,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-quintal-residencial5'
       }
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/residencial5',
@@ -402,7 +423,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 4,
           area: 230,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-moderna-burlemarx'
       },
       {
         image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
@@ -413,7 +435,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 5,
           area: 290,
           vagas: 3
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/residencia-contemporanea-burlemarx'
       },
       {
         image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
@@ -424,7 +447,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 3,
           area: 250,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-design-exclusivo-burlemarx'
       }
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/burlemarx',
@@ -457,7 +481,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 3,
           area: 133,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-3quartos-alphaville'
       },
       {
         image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
@@ -468,7 +493,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 2,
           area: 95,
           vagas: 1
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-moderno-alphaville'
       },
       {
         image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
@@ -479,7 +505,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 2,
           area: 110,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-espacoso-alphaville'
       }
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/apartamentos-alugar',
@@ -512,7 +539,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 3,
           area: 133,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-resort-tambore'
       },
       {
         image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
@@ -523,7 +551,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 2,
           area: 85,
           vagas: 1
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-lazer-resort-tambore'
       },
       {
         image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
@@ -534,7 +563,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bathrooms: 2,
           area: 120,
           vagas: 2
-        }
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-premium-resort-tambore'
       }
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/resort-tambore',

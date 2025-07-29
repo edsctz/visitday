@@ -16,6 +16,7 @@ export interface ShowcaseProperty {
   title: string;
   subtitle: string;
   features: PropertyFeatures;
+  propertyUrl: string;
 }
 
 export interface FormPreferences {

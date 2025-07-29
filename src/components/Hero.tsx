@@ -82,7 +82,6 @@ const Hero: React.FC<HeroProps> = ({
                   <div key={index} className="w-full flex-shrink-0 px-2">
                     <PropertyCard
                       property={property}
-                      listingPageUrl={listingPageUrl}
                     />
                   </div>
                 ))}
@@ -134,7 +133,6 @@ const Hero: React.FC<HeroProps> = ({
                 <PropertyCard
                   key={index}
                   property={showcaseProperties[index]}
-                  listingPageUrl={listingPageUrl}
                 />
               ))}
             </div>
