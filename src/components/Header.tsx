@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="absolute w-full z-10 px-4 py-6 md:px-8">
+    <header className="absolute w-full z-10 px-4 py-4 md:px-8">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white font-bold text-xl tracking-wider">
           <span className="text-[#BEAF87]">CENTURY 21</span> <span>Alpha</span>

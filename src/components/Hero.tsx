@@ -53,20 +53,20 @@ const Hero: React.FC<HeroProps> = ({
         <div className="absolute inset-0 bg-gradient-to-b from-[#121212]/80 to-[#121212]/60"></div>
       </div>
       
-      <div className="container mx-auto px-4 md:px-8 relative z-[1] pt-24 pb-12">
+      <div className="container mx-auto px-4 md:px-8 relative z-[1] pt-16 pb-8">
         {/* Header Section */}
-        <div className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-white mb-4 leading-tight">
+        <div className="text-center mb-6">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-light text-white mb-2 leading-tight">
             Imóveis no {neighborhoodName}
           </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-base md:text-xl text-white/90 mb-4 leading-relaxed max-w-3xl mx-auto">
             Explore nossa seleção exclusiva de imóveis ou solicite uma curadoria personalizada
           </p>
         </div>
 
         {/* Property Carousel */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-semibold text-white mb-6 text-center">
+        <div className="mb-8">
+          <h2 className="text-xl md:text-2xl font-semibold text-white mb-4 text-center">
             Melhores Oportunidades
           </h2>
           
@@ -142,12 +142,12 @@ const Hero: React.FC<HeroProps> = ({
         </div>
 
         {/* Call-to-Action Buttons */}
-        <div className="flex flex-col md:flex-row gap-4 max-w-4xl mx-auto">
+        <div className="flex flex-col md:flex-row gap-3 max-w-4xl mx-auto">
           <a
             href={listingPageUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 bg-white hover:bg-gray-50 text-[#252526] font-semibold py-4 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-3 group"
+            className="flex-1 bg-white hover:bg-gray-50 text-[#252526] font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 group text-sm md:text-base"
           >
             <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform" />
             Ver Todos os Imóveis Disponíveis
@@ -155,12 +155,12 @@ const Hero: React.FC<HeroProps> = ({
           
           <button
             onClick={scrollToForm}
-            className="flex-1 bg-[#BEAF87] hover:bg-[#746649] text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-3 group"
+            className="flex-1 bg-[#BEAF87] hover:bg-[#746649] text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 group text-sm md:text-base"
           >
             <Star className="w-5 h-5 group-hover:scale-110 transition-transform" />
             <span className="text-center">
-              <span className="block">Seleção VIP Personalizada</span>
-              <span className="block text-sm font-normal opacity-90">
+              <span className="block text-sm md:text-base">Seleção VIP Personalizada</span>
+              <span className="block text-xs md:text-sm font-normal opacity-90">
                 Análise gratuita dos 5 melhores imóveis para você
               </span>
             </span>
