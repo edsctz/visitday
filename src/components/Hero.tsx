@@ -150,7 +150,7 @@ const Hero: React.FC<HeroProps> = ({
             className="flex-1 bg-white hover:bg-gray-50 text-[#252526] font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 group text-sm md:text-base"
           >
             <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform" />
-            Ver Todos os Imóveis Disponíveis
+            Ver Todos Imóveis Disponíveis
           </a>
           
           <button
