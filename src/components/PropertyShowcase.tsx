@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, BedDouble, Bath, Maximize, TreePine } from 'lucide-react';
+import { Car, BedDouble, Bath, Maximize, TreePine } from 'lucide-react';
 
 interface PropertyShowcaseProps {
   neighborhoodName: string;
@@ -63,8 +63,8 @@ const PropertyShowcase: React.FC<PropertyShowcaseProps> = ({ neighborhoodName, p
                     <span className="text-[#727273]">{property.features.area}m²</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Home className="text-[#BEAF87]" size={24} />
-                    <span className="text-[#727273]">Mobiliado: {property.features.mobiliado ? 'Sim' : 'Não'}</span>
+                    <Car className="text-[#BEAF87]" size={24} />
+                    <span className="text-[#727273]">{property.features.vagas} {property.features.vagas === 1 ? 'Vaga' : 'Vagas'}</span>
                   </div>
                 </div>
 

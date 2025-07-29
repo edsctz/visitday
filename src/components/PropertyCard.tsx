@@ -1,5 +1,5 @@
 import React from 'react';
-import { BedDouble, Bath, Maximize, Home } from 'lucide-react';
+import { BedDouble, Bath, Maximize, Car } from 'lucide-react';
 import { ShowcaseProperty } from '../types';
 
 interface PropertyCardProps {
@@ -43,9 +43,9 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property, listingPageUrl })
             <span className="text-[#727273] text-sm">{property.features.area}m²</span>
           </div>
           <div className="flex items-center space-x-2">
-            <Home className="text-[#BEAF87] w-4 h-4" />
+            <Car className="text-[#BEAF87] w-4 h-4" />
             <span className="text-[#727273] text-sm">
-              {property.features.mobiliado ? 'Mobiliado' : 'Sem Móveis'}
+              {property.features.vagas} {property.features.vagas === 1 ? 'Vaga' : 'Vagas'}
             </span>
           </div>
         </div>

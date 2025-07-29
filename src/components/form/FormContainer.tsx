@@ -36,7 +36,7 @@ const getInitialFormData = (budgetRanges?: FormContainerProps['budgetRanges']): 
   return {
     budget,
     preferences: {
-      furnished: null,
+      vagas: null,
       minArea: 100,
       maxArea: 500,
       quartos: 3,

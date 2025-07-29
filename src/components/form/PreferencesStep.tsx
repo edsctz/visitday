@@ -171,20 +171,20 @@ const PreferencesStep: React.FC<PreferencesStepProps> = ({
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label htmlFor="furnished" className="block text-[#252526] font-medium mb-2">
-              Mobiliado?
+            <label htmlFor="vagas" className="block text-[#252526] font-medium mb-2">
+              Número de Vagas
             </label>
-            <select
-              id="furnished"
-              name="furnished"
-              value={localPreferences.furnished || ''}
+            <input
+              type="number"
+              id="vagas"
+              name="vagas"
+              min="0"
+              max="10"
+              value={localPreferences.vagas || ''}
               onChange={handleInputChange}
+              placeholder="Ex: 2"
               className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#BEAF87] focus:border-transparent"
-            >
-              <option value="">Indiferente</option>
-              <option value="sim">Sim</option>
-              <option value="nao">Não</option>
-            </select>
+            />
           </div>
 
           <div>

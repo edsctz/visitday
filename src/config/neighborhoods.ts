@@ -16,7 +16,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 4,
           bathrooms: 5,
           area: 433,
-          mobiliado: false
+          vagas: 4
         }
       },
       {
@@ -27,7 +27,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 4,
           area: 380,
-          mobiliado: true
+          vagas: 2
         }
       },
       {
@@ -38,7 +38,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 3,
           area: 320,
-          mobiliado: false
+          vagas: 2
         }
       }
     ],
@@ -71,7 +71,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 4,
           bathrooms: 5,
           area: 310,
-          mobiliado: false
+          vagas: 3
         }
       },
       {
@@ -82,7 +82,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 4,
           area: 285,
-          mobiliado: true
+          vagas: 2
         }
       },
       {
@@ -93,7 +93,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 3,
           area: 260,
-          mobiliado: false
+          vagas: 2
         }
       }
     ],
@@ -126,7 +126,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 5,
           bathrooms: 6,
           area: 1080,
-          mobiliado: true
+          vagas: 6
         }
       },
       {
@@ -137,7 +137,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 4,
           bathrooms: 5,
           area: 850,
-          mobiliado: false
+          vagas: 4
         }
       },
       {
@@ -148,7 +148,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 4,
           bathrooms: 4,
           area: 720,
-          mobiliado: true
+          vagas: 3
         }
       }
     ],
@@ -181,7 +181,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 4,
           area: 345,
-          mobiliado: false
+          vagas: 2
         }
       },
       {
@@ -192,7 +192,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 4,
           bathrooms: 3,
           area: 390,
-          mobiliado: true
+          vagas: 3
         }
       },
       {
@@ -203,7 +203,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 3,
           area: 310,
-          mobiliado: false
+          vagas: 2
         }
       }
     ],
@@ -236,7 +236,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 4,
           area: 345,
-          mobiliado: false
+          vagas: 2
         }
       },
       {
@@ -247,7 +247,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 4,
           bathrooms: 5,
           area: 450,
-          mobiliado: true
+          vagas: 3
         }
       },
       {
@@ -258,7 +258,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 3,
           area: 380,
-          mobiliado: false
+          vagas: 2
         }
       }
     ],
@@ -291,7 +291,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 4,
           bathrooms: 7,
           area: 303,
-          mobiliado: true
+          vagas: 3
         }
       },
       {
@@ -302,7 +302,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 4,
           area: 280,
-          mobiliado: false
+          vagas: 2
         }
       },
       {
@@ -313,7 +313,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 4,
           bathrooms: 5,
           area: 350,
-          mobiliado: true
+          vagas: 3
         }
       }
     ],
@@ -346,7 +346,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 4,
           bathrooms: 3,
           area: 290,
-          mobiliado: false
+          vagas: 2
         }
       },
       {
@@ -357,7 +357,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 4,
           area: 320,
-          mobiliado: true
+          vagas: 3
         }
       },
       {
@@ -368,7 +368,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 3,
           area: 275,
-          mobiliado: false
+          vagas: 2
         }
       }
     ],
@@ -401,7 +401,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 4,
           area: 230,
-          mobiliado: true
+          vagas: 2
         }
       },
       {
@@ -412,7 +412,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 4,
           bathrooms: 5,
           area: 290,
-          mobiliado: false
+          vagas: 3
         }
       },
       {
@@ -423,7 +423,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 3,
           area: 250,
-          mobiliado: true
+          vagas: 2
         }
       }
     ],
@@ -456,7 +456,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 3,
           area: 133,
-          mobiliado: true
+          vagas: 2
         }
       },
       {
@@ -467,7 +467,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 2,
           bathrooms: 2,
           area: 95,
-          mobiliado: false
+          vagas: 1
         }
       },
       {
@@ -478,7 +478,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 2,
           area: 110,
-          mobiliado: true
+          vagas: 2
         }
       }
     ],
@@ -511,7 +511,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 3,
           area: 133,
-          mobiliado: true
+          vagas: 2
         }
       },
       {
@@ -522,7 +522,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 2,
           bathrooms: 2,
           area: 85,
-          mobiliado: false
+          vagas: 1
         }
       },
       {
@@ -533,7 +533,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
           bedrooms: 3,
           bathrooms: 2,
           area: 120,
-          mobiliado: true
+          vagas: 2
         }
       }
     ],
