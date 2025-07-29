@@ -40,10 +40,6 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
         >
           Escolher Imóveis
         </button>
-        
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown size={36} className="text-white" />
-        </div>
       </div>
     </section>
   );
