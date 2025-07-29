@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Star } from 'lucide-react';
+import { ExternalLink, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { ShowcaseProperty } from '../types';
 import PropertyCard from './PropertyCard';
 
@@ -16,11 +16,29 @@ const Hero: React.FC<HeroProps> = ({
   showcaseProperties, 
   listingPageUrl 
 }) => {
+  const [currentIndex, setCurrentIndex] = React.useState(0);
+
   const scrollToForm = () => {
     const formElement = document.getElementById('form-section');
     if (formElement) {
       formElement.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? showcaseProperties.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === showcaseProperties.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const goToSlide = (index: number) => {
+    setCurrentIndex(index);
   };
 
   return (
@@ -46,13 +64,68 @@ const Hero: React.FC<HeroProps> = ({
           </p>
         </div>
 
-        {/* Property Gallery */}
+        {/* Property Carousel */}
         <div className="mb-12">
           <h2 className="text-2xl font-semibold text-white mb-6 text-center">
             Propriedades em Destaque
           </h2>
-          <div className="overflow-x-auto pb-4">
-            <div className="flex space-x-4 px-4 md:px-0 min-w-max md:justify-center">
+          
+          {/* Mobile Carousel */}
+          <div className="md:hidden relative">
+            {/* Carousel Container */}
+            <div className="overflow-hidden rounded-lg">
+              <div 
+                className="flex transition-transform duration-300 ease-in-out"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              >
+                {showcaseProperties.map((property, index) => (
+                  <div key={index} className="w-full flex-shrink-0 px-2">
+                    <PropertyCard
+                      property={property}
+                      listingPageUrl={listingPageUrl}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            {/* Navigation Buttons */}
+            <button
+              onClick={goToPrevious}
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-[#252526] p-2 rounded-full shadow-lg transition-all duration-200 z-10"
+              aria-label="Propriedade anterior"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+            
+            <button
+              onClick={goToNext}
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-[#252526] p-2 rounded-full shadow-lg transition-all duration-200 z-10"
+              aria-label="Próxima propriedade"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+            
+            {/* Indicators */}
+            <div className="flex justify-center mt-4 space-x-2">
+              {showcaseProperties.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`w-2 h-2 rounded-full transition-all duration-200 ${
+                    index === currentIndex 
+                      ? 'bg-[#BEAF87] w-6' 
+                      : 'bg-white/50 hover:bg-white/70'
+                  }`}
+                  aria-label={`Ir para propriedade ${index + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+          
+          {/* Desktop Grid */}
+          <div className="hidden md:block">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {showcaseProperties.map((property, index) => (
                 <PropertyCard
                   key={index}

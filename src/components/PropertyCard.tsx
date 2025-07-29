@@ -9,7 +9,7 @@ interface PropertyCardProps {
 
 const PropertyCard: React.FC<PropertyCardProps> = ({ property, listingPageUrl }) => {
   return (
-    <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden mr-4 last:mr-0">
+    <div className="w-full bg-white rounded-lg shadow-lg overflow-hidden">
       <div className="relative h-48">
         <img
           src={property.image}
