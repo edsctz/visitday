@@ -73,7 +73,7 @@ const Hero: React.FC<HeroProps> = ({
           {/* Mobile Carousel */}
           <div className="md:hidden relative">
             {/* Carousel Container */}
-            <div className="overflow-hidden rounded-lg">
+            <div className="overflow-hidden rounded-lg mb-4">
               <div 
                 className="flex transition-transform duration-300 ease-in-out"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -89,47 +89,51 @@ const Hero: React.FC<HeroProps> = ({
               </div>
             </div>
             
-            {/* Navigation Buttons */}
-            <button
-              onClick={goToPrevious}
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-[#252526] p-2 rounded-full shadow-lg transition-all duration-200 z-10"
-              aria-label="Propriedade anterior"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            
-            <button
-              onClick={goToNext}
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-[#252526] p-2 rounded-full shadow-lg transition-all duration-200 z-10"
-              aria-label="Próxima propriedade"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
-            
-            {/* Indicators */}
-            <div className="flex justify-center mt-4 space-x-2">
-              {showcaseProperties.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => goToSlide(index)}
-                  className={`w-2 h-2 rounded-full transition-all duration-200 ${
-                    index === currentIndex 
-                      ? 'bg-[#BEAF87] w-6' 
-                      : 'bg-white/50 hover:bg-white/70'
-                  }`}
-                  aria-label={`Ir para propriedade ${index + 1}`}
-                />
-              ))}
+            {/* Navigation Controls */}
+            <div className="flex justify-center items-center space-x-4">
+              {/* Previous Button */}
+              <button
+                onClick={goToPrevious}
+                className="bg-white/90 hover:bg-white text-[#252526] p-2 rounded-full shadow-lg transition-all duration-200"
+                aria-label="Propriedade anterior"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              
+              {/* Indicators */}
+              <div className="flex space-x-2">
+                {showcaseProperties.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => goToSlide(index)}
+                    className={`w-2 h-2 rounded-full transition-all duration-200 ${
+                      index === currentIndex 
+                        ? 'bg-[#BEAF87] w-6' 
+                        : 'bg-white/50 hover:bg-white/70'
+                    }`}
+                    aria-label={`Ir para propriedade ${index + 1}`}
+                  />
+                ))}
+              </div>
+              
+              {/* Next Button */}
+              <button
+                onClick={goToNext}
+                className="bg-white/90 hover:bg-white text-[#252526] p-2 rounded-full shadow-lg transition-all duration-200"
+                aria-label="Próxima propriedade"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
             </div>
           </div>
           
           {/* Desktop Grid */}
           <div className="hidden md:block">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              {showcaseProperties.map((property, index) => (
+              {showcaseProperties.map((_, index) => (
                 <PropertyCard
                   key={index}
-                  property={property}
+                  property={showcaseProperties[index]}
                   listingPageUrl={listingPageUrl}
                 />
               ))}
