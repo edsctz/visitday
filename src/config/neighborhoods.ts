@@ -7,17 +7,42 @@ export const neighborhoods: Record<string, Neighborhood> = {
     title: 'Casas a Venda e Locação no Tamboré 11',
     subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
     heroImage: '/tambore11.webp',
-    showcaseProperty: {
-      image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1g8jMxg+T0dtO0zX7mxvwShh5mk496Yvm2c6rXchJHi7szPZuSGl4UkiqisO3qe7KB3ZvouAVlAQNJ-AB3rXZrcbSB0vAO7lB3GeL5Ge3MOxFs8mwtvxH+5Bafx7GNu9wi7AaKGsw+TZ-DCBnkAHrMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
-      title: 'Casa Moderna',
-      subtitle: 'Tamboré 11 - Alto Padrão',
-      features: {
-        bedrooms: 3,
-        bathrooms: 4,
-        area: 433,
-        mobiliado: false
+    showcaseProperties: [
+      {
+        image: 'http://images.ingaiasites.com.br/7414a22a49b9c2e05e35c781712cfd2f.jpg',
+        title: 'Casa Moderna com Piscina',
+        subtitle: 'Tamboré 11 - Alto Padrão',
+        features: {
+          bedrooms: 4,
+          bathrooms: 5,
+          area: 433,
+          mobiliado: false
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
+        title: 'Residência Espaçosa',
+        subtitle: 'Design Contemporâneo e Acabamentos Premium',
+        features: {
+          bedrooms: 3,
+          bathrooms: 4,
+          area: 380,
+          mobiliado: true
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
+        title: 'Oportunidade Única',
+        subtitle: 'Próximo a Áreas Verdes e Comércio',
+        features: {
+          bedrooms: 3,
+          bathrooms: 3,
+          area: 320,
+          mobiliado: false
+        }
       }
-    },
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/tambore11',
     budgetRanges: {
       venda: {
         min: 4000000,
@@ -37,17 +62,42 @@ export const neighborhoods: Record<string, Neighborhood> = {
     title: 'Casas Novas no Condomínio Singular',
     subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
     heroImage: '/Singular.webp',
-    showcaseProperty: {
-      image: '/casasingular.webp',
-      title: 'Casa Recém Entregue',
-      subtitle: 'Excelente Local no Condomínio',
-      features: {
-        bedrooms: 4,
-        bathrooms: 5,
-        area: 310,
-        mobiliado: false
+    showcaseProperties: [
+      {
+        image: 'http://images.ingaiasites.com.br/7414a22a49b9c2e05e35c781712cfd2f.jpg',
+        title: 'Casa Recém Entregue',
+        subtitle: 'Singular - Excelente Localização',
+        features: {
+          bedrooms: 4,
+          bathrooms: 5,
+          area: 310,
+          mobiliado: false
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
+        title: 'Casa Nova com Acabamentos Premium',
+        subtitle: 'Design Moderno e Funcional',
+        features: {
+          bedrooms: 3,
+          bathrooms: 4,
+          area: 285,
+          mobiliado: true
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
+        title: 'Oportunidade no Singular',
+        subtitle: 'Pronta para Morar',
+        features: {
+          bedrooms: 3,
+          bathrooms: 3,
+          area: 260,
+          mobiliado: false
+        }
       }
-    },
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/singular',
     budgetRanges: {
       venda: {
         min: 3000000,
@@ -67,17 +117,42 @@ export const neighborhoods: Record<string, Neighborhood> = {
     title: 'Casas a Venda e Locação no Tamboré 3',
     subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
     heroImage: '/Tambore3.webp',
-    showcaseProperty: {
-      image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0REzepc+hFlr881To3glXCG3d61vNamnW2pxa3r5p7xheXjQNrM2LAn86rTTluC9p84YdF9GUV4S8khQkXoUZecPE9evTur-2PfYZRbZk1V2iQ1sxh553inWYj96F8S9xqqIK-Giye2R4bIX0JrLuBHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
-      title: 'Mansão Luxuosa',
-      subtitle: 'Acabamentos de Altíssimo Padrão',
-      features: {
-        bedrooms: 5,
-        bathrooms: 6,
-        area: 1080,
-        mobiliado: true
+    showcaseProperties: [
+      {
+        image: 'http://images.ingaiasites.com.br/7414a22a49b9c2e05e35c781712cfd2f.jpg',
+        title: 'Mansão Luxuosa',
+        subtitle: 'Tamboré 3 - Acabamentos de Altíssimo Padrão',
+        features: {
+          bedrooms: 5,
+          bathrooms: 6,
+          area: 1080,
+          mobiliado: true
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
+        title: 'Casa de Alto Padrão',
+        subtitle: 'Arquitetura Exclusiva e Lazer Completo',
+        features: {
+          bedrooms: 4,
+          bathrooms: 5,
+          area: 850,
+          mobiliado: false
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
+        title: 'Residência Premium',
+        subtitle: 'Vista Privilegiada e Segurança 24h',
+        features: {
+          bedrooms: 4,
+          bathrooms: 4,
+          area: 720,
+          mobiliado: true
+        }
       }
-    },
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/tambore3',
     budgetRanges: {
       venda: {
         min: 6000000,
@@ -97,17 +172,42 @@ export const neighborhoods: Record<string, Neighborhood> = {
     title: 'Casas a Venda e Locação no Residencial 9',
     subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
     heroImage: '/Residencial9.webp',
-    showcaseProperty: {
-      image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0lI8PJkxQodu+c8Y4WZhgveh7ySu4a9knawp7PRmJ+C25jOU5nU8d0l2LDKG1n1sol0ZcwHHWN3fssnSD-SB6ieB39qhiedj0zqEolLY3RW4SsLyBpc836OBMOO1XA-xBuiB6-YsiiqS7noWk1tB+VHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
-      title: 'Excelente Oportunidade',
-      subtitle: 'Abaixo do Valor de Mercado',
-      features: {
-        bedrooms: 3,
-        bathrooms: 4,
-        area: 345,
-        mobiliado: false
+    showcaseProperties: [
+      {
+        image: 'http://images.ingaiasites.com.br/7414a22a49b9c2e05e35c781712cfd2f.jpg',
+        title: 'Excelente Oportunidade',
+        subtitle: 'Residencial 9 - Abaixo do Valor de Mercado',
+        features: {
+          bedrooms: 3,
+          bathrooms: 4,
+          area: 345,
+          mobiliado: false
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
+        title: 'Casa Familiar Completa',
+        subtitle: 'Área de Lazer e Jardim Amplo',
+        features: {
+          bedrooms: 4,
+          bathrooms: 3,
+          area: 390,
+          mobiliado: true
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
+        title: 'Casa Pronta para Morar',
+        subtitle: 'Localização Privilegiada',
+        features: {
+          bedrooms: 3,
+          bathrooms: 3,
+          area: 310,
+          mobiliado: false
+        }
       }
-    },
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/residencial9',
     budgetRanges: {
       venda: {
         min: 1500000,
@@ -127,17 +227,42 @@ export const neighborhoods: Record<string, Neighborhood> = {
     title: 'Casas a Venda em Alphaville',
     subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
     heroImage: '/Residencial9.webp',
-    showcaseProperty: {
-      image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0lI8PJkxQodu+c8Y4WZhgveh7ySu4a9knawp7PRmJ+C25jOU5nU8d0l2LDKG1n1sol0ZcwHHWN3fssnSD-SB6ieB39qhiedj0zqEolLY3RW4SsLyBpc836OBMOO1XA-xBuiB6-YsiiqS7noWk1tB+VHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
-      title: 'Excelente Oportunidade',
-      subtitle: 'Abaixo do Valor de Mercado',
-      features: {
-        bedrooms: 3,
-        bathrooms: 4,
-        area: 345,
-        mobiliado: false
+    showcaseProperties: [
+      {
+        image: 'http://images.ingaiasites.com.br/7414a22a49b9c2e05e35c781712cfd2f.jpg',
+        title: 'Casa para Venda',
+        subtitle: 'Alphaville - Excelente Oportunidade',
+        features: {
+          bedrooms: 3,
+          bathrooms: 4,
+          area: 345,
+          mobiliado: false
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
+        title: 'Residência de Alto Padrão',
+        subtitle: 'Acabamentos Diferenciados',
+        features: {
+          bedrooms: 4,
+          bathrooms: 5,
+          area: 450,
+          mobiliado: true
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
+        title: 'Casa com Piscina',
+        subtitle: 'Área de Lazer Completa',
+        features: {
+          bedrooms: 3,
+          bathrooms: 3,
+          area: 380,
+          mobiliado: false
+        }
       }
-    },
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/casas-venda',
     budgetRanges: {
       venda: {
         min: 1500000,
@@ -157,17 +282,42 @@ export const neighborhoods: Record<string, Neighborhood> = {
     title: 'Casas a Venda e Locação no Genesis 1 e 2',
     subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
     heroImage: '/Genesis.webp',
-    showcaseProperty: {
-      image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2d2+uxfuzUAkekHVYi+4jXa+dSK5fjAgW+ypsmG5auF+d7mTZzk6qMc8a7TClH0iKBDSfINCXdmSbJ4ZiXsdKauI2VTmmGOnBjMd-5gTmBb9T4NuSpNn0eOArLz10Q--iG1EsT0+haIXb3BB19DQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAvEGLFMu0zqlYLGg-atbkyGZVA897nN8afjOqj6Ef-xOUupjo0W5ISdfZoJdM-0XUdJQn52ZWBDplWm6tfGp02ncjSdth5HCl6OzpZqtXZrYEdR-9tU52I=.jpg',
-      title: 'Casa com Vista para a Mata',
-      subtitle: 'Genesis II - Alto Padrão',
-      features: {
-        bedrooms: 4,
-        bathrooms: 7,
-        area: 303,
-        mobiliado: true
+    showcaseProperties: [
+      {
+        image: 'http://images.ingaiasites.com.br/7414a22a49b9c2e05e35c781712cfd2f.jpg',
+        title: 'Casa com Vista para a Mata',
+        subtitle: 'Genesis II - Alto Padrão',
+        features: {
+          bedrooms: 4,
+          bathrooms: 7,
+          area: 303,
+          mobiliado: true
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
+        title: 'Residência Exclusiva',
+        subtitle: 'Genesis I - Conforto e Privacidade',
+        features: {
+          bedrooms: 3,
+          bathrooms: 4,
+          area: 280,
+          mobiliado: false
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
+        title: 'Casa em Condomínio Fechado',
+        subtitle: 'Segurança e Tranquilidade',
+        features: {
+          bedrooms: 4,
+          bathrooms: 5,
+          area: 350,
+          mobiliado: true
+        }
       }
-    },
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/genesis',
     budgetRanges: {
       venda: {
         min: 4000000,
@@ -187,17 +337,42 @@ export const neighborhoods: Record<string, Neighborhood> = {
     title: 'Casas a Venda e Locação no Residencial 5',
     subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
     heroImage: '/Residencial5.webp',
-    showcaseProperty: {
-      image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtuxxB9c5ry0kCyulIB4+JrTS97InL7eahoUvP8pSMvYny0-T5feTu8Z8Ey5zXSgHxrrU-dvMVbhApRsh3ayXwcJ28Z0F-nzayoUCSHqMeb1gQ0wAUmxJglHajXq+L6Gx1xQa0BPPb7xehZa7WO1Z2ErZHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
-      title: 'Casa Pronta para Morar',
-      subtitle: 'Para Venda ou Alugar',
-      features: {
-        bedrooms: 4,
-        bathrooms: 3,
-        area: 290,
-        mobiliado: false
+    showcaseProperties: [
+      {
+        image: 'http://images.ingaiasites.com.br/7414a22a49b9c2e05e35c781712cfd2f.jpg',
+        title: 'Casa Pronta para Morar',
+        subtitle: 'Residencial 5 - Para Venda ou Alugar',
+        features: {
+          bedrooms: 4,
+          bathrooms: 3,
+          area: 290,
+          mobiliado: false
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
+        title: 'Residência Familiar',
+        subtitle: 'Espaços Amplos e Bem Distribuídos',
+        features: {
+          bedrooms: 3,
+          bathrooms: 4,
+          area: 320,
+          mobiliado: true
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
+        title: 'Casa com Quintal Amplo',
+        subtitle: 'Ideal para Famílias',
+        features: {
+          bedrooms: 3,
+          bathrooms: 3,
+          area: 275,
+          mobiliado: false
+        }
       }
-    },
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/residencial5',
     budgetRanges: {
       venda: {
         min: 2000000,
@@ -217,17 +392,42 @@ export const neighborhoods: Record<string, Neighborhood> = {
     title: 'Casas a Venda e Locação no Burle Marx',
     subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
     heroImage: '/BurleMarx.webp',
-    showcaseProperty: {
-      image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2x51fd+xDIutMcSUoemonSm8qq3zvyZ8Ri89q--uOjpx5vuV+mb5tsVifbKIFq2qLBpe-I1BHJ9TtFDdETJUbmLJT1tsze7phTSVpVMeHt-8RkYuisM9AHocseB3gU23hqlBdb+tSfXVr7tLH91QPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAvEGLFMu0zqlYLGg-atbkyGZVA897nN8afjOqj6Ef-xOUupjo0W5ISdfZoJdM-0XUdJQn52ZWBDplWm6tfGp02ncjSdth5HCl6OzpZqtXZrYEdR-9tU52I=.jpg',
-      title: 'Casa Moderna',
-      subtitle: 'Burle Marx - Alto Padrão',
-      features: {
-        bedrooms: 3,
-        bathrooms: 4,
-        area: 230,
-        mobiliado: true
+    showcaseProperties: [
+      {
+        image: 'http://images.ingaiasites.com.br/7414a22a49b9c2e05e35c781712cfd2f.jpg',
+        title: 'Casa Moderna',
+        subtitle: 'Burle Marx - Alto Padrão',
+        features: {
+          bedrooms: 3,
+          bathrooms: 4,
+          area: 230,
+          mobiliado: true
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
+        title: 'Residência Contemporânea',
+        subtitle: 'Arquitetura Diferenciada',
+        features: {
+          bedrooms: 4,
+          bathrooms: 5,
+          area: 290,
+          mobiliado: false
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
+        title: 'Casa com Design Exclusivo',
+        subtitle: 'Conforto e Sofisticação',
+        features: {
+          bedrooms: 3,
+          bathrooms: 3,
+          area: 250,
+          mobiliado: true
+        }
       }
-    },
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/burlemarx',
     budgetRanges: {
       venda: {
         min: 2000000,
@@ -247,17 +447,42 @@ export const neighborhoods: Record<string, Neighborhood> = {
     title: 'Apartamentos para Alugar em Alphaville',
     subtitle: 'Conheça os melhores apartamentos disponíveis para alugar em Alphaville',
     heroImage: '/resorttambore.webp',
-    showcaseProperty: {
-      image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtux1a0Ylj2go-nuQzeLudiyyYxI+5woq4tBXTqZ7Onu3Zi8LNWefe4p817Y-VOHKh6IpBe9AHPk1+f7ZcHDbabt+LZiQI8yGOrX38YpdkeFF6miRroBQN7mTpB7Wc5noXxwS9VNPZ8QilFfv9Pl9TQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAvEGLFMu0zqlYLGg-atbkyGZVA897nN8afjOqj6Ef-xOUupjo0W5ISdfZoJdM-0XUdJQn52ZWBDplWm6tfGp02ncjSdth5HCl6OzpZqtXZrYEdR-9tU52I=.jpg',
-      title: 'Apartamento com 3 Quartos',
-      subtitle: 'Vai Alugar Rápido',
-      features: {
-        bedrooms: 3,
-        bathrooms: 3,
-        area: 133,
-        mobiliado: true
+    showcaseProperties: [
+      {
+        image: 'http://images.ingaiasites.com.br/7414a22a49b9c2e05e35c781712cfd2f.jpg',
+        title: 'Apartamento com 3 Quartos',
+        subtitle: 'Alphaville - Pronto para Morar',
+        features: {
+          bedrooms: 3,
+          bathrooms: 3,
+          area: 133,
+          mobiliado: true
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
+        title: 'Apartamento Moderno',
+        subtitle: 'Acabamentos de Qualidade',
+        features: {
+          bedrooms: 2,
+          bathrooms: 2,
+          area: 95,
+          mobiliado: false
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
+        title: 'Apartamento Espaçoso',
+        subtitle: 'Vista Livre e Varanda Gourmet',
+        features: {
+          bedrooms: 3,
+          bathrooms: 2,
+          area: 110,
+          mobiliado: true
+        }
       }
-    },
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/apartamentos-alugar',
     budgetRanges: {
       venda: {
         min: 1000000,
@@ -277,17 +502,42 @@ export const neighborhoods: Record<string, Neighborhood> = {
     title: 'Apartamentos no Resort Tamboré',
     subtitle: 'Conheça os melhores apartamentos disponíveis em um dos condomínios clube mais exclusivos de Alphaville',
     heroImage: '/resorttambore.webp',
-    showcaseProperty: {
-      image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtux1a0Ylj2go-nuQzeLudiyyYxI+5woq4tBXTqZ7Onu3Zi8LNWefe4p817Y-VOHKh6IpBe9AHPk1+f7ZcHDbabt+LZiQI8yGOrX38YpdkeFF6miRroBQN7mTpB7Wc5noXxwS9VNPZ8QilFfv9Pl9TQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAvEGLFMu0zqlYLGg-atbkyGZVA897nN8afjOqj6Ef-xOUupjo0W5ISdfZoJdM-0XUdJQn52ZWBDplWm6tfGp02ncjSdth5HCl6OzpZqtXZrYEdR-9tU52I=.jpg',
-      title: 'Apartamento com 3 Quartos',
-      subtitle: 'A Venda ou Alugar',
-      features: {
-        bedrooms: 3,
-        bathrooms: 3,
-        area: 133,
-        mobiliado: true
+    showcaseProperties: [
+      {
+        image: 'http://images.ingaiasites.com.br/7414a22a49b9c2e05e35c781712cfd2f.jpg',
+        title: 'Apartamento Resort Tamboré',
+        subtitle: 'Condomínio Clube Exclusivo',
+        features: {
+          bedrooms: 3,
+          bathrooms: 3,
+          area: 133,
+          mobiliado: true
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
+        title: 'Apartamento com Lazer Completo',
+        subtitle: 'Piscinas, Quadras e Spa',
+        features: {
+          bedrooms: 2,
+          bathrooms: 2,
+          area: 85,
+          mobiliado: false
+        }
+      },
+      {
+        image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
+        title: 'Apartamento Premium',
+        subtitle: 'Vista para Área Verde',
+        features: {
+          bedrooms: 3,
+          bathrooms: 2,
+          area: 120,
+          mobiliado: true
+        }
       }
-    },
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/resort-tambore',
     budgetRanges: {
       venda: {
         min: 1000000,

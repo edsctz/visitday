@@ -30,15 +30,16 @@ const LandingPage: React.FC<LandingPageProps> = ({ neighborhoodId }) => {
       </Helmet>
       <Header />
       <Hero 
-        title={neighborhood.title}
-        subtitle={neighborhood.subtitle}
+        neighborhoodName={neighborhood.name}
         backgroundImage={neighborhood.heroImage}
+        showcaseProperties={neighborhood.showcaseProperties}
+        listingPageUrl={neighborhood.listingPageUrl || 'https://www.c21alpha.com.br/imoveis'}
       />
       <HowItWorks neighborhoodName={neighborhood.name} />
       <GlobalPresence />
       <PropertyShowcase 
         neighborhoodName={neighborhood.name}
-        property={neighborhood.showcaseProperty}
+        property={neighborhood.showcaseProperties[0]}
       />
       <FormContainer 
         neighborhoodName={neighborhood.name}
