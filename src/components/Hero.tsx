@@ -67,7 +67,7 @@ const Hero: React.FC<HeroProps> = ({
         {/* Property Carousel */}
         <div className="mb-12">
           <h2 className="text-2xl font-semibold text-white mb-6 text-center">
-            Imóveis em Destaque
+            Melhores Oportunidades
           </h2>
           
           {/* Mobile Carousel */}
