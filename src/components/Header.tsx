@@ -34,12 +34,6 @@ const Header: React.FC = () => {
             Sobre
           </button>
           <button 
-            onClick={() => scrollToSection('concierge')} 
-            className="hover:text-[#BEAF87] transition-colors"
-          >
-            Destaque
-          </button>
-          <button 
             onClick={() => scrollToSection('form-section')} 
             className="hover:text-[#BEAF87] transition-colors"
           >
@@ -71,12 +65,6 @@ const Header: React.FC = () => {
                 className="text-white hover:text-[#BEAF87] transition-colors text-left"
               >
                 Sobre
-              </button>
-              <button 
-                onClick={() => scrollToSection('concierge')} 
-                className="text-white hover:text-[#BEAF87] transition-colors text-left"
-              >
-                Destaque
               </button>
               <button 
                 onClick={() => scrollToSection('form-section')} 
