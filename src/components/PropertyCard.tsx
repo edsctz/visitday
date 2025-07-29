@@ -16,9 +16,6 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property, listingPageUrl })
           alt={property.title}
           className="w-full h-full object-cover"
         />
-        <div className="absolute top-3 right-3 bg-[#BEAF87] text-white px-2 py-1 rounded text-sm font-medium">
-          {property.features.area}m²
-        </div>
       </div>
       
       <div className="p-4">
