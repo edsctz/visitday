@@ -50,6 +50,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
           href={property.propertyUrl}
           target="_blank"
           rel="noopener noreferrer"
+          target="_blank"
+          rel="noopener noreferrer"
           className="block w-full bg-[#BEAF87] hover:bg-[#746649] text-white text-center py-2 px-4 rounded font-medium transition-colors duration-300"
         >
           Veja Mais
