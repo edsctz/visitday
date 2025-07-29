@@ -57,17 +57,17 @@ const Hero: React.FC<HeroProps> = ({
         {/* Header Section */}
         <div className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-white mb-4 leading-tight">
-            Imóveis Disponíveis no {neighborhoodName}
+            Imóveis no {neighborhoodName}
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Explore nossa seleção exclusiva de propriedades ou solicite uma curadoria personalizada
+            Explore nossa seleção exclusiva de imóveis ou solicite uma curadoria personalizada
           </p>
         </div>
 
         {/* Property Carousel */}
         <div className="mb-12">
           <h2 className="text-2xl font-semibold text-white mb-6 text-center">
-            Propriedades em Destaque
+            Imóveis em Destaque
           </h2>
           
           {/* Mobile Carousel */}
