@@ -37,10 +37,6 @@ const LandingPage: React.FC<LandingPageProps> = ({ neighborhoodId }) => {
       />
       <HowItWorks neighborhoodName={neighborhood.name} />
       <GlobalPresence />
-      <PropertyShowcase 
-        neighborhoodName={neighborhood.name}
-        property={neighborhood.showcaseProperties[0]}
-      />
       <FormContainer 
         neighborhoodName={neighborhood.name}
         budgetRanges={neighborhood.budgetRanges}
