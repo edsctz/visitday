@@ -5,6 +5,8 @@ import PropertyCard from './PropertyCard';
 
 interface HeroProps {
   neighborhoodName: string;
+  title: string;
+  subtitle: string;
   backgroundImage: string;
   showcaseProperties: ShowcaseProperty[];
   listingPageUrl: string;
@@ -12,6 +14,8 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ 
   neighborhoodName, 
+  title,
+  subtitle,
   backgroundImage, 
   showcaseProperties, 
   listingPageUrl 
@@ -57,10 +61,10 @@ const Hero: React.FC<HeroProps> = ({
         {/* Header Section */}
         <div className="text-center mb-6">
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-light text-white mb-2 leading-tight">
-            Imóveis no {neighborhoodName}
+            {title}
           </h1>
           <p className="text-base md:text-xl text-white/90 mb-4 leading-relaxed max-w-3xl mx-auto">
-            Explore nossa seleção exclusiva de imóveis ou solicite uma curadoria personalizada
+            {subtitle}
           </p>
         </div>
 
