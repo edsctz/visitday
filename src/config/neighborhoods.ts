@@ -234,101 +234,55 @@ export const neighborhoods: Record<string, Neighborhood> = {
   residencial9: {
     id: 'residencial9',
     name: 'Alphaville Residencial 9',
-    title: 'Casas a Venda e Locação no Residencial 9',
-    subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
+    title: 'Casas a Venda no Residencial 9',
+    subtitle: 'Descubra as melhores casas no Residencial 9 – veja fotos e preços, agende visitas ou receba uma seleção VIP',
     heroImage: '/Residencial9.webp',
     showcaseProperties: [
       {
-        image: 'http://images.ingaiasites.com.br/7414a22a49b9c2e05e35c781712cfd2f.jpg',
-        title: 'Excelente Oportunidade',
-        subtitle: 'Residencial 9 - Abaixo do Valor de Mercado',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2Ei+4ky2RsOi+sCY7yj5CbC36qr6tjcrVm05siNsbyAkNPHB-ffkbk-+JSuCmD3koIgX+F5a3pZeLEiSgfHU7qNAmVJkiagt0bvYbhCaHRe6B0oujhn4weEZ7iu-UNg2D+JUfz5iS-UdIPJPVd7BMFHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
+        title: 'Para Retrofit - Alta Valorização',
+        subtitle: 'R$2.380.000',
+        features: {
+          bedrooms: 4,
+          bathrooms: 6,
+          area: 506,
+          vagas: 9
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-506-m/CA0070-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2pO+vd-6U4movU2dpGT+S2A19+wt42giHbG0bHp4+vdiN2lQMHY-7g+8-HyDW71tYJYb-s3E3h-eNtVRyK2dK2ZJmpPgiCwiBnmaoBWUTFa3z53zAZAlXiTUL2n8Gxh-Aj1UOvWlh+JXpDPO39EOddHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
+        title: 'Sugestão do Especialista',
+        subtitle: 'R$2.600.000',
+        features: {
+          bedrooms: 3,
+          bathrooms: 5,
+          area: 338,
+          vagas: 6
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-3-quartos-338-m/CA0020-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu31e3453yytvq5A7e7aQuzOa75+F5eyJsU3G5L7thPbny+DfAf-i2ow9-ZHsKVv26LdMHfZ2HkB2f8pRdA3wUbqqIHJQsSKvuGH-QZBLBkVshyg4oDgM1XbjZ6KL5k8Ihy2DG93ZkSuBHYW7IQN1QPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAvEGLFMu0zqlYLGg-atbkyGZVA897nN8afjOqj6Ef-xOUupjo0W5ISdfZoJdM-0XUdJQn52ZWBDplWm6tfGp02ncjSdth5HCl6OzpZqtXZrYEdR-9tU52I=.jpg',
+        title: 'Aceita Permuta',
+        subtitle: 'R$2.800.000',
         features: {
           bedrooms: 3,
           bathrooms: 4,
           area: 345,
           vagas: 2
         },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/excelente-oportunidade-residencial9'
-      },
-      {
-        image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
-        title: 'Casa Familiar Completa',
-        subtitle: 'Área de Lazer e Jardim Amplo',
-        features: {
-          bedrooms: 4,
-          bathrooms: 3,
-          area: 390,
-          vagas: 3
-        },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-familiar-residencial9'
-      },
-      {
-        image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
-        title: 'Casa Pronta para Morar',
-        subtitle: 'Localização Privilegiada',
-        features: {
-          bedrooms: 3,
-          bathrooms: 3,
-          area: 310,
-          vagas: 2
-        },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-pronta-residencial9'
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-3-quartos-345-m/CA0013-ALPH'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/residencial9'
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/santana-de-parnaiba/alphaville-09'
   },
   residencial11: {
     id: 'residencial11',
     name: 'Alphaville Residencial 11',
     title: 'Casas a Venda no Residencial 11',
-    subtitle: 'Descubra as melhores casa no Residencial 11 – veja fotos e preços, agende visitas ou receba uma seleção VIP',
+    subtitle: 'Descubra as melhores casas no Residencial 11 – veja fotos e preços, agende visitas ou receba uma seleção VIP',
     heroImage: '/Residencial11.webp',
-    showcaseProperties: [
-      {
-        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1k4wtlq+kw1peUhTLmMnyWE4IOf+fOLlmGm5KP-iKj4ivKiZfbD+J9hwZPqTUKbjrA4WY0HEUl8X+1jQUL2TrejYVZBhQuRuFjzE7lFRDRx6DsVrBIAxHqCcZKv2g8zhi6VF-D79AiHUIHWME1uErMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
-        title: 'Melhor Valor do Condomínio',
-        subtitle: 'R$2.500.000',
-        features: {
-          bedrooms: 4,
-          bathrooms: 5,
-          area: 350,
-          vagas: 4
-        },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-350-m/CA0030-ALPH'
-      },
-      {
-        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0lN89RXozEEpeQ7BJWU4yqezr69vcy3s2qN2LCPmYjY-9qvc+P74qEf4KOpQ371nZZUQOEFFn1kRchdazDBWq2nMH18+SGQmErLf+Voc2hlgAVrrkp+3n6nDJT303Ng-Cy5VargnTyvVfy9Ck0DOddHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
-        title: 'Totalmente Mobiliada',
-        subtitle: 'R$3.100.000',
-        features: {
-          bedrooms: 3,
-          bathrooms: 2,
-          area: 200,
-          vagas: 2
-        },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-3-quartos-200-m/CA0062-ALPH'
-      },
-      {
-        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0Bsj+1-uC07jdg4Xoi+kha5g77J4t7CrXvI-bKO4unq--rOa9XP8YFhgJ7aGwCSt-ROQoUAAXBIWLdVHxvVUb27B1Zpvwen-3fmZKJYUWtY-Qs-tBwK7mShZYG1228+-xGOKK36oX60c5fbImROKLMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
-        title: 'Aceita Alugar com Opção de Compra',
-        subtitle: 'R$4.500.000',
-        features: {
-          bedrooms: 4,
-          bathrooms: 4,
-          area: 382,
-          vagas: 4
-        },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-382-m/CA0073-ALPH'
-      }
-    ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/santana-de-parnaiba/alphaville-11'
-  },
-  residencial10: {
-    id: 'residencial10',
-    name: 'Alphaville Residencial 10',
-    title: 'Casas a Venda no Residencial 10',
-    subtitle: 'Descubra as melhores casa no Residencial 10 – veja fotos e preços, agende visitas ou receba uma seleção VIP',
-    heroImage: '/Residencial10.webp',
     showcaseProperties: [
       {
         image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1k4wtlq+kw1peUhTLmMnyWE4IOf+fOLlmGm5KP-iKj4ivKiZfbD+J9hwZPqTUKbjrA4WY0HEUl8X+1jQUL2TrejYVZBhQuRuFjzE7lFRDRx6DsVrBIAxHqCcZKv2g8zhi6VF-D79AiHUIHWME1uErMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
