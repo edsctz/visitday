@@ -1,14 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import SingleStepForm from './SingleStepForm';
-import { FormPreferences } from '../../types';
-
-export interface FormData {
-  preferences: FormPreferences;
-  contact: {
-    name: string;
-    phone: string;
-  };
-}
 
 interface FormContainerProps {
   neighborhoodName: string;
@@ -28,26 +19,14 @@ const FormContainer: React.FC<FormContainerProps> = ({ neighborhoodName }) => {
         throw new Error('Contact information is required');
       }
 
-      // Create default form data with the provided contact info
-      const formData: FormData = {
-        preferences: {
-          vagas: null,
-          minArea: 100,
-          maxArea: 500,
-          quartos: 3,
-          additionalRequests: 'Solicitação através do formulário simplificado',
-        },
-        contact
-      };
-      
       const response = await fetch('https://workflowwebhook.prospectz.com.br/webhook/c21-diavisitasintake', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          preferences: formData.preferences,
-          contact: contact,
+          name: contact.name,
+          phone: contact.phone,
           neighborhood: neighborhoodName,
           submittedAt: new Date().toISOString()
         }),
