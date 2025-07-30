@@ -36,7 +36,7 @@ const GlobalPresence: React.FC<GlobalPresenceProps> = ({ heroImage }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           <Stat
             icon={<Globe2 size={32} />}
             number="86"
