@@ -18,7 +18,7 @@ const Footer: React.FC<FooterProps> = ({ neighborhoodName }) => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Especialistas em imóveis de alto padrão em {neighborhoodName}, oferecendo uma abordagem de concierge personalizada para encontrar sua casa ideal.
+              Especialistas em imóveis de alto padrão no {neighborhoodName}, oferecendo uma abordagem de concierge personalizada para encontrar sua casa ideal.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/profile.php?id=61570667562801" className="text-gray-300 hover:text-[#BEAF87] transition-colors">
