@@ -52,7 +52,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Alphaview',
     title: 'Apartamentos a Venda no Alphaview',
     subtitle: 'Descubra os melhores apartamentos no Alphaview – veja fotos e preços, agende visitas ou receba uma seleção VIP',
-    heroImage: '/tambore11.webp',
+    heroImage: '/alphaview.webp',
     showcaseProperties: [
       {
         image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0BZ0fB11Ds6vNMmZpOvgCeo996Wt+2Li2rNxY36p+rVkO3NZ8f7ytgGiJPjPwSLiLJJXdoVa1wlZ+taHj3sdpypZ1pBpQO3q3vTF7QeE3BY8TwAghpqzluBap2222Ui8TyhLqLCrA+0dpi5OVh5TLhHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
@@ -372,48 +372,48 @@ export const neighborhoods: Record<string, Neighborhood> = {
   burlemarx: {
     id: 'burlemarx',
     name: 'Burle Marx',
-    title: 'Casas a Venda e Locação no Burle Marx',
-    subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
+    title: 'Casas a Venda no Burle Marx',
+    subtitle: 'Descubra as melhores casas do Burle Marx – veja fotos e preços, agende visitas ou receba uma seleção VIP',
     heroImage: '/BurleMarx.webp',
     showcaseProperties: [
       {
-        image: 'http://images.ingaiasites.com.br/7414a22a49b9c2e05e35c781712cfd2f.jpg',
-        title: 'Casa Moderna',
-        subtitle: 'Burle Marx - Alto Padrão',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0tfiO5BwTElo-dBWa66viXf0qOoutCAvEWr2LDw5Jnai8zEQfDa4b4u0-DCDm6y46wgX-AlEh1-bcBjeweyZ9-FDVVNoWGBuUTgF5BiYTdZwRwAsUl3xEOLTLid-lQ37AG4UaL7sQ+XRZi+AlhbSbMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
+        title: 'Preço Reduzido para Vender Logo',
+        subtitle: 'R$2.970.000',
+        features: {
+          bedrooms: 4,
+          bathrooms: 4,
+          area: 330,
+          vagas: 4
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-330-m/CA0037-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1s24fky-xIMncNBZqek4yO58666xtu18XSG6Z3u4ZzQi-3mbOGB7YkR9-bYJUTy47ZuSdF8PWByWO1AdC3LYYa4IiRJkziAlFjvVesDZFt2gh9ptzhtxVqERJedrXoZ33+uMOvB9RGFaYbjP0dDQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAvEGLFMu0zqlYLGg-atbkyGZVA897nN8afjOqj6Ef-xOUupjo0W5ISdfZoJdM-0XUdJQn52ZWBDplWm6tfGp02ncjSdth5HCl6OzpZqtXZrYEdR-9tU52I=.jpg',
+        title: 'Casa Fácil de Manter',
+        subtitle: 'R$3.300.000',
         features: {
           bedrooms: 3,
           bathrooms: 4,
           area: 230,
-          vagas: 2
+          vagas: 4
         },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-moderna-burlemarx'
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-3-quartos-230-m/CA0006-ALPH'
       },
       {
-        image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
-        title: 'Residência Contemporânea',
-        subtitle: 'Arquitetura Diferenciada',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtuxtOjINv-gwmw9FFY6bk7Qug6d6MyoioslyZwZThrevb2trOfN3z-4Y50JDCK2yFj6tJYIU2CGxrIvBrWkTvVYuNYHNf8hu8uXmVb-4ZczZqxCVotxIB6AufVMmg2nMb9ySvEK-SqinRYfDvO21tFrMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
+        title: 'Sala com Pé Direito Duplo',
+        subtitle: 'R$4.200.000',
         features: {
           bedrooms: 4,
-          bathrooms: 5,
-          area: 290,
-          vagas: 3
+          bathrooms: 4,
+          area: 425,
+          vagas: 4
         },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/residencia-contemporanea-burlemarx'
-      },
-      {
-        image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
-        title: 'Casa com Design Exclusivo',
-        subtitle: 'Conforto e Sofisticação',
-        features: {
-          bedrooms: 3,
-          bathrooms: 3,
-          area: 250,
-          vagas: 2
-        },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-design-exclusivo-burlemarx'
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-425-m/CA0036-ALPH'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/burlemarx'
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/santana-de-parnaiba/burle-marx'
   },
   apartamentoalugar: {
     id: 'apartamentoalugar',
