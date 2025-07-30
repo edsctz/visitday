@@ -104,10 +104,10 @@ const SingleStepForm: React.FC<SingleStepFormProps> = ({
           <Star className="w-12 h-12" />
         </div>
         <h2 className="text-2xl md:text-3xl font-semibold mb-3">
-          Receba uma Seleção Exclusiva de Imóveis no {neighborhoodName}
+          Receba uma Seleção Exclusiva no {neighborhoodName} Feitas para o Seu Perfil
         </h2>
         <p className="text-lg opacity-95 max-w-2xl mx-auto">
-          Economize tempo e encontre seu lar ideal com acesso a propriedades que você não verá em portais públicos. Conforto e segurança na sua busca.
+          Economize tempo e descubra seu próximo lar com a consultoria exclusiva Century 21 Alpha. Nossa equipe filtra entre centenas de imóveis para indicar apenas aqueles que realmente combinam com seu estilo de vida.
         </p>
       </div>
 
