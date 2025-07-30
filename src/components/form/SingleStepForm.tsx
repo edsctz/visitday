@@ -158,6 +158,7 @@ const SingleStepForm: React.FC<SingleStepFormProps> = ({
               value={contact.name}
               onChange={handleInputChange}
               placeholder="Digite seu nome completo"
+              autoComplete="name"
               className={`w-full px-4 py-4 text-lg border-2 rounded-lg focus:ring-2 focus:ring-[#BEAF87] focus:border-transparent transition-all ${
                 errors.name ? 'border-red-500' : 'border-gray-200 hover:border-[#BEAF87]/50'
               }`}
@@ -179,6 +180,7 @@ const SingleStepForm: React.FC<SingleStepFormProps> = ({
               value={contact.phone}
               onChange={handlePhoneChange}
               placeholder="(11) 99999-9999"
+              autoComplete="tel"
               className={`w-full px-4 py-4 text-lg border-2 rounded-lg focus:ring-2 focus:ring-[#BEAF87] focus:border-transparent transition-all ${
                 errors.phone ? 'border-red-500' : 'border-gray-200 hover:border-[#BEAF87]/50'
               }`}
