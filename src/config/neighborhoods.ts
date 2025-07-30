@@ -553,6 +553,52 @@ export const neighborhoods: Record<string, Neighborhood> = {
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/apartamentos-alugar'
   },
+  casaalugar: {
+    id: 'casaalugar',
+    name: 'Alphaville',
+    title: 'Casas para Alugar em Alphaville',
+    subtitle: 'Conheça as melhores casas disponíveis para alugar em Alphaville',
+    heroImage: '/Residencial9.webp',
+    showcaseProperties: [
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu34+5+lN+E0SktUYAb2k5Se5xbmj4uzJsECqoIvdrurm7s78Adjj0pwdw7LxN1Gm7f9rVOYXHXldOMB0dSLsUJaiAGBAhjvWoB7fb5tUQjBbgiM7yExx6gCzYoqQ-Fcghib5L8PJkR7Jb77fUAJgKLMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
+        title: 'Residencial 5',
+        subtitle: 'Pacote: R$16.348',
+        features: {
+          bedrooms: 4,
+          bathrooms: 4,
+          area: 480,
+          vagas: 3
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-480-m/CA0086-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2lEj9li9D5vzssBRLSHvyWWhNm+yfSQnhmT3JH5ubiDxeDmDYLe5qcy9rDTIEWmkp9nS4E-LXgoSvFYHxzDQoiaAHZ4lDSlukPkVLYYaGsF2ygVrhd6xwWBR6f02wUV-h2DJdSIuA6RTJjAHnhTQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAvEGLFMu0zqlYLGg-atbkyGZVA897nN8afjOqj6Ef-xOUupjo0W5ISdfZoJdM-0XUdJQn52ZWBDplWm6tfGp02ncjSdth5HCl6OzpZqtXZrYEdR-9tU52I=.jpg',
+        title: 'Valville 1',
+        subtitle: 'Pacote: R$14.900',
+        features: {
+          bedrooms: 4,
+          bathrooms: 4,
+          area: 350,
+          vagas: 4
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-350-m/CA0069-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu35c1tJ16T5vjdAYf4+RkDup4LXE7ImIpk6Ez6LNgon228enTOLS97cU9--VN26wtZldSeEfOHBfe9tQWgzlB42tLVRKjHyTr3noFatne1NNjyozki5zlUarQqqK6kQT6XqDL6mFtHeCRfzXW01RKLMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
+        title: 'Residencial 1',
+        subtitle: 'Pacote: R$26.515',
+        features: {
+          bedrooms: 4,
+          bathrooms: 5,
+          area: 400,
+          vagas: 6
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-barueri-4-quartos-400-m/CA0031-ALPH'
+      }
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/para-alugar/casa'
+  },
   resorttambore: {
     id: 'resorttambore',
     name: 'Resort Tamboré',
