@@ -35,17 +35,17 @@ const HowItWorks: React.FC<HowItWorksProps> = ({ neighborhoodName }) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <Step 
             icon={<ClipboardCheck size={32} />}
-            title="Formulário"
+            title="Passo 1 - Contato"
             description={`Conte-nos sobre suas preferências e necessidades para um imóvel no ${neighborhoodName}.`}
           />
           <Step 
             icon={<Search size={32} />}
-            title="Seleção"
+            title="Passo 2 - Seleção"
             description="Nossa equipe selecionará cuidadosamente 3-5 propriedades que correspondam exatamente ao que você procura."
           />
           <Step 
             icon={<CalendarCheck size={32} />}
-            title="Visita"
+            title="Passo 3 - Visita"
             description="Agende seu Dia de Visitas exclusivo para conhecer cada propriedade com nosso especialista."
           />
         </div>
