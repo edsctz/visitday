@@ -515,40 +515,40 @@ export const neighborhoods: Record<string, Neighborhood> = {
     heroImage: '/resorttambore.webp',
     showcaseProperties: [
       {
-        image: 'http://images.ingaiasites.com.br/7414a22a49b9c2e05e35c781712cfd2f.jpg',
-        title: 'Apartamento com 3 Quartos',
-        subtitle: 'Alphaville - Pronto para Morar',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2Fi3e5r4k8HoM40Ub+-5Qql+pXKxdi88hm0wY-zuu6D6-HxU+r57YQijL79LHPw6qU7VuUEEkJFaPlgHgPKeYGDFUFSrxmsik-CQoJ2WDBa5RAzly4K62K5R5yr1m8Z3n6hC--l9C7cYIPiOlxBHqxWEpwj5l5T+BCpSRFyvwoX+onw-CDLaP7xaN-+32EVVkAor9y8W7T1nZDAIZonG6QpdHkcrVURUaIC3e2CAvpw9AUYpu-SCV-Fw1ib0a1xJZmsXI8azfAFlgiQGrNP6ki4x4bG1qz5PUvQO1pr9aXsraz1eby7DavxJjnp0ski+o3QLo8JdcfjXzZpXXF4biId7FK4+OvGswCzIDnYuBAKChPH1Jw1.jpg',
+        title: 'Resort Tamboré',
+        subtitle: 'Pacote: R$8.500',
         features: {
           bedrooms: 3,
           bathrooms: 3,
-          area: 133,
+          area: 113,
           vagas: 2
         },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-3quartos-alphaville'
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-santana-de-parnaiba-3-quartos-113-m/AP0038-ALPH'
       },
       {
-        image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
-        title: 'Apartamento Moderno',
-        subtitle: 'Acabamentos de Qualidade',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtuxl90cts6CduqsMlBIK3nCKNw4+b4POnoR+P0onmmJ--y9jnbJbZzp4g7vbOOHGnmP9sZuM8DElEfcVofgHnQ42hP1R8uhOi-Uv0c6p9X3dygy4QgRFWmmmSeYeR3lQy-TigM6vIgBSRYpi2BURwHrMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
+        title: 'Green Valley',
+        subtitle: 'Pacote: R$7.500',
         features: {
           bedrooms: 2,
           bathrooms: 2,
-          area: 95,
-          vagas: 1
-        },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-moderno-alphaville'
-      },
-      {
-        image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
-        title: 'Apartamento Espaçoso',
-        subtitle: 'Vista Livre e Varanda Gourmet',
-        features: {
-          bedrooms: 3,
-          bathrooms: 2,
-          area: 110,
+          area: 69,
           vagas: 2
         },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-espacoso-alphaville'
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-2-quartos-69-m/AP0039-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu15s89B83Ro1gMsBcuGYjDHb0au7uP61o13JobOPsrni9p7iQ-vgwt4T3433KF6yvrJMedAjFUUlX-ZkQjPER4zdM1R2uTClmkLUYrBGZWxlhQ4QsEh1432pUaSyyA8K8X2ZLNqJhS+TCa3RE3BdMPtHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
+        title: '18 do Forte',
+        subtitle: 'Pacote: R$4.350',
+        features: {
+          bedrooms: 1,
+          bathrooms: 1,
+          area: 40,
+          vagas: 1
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-1-quarto-40-m/AP0017-ALPH'
       }
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/apartamentos-alugar'
