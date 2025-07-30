@@ -79,10 +79,6 @@ const GlobalPresence: React.FC<GlobalPresenceProps> = ({ heroImage }) => {
                 </li>
                 <li className="flex items-center text-[#727273]">
                   <span className="w-2 h-2 bg-[#BEAF87] rounded-full mr-3"></span>
-                  Rede internacional de compradores qualificados
-                </li>
-                <li className="flex items-center text-[#727273]">
-                  <span className="w-2 h-2 bg-[#BEAF87] rounded-full mr-3"></span>
                   Padrões rigorosos de qualidade e ética
                 </li>
               </ul>
