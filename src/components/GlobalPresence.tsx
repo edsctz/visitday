@@ -19,7 +19,11 @@ const Stat: React.FC<StatProps> = ({ icon, number, label }) => {
   );
 };
 
-const GlobalPresence: React.FC = () => {
+interface GlobalPresenceProps {
+  heroImage: string;
+}
+
+const GlobalPresence: React.FC<GlobalPresenceProps> = ({ heroImage }) => {
   return (
     <section id="about" className="py-20 bg-[#F9F9F9]">
       <div className="container mx-auto px-4 md:px-8">
@@ -85,8 +89,8 @@ const GlobalPresence: React.FC = () => {
             </div>
             <div className="relative h-64 md:h-full min-h-[320px]">
               <img
-                src="https://images.pexels.com/photos/1546168/pexels-photo-1546168.jpeg?auto=compress&cs=tinysrgb&w=1280"
-                alt="Century 21 Global Office"
+                src={heroImage}
+                alt="Vista do bairro"
                 className="absolute inset-0 w-full h-full object-cover rounded-lg"
               />
             </div>

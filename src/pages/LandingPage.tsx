@@ -36,7 +36,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ neighborhoodId }) => {
         listingPageUrl={neighborhood.listingPageUrl || 'https://www.c21alpha.com.br/imoveis'}
       />
       <HowItWorks neighborhoodName={neighborhood.name} />
-      <GlobalPresence />
+      <GlobalPresence heroImage={neighborhood.heroImage} />
       <FormContainer 
         neighborhoodName={neighborhood.name}
         budgetRanges={neighborhood.budgetRanges}
