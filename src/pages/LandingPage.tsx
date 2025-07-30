@@ -37,11 +37,11 @@ const LandingPage: React.FC<LandingPageProps> = ({ neighborhoodId }) => {
         showcaseProperties={neighborhood.showcaseProperties}
         listingPageUrl={neighborhood.listingPageUrl || 'https://www.c21alpha.com.br/imoveis'}
       />
-      <HowItWorks neighborhoodName={neighborhood.name} />
-      <GlobalPresence heroImage={neighborhood.heroImage} />
       <FormContainer 
         neighborhoodName={neighborhood.name}
       />
+      <HowItWorks neighborhoodName={neighborhood.name} />
+      <GlobalPresence heroImage={neighborhood.heroImage} />
       <Testimonials neighborhoodName={neighborhood.name} />
       <Footer neighborhoodName={neighborhood.name} />
     </div>
