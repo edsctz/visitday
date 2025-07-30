@@ -17,21 +17,9 @@ export interface FormData {
 
 interface FormContainerProps {
   neighborhoodName: string;
-  budgetRanges: {
-    venda: {
-      min: number;
-      max: number;
-      step: number;
-    };
-    locacao: {
-      min: number;
-      max: number;
-      step: number;
-    };
-  };
 }
 
-const FormContainer: React.FC<FormContainerProps> = ({ neighborhoodName, budgetRanges }) => {
+const FormContainer: React.FC<FormContainerProps> = ({ neighborhoodName }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const formSectionRef = useRef<HTMLElement>(null);
@@ -49,8 +37,8 @@ const FormContainer: React.FC<FormContainerProps> = ({ neighborhoodName, budgetR
       const formData: FormData = {
         budget: {
           type: 'venda',
-          min: budgetRanges.venda.min,
-          max: budgetRanges.venda.max
+          min: 1000000,
+          max: 10000000
         },
         preferences: {
           vagas: null,

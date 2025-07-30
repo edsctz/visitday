@@ -41,7 +41,6 @@ const LandingPage: React.FC<LandingPageProps> = ({ neighborhoodId }) => {
       <GlobalPresence heroImage={neighborhood.heroImage} />
       <FormContainer 
         neighborhoodName={neighborhood.name}
-        budgetRanges={neighborhood.budgetRanges}
       />
       <Testimonials neighborhoodName={neighborhood.name} />
       <Footer neighborhoodName={neighborhood.name} />

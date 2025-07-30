@@ -35,8 +35,4 @@ export interface Neighborhood {
   heroImage: string;
   showcaseProperties: ShowcaseProperty[];
   listingPageUrl?: string;
-  budgetRanges: {
-    venda: BudgetRange;
-    locacao: BudgetRange;
-  };
 }

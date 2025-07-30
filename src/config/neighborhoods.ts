@@ -45,19 +45,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/oportunidade-unica-tambore11'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/tambore11',
-    budgetRanges: {
-      venda: {
-        min: 4000000,
-        max: 15000000,
-        step: 200000
-      },
-      locacao: {
-        min: 20000,
-        max: 50000,
-        step: 2000
-      }
-    }
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/tambore11'
   },
     singular: {
     id: 'singular',
@@ -103,19 +91,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/oportunidade-singular'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/singular',
-    budgetRanges: {
-      venda: {
-        min: 3000000,
-        max: 10000000,
-        step: 100000
-      },
-      locacao: {
-        min: 20000,
-        max: 50000,
-        step: 2000
-      }
-    }
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/singular'
   },
     tambore3: {
     id: 'tambore3',
@@ -161,19 +137,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/residencia-premium-tambore3'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/tambore3',
-    budgetRanges: {
-      venda: {
-        min: 6000000,
-        max: 25000000,
-        step: 200000
-      },
-      locacao: {
-        min: 30000,
-        max: 60000,
-        step: 2000
-      }
-    }
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/tambore3'
   },
     residencial9: {
     id: 'residencial9',
@@ -219,19 +183,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-pronta-residencial9'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/residencial9',
-    budgetRanges: {
-      venda: {
-        min: 1500000,
-        max: 7000000,
-        step: 200000
-      },
-      locacao: {
-        min: 10000,
-        max: 30000,
-        step: 2000
-      }
-    }
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/residencial9'
   },
   casaavenda: {
     id: 'casaavenda',
@@ -277,19 +229,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-piscina-alphaville'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/casas-venda',
-    budgetRanges: {
-      venda: {
-        min: 1500000,
-        max: 10000000,
-        step: 200000
-      },
-      locacao: {
-        min: 10000,
-        max: 60000,
-        step: 5000
-      }
-    }
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/casas-venda'
   },
     genesis: {
     id: 'genesis12',
@@ -335,19 +275,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-condominio-genesis'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/genesis',
-    budgetRanges: {
-      venda: {
-        min: 4000000,
-        max: 15000000,
-        step: 200000
-      },
-      locacao: {
-        min: 20000,
-        max: 50000,
-        step: 2000
-      }
-    }
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/genesis'
   },
     residencial5: {
     id: 'residencial5',
@@ -393,19 +321,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-quintal-residencial5'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/residencial5',
-    budgetRanges: {
-      venda: {
-        min: 2000000,
-        max: 10000000,
-        step: 200000
-      },
-      locacao: {
-        min: 10000,
-        max: 30000,
-        step: 2000
-      }
-    }
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/residencial5'
   },
     burlemarx: {
     id: 'burlemarx',
@@ -451,19 +367,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-design-exclusivo-burlemarx'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/burlemarx',
-    budgetRanges: {
-      venda: {
-        min: 2000000,
-        max: 15000000,
-        step: 200000
-      },
-      locacao: {
-        min: 15000,
-        max: 50000,
-        step: 2000
-      }
-    }
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/burlemarx'
   },
   apartamentoalugar: {
     id: 'apartamentoalugar',
@@ -509,19 +413,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-espacoso-alphaville'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/apartamentos-alugar',
-    budgetRanges: {
-      venda: {
-        min: 1000000,
-        max: 1700000,
-        step: 100000
-      },
-      locacao: {
-        min: 5000,
-        max: 20000,
-        step: 1000
-      }
-    }
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/apartamentos-alugar'
   },
   resorttambore: {
     id: 'resorttambore',
@@ -567,18 +459,6 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-premium-resort-tambore'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/resort-tambore',
-    budgetRanges: {
-      venda: {
-        min: 1000000,
-        max: 1700000,
-        step: 100000
-      },
-      locacao: {
-        min: 7000,
-        max: 15000,
-        step: 1000
-      }
-    }
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/resort-tambore'
   }
 };
