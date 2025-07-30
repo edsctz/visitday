@@ -327,47 +327,47 @@ export const neighborhoods: Record<string, Neighborhood> = {
     id: 'casaavenda',
     name: 'Alphaville',
     title: 'Casas a Venda em Alphaville',
-    subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
+    subtitle: 'Descubra as melhores casas a venda em Alphaville – veja fotos e preços, agende visitas ou receba uma seleção VIP',
     heroImage: '/Residencial9.webp',
     showcaseProperties: [
       {
-        image: 'http://images.ingaiasites.com.br/7414a22a49b9c2e05e35c781712cfd2f.jpg',
-        title: 'Casa para Venda',
-        subtitle: 'Alphaville - Excelente Oportunidade',
-        features: {
-          bedrooms: 3,
-          bathrooms: 4,
-          area: 345,
-          vagas: 2
-        },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-venda-alphaville'
-      },
-      {
-        image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
-        title: 'Residência de Alto Padrão',
-        subtitle: 'Acabamentos Diferenciados',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1k45+VMyBIXztE3RKPvnQyJ3pi3xNOevF3JyYHa553-2ufbbNzc2YYm0ZLLCE+ukIx9e-04C2tBStBFFDj3YKauLFxpoRyGtkvva6F0HDcOxToUjBdpwVuDAIqv8k9v9QulKM7ZsjLVZ7LHKlhHSdxHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
+        title: 'Melville',
+        subtitle: 'R$6.900.000',
         features: {
           bedrooms: 4,
           bathrooms: 5,
-          area: 450,
-          vagas: 3
+          area: 600,
+          vagas: 4
         },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/residencia-alto-padrao-alphaville'
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-600-m/CA0088-ALPH'
       },
       {
-        image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
-        title: 'Casa com Piscina',
-        subtitle: 'Área de Lazer Completa',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2B8zONI0TEXsMVCe+SviziY4Kur--6nqhmIz5TUoerq3pjjZYLfzoEW9rHSHmaqiKJUd9gALUF9VtRFGDW6RaiPBFhLvWeNqxjtT6ZCaV1W2RowsU5322upQb2F8AEbgS64JPfIkT+PQqXLM2xzJLMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
+        title: 'Preço Reduzido para Venda Rápida',
+        subtitle: 'R$2.050.000',
         features: {
-          bedrooms: 3,
-          bathrooms: 3,
-          area: 380,
-          vagas: 2
+          bedrooms: 4,
+          bathrooms: 4,
+          area: 326,
+          vagas: 4
         },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-piscina-alphaville'
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-326-m/CA0022-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0Bsj+1-uC07jdg4Xoi+kha5g77J4t7CrXvI-bKO4unq--rOa9XP8YFhgJ7aGwCSt-ROQoUAAXBIWLdVHxvVUb27B1Zpvwen-3fmZKJYUWtY-Qs-tBwK7mShZYG1228+-xGOKK36oX60c5fbImROKLMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
+        title: 'Destaque do Especialista',
+        subtitle: 'R$4.500.000',
+        features: {
+          bedrooms: 4,
+          bathrooms: 4,
+          area: 382,
+          vagas: 4
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-382-m/CA0073-ALPH'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/casas-venda'
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/a-venda/casa'
   },
   genesis: {
     id: 'genesis12',
