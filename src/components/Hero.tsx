@@ -127,7 +127,7 @@ const Hero: React.FC<HeroProps> = ({
             <span className="text-center">
               <span className="block text-sm md:text-base">Seleção VIP Personalizada</span>
               <span className="block text-xs md:text-sm font-normal opacity-90">
-                Análise gratuita dos 5 melhores imóveis para você
+                Um especialista envia as melhores opções para você
               </span>
             </span>
           </button>
