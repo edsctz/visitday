@@ -74,59 +74,21 @@ const Hero: React.FC<HeroProps> = ({
             Top 3 Oportunidades Hoje
           </h2>
           
-          {/* Mobile Carousel */}
-          <div className="md:hidden relative">
-            {/* Carousel Container */}
-            <div className="overflow-hidden rounded-lg mb-4">
-              <div 
-                className="flex transition-transform duration-300 ease-in-out"
-                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-              >
+          {/* Mobile Horizontal Scroll */}
+          <div className="md:hidden">
+            <div className="overflow-x-auto scrollbar-hide">
+              <div className="flex space-x-4 pb-4" style={{ width: 'max-content' }}>
                 {showcaseProperties.map((property, index) => (
-                  <div key={index} className="w-full flex-shrink-0 px-2">
-                    <PropertyCard
-                      property={property}
-                    />
+                  <div key={index} className="w-80 flex-shrink-0">
+                    <PropertyCard property={property} />
                   </div>
                 ))}
               </div>
             </div>
             
-            {/* Navigation Controls */}
-            <div className="flex justify-center items-center space-x-4">
-              {/* Previous Button */}
-              <button
-                onClick={goToPrevious}
-                className="bg-white/90 hover:bg-white text-[#252526] p-2 rounded-full shadow-lg transition-all duration-200"
-                aria-label="Propriedade anterior"
-              >
-                <ChevronLeft className="w-5 h-5" />
-              </button>
-              
-              {/* Indicators */}
-              <div className="flex space-x-2">
-                {showcaseProperties.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => goToSlide(index)}
-                    className={`w-2 h-2 rounded-full transition-all duration-200 ${
-                      index === currentIndex 
-                        ? 'bg-[#BEAF87] w-6' 
-                        : 'bg-white/50 hover:bg-white/70'
-                    }`}
-                    aria-label={`Ir para propriedade ${index + 1}`}
-                  />
-                ))}
-              </div>
-              
-              {/* Next Button */}
-              <button
-                onClick={goToNext}
-                className="bg-white/90 hover:bg-white text-[#252526] p-2 rounded-full shadow-lg transition-all duration-200"
-                aria-label="Próxima propriedade"
-              >
-                <ChevronRight className="w-5 h-5" />
-              </button>
+            {/* Scroll Indicator */}
+            <div className="flex justify-center mt-2">
+              <p className="text-white/70 text-sm">← Deslize para ver mais →</p>
             </div>
           </div>
           
