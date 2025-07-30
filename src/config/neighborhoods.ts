@@ -96,7 +96,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
   newville: {
     id: 'newville',
     name: 'New Ville',
-    title: 'Casas a Venda no Alphaview',
+    title: 'Casas a Venda no New Ville',
     subtitle: 'Descubra as melhores casa no New Ville – veja fotos e preços, agende visitas ou receba uma seleção VIP',
     heroImage: '/newville.webp',
     showcaseProperties: [
