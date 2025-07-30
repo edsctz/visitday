@@ -47,7 +47,53 @@ export const neighborhoods: Record<string, Neighborhood> = {
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/tambore11'
   },
-    singular: {
+  alphaview: {
+    id: 'alphaview',
+    name: 'Alphaview',
+    title: 'Apartamentos a Venda no Alphaview',
+    subtitle: 'Descubra os melhores apartamentos no Alphaview – veja fotos e preços, agende visitas ou receba uma seleção VIP',
+    heroImage: '/tambore11.webp',
+    showcaseProperties: [
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0BZ0fB11Ds6vNMmZpOvgCeo996Wt+2Li2rNxY36p+rVkO3NZ8f7ytgGiJPjPwSLiLJJXdoVa1wlZ+taHj3sdpypZ1pBpQO3q3vTF7QeE3BY8TwAghpqzluBap2222Ui8TyhLqLCrA+0dpi5OVh5TLhHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
+        title: 'Pronto para Mudar',
+        subtitle: 'R$419.000',
+        features: {
+          bedrooms: 2,
+          bathrooms: 1,
+          area: 60,
+          vagas: 1
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-2-quartos-60-m/AP0033-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu19b+tdUyQ0Zn8YhbJaBg2yA-om01cmLpnyNyI-ogKrh8trfU9nxx7d6j5nuQkeGtok7F9wbHXJkV+B1WxfaVtiRH1d7hTWR+2KcdKdhe09J+g0upydr4Hn8Vp+t62c+8Xr1GqyduAu7e5n6WFVlNLMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
+        title: 'Recomendação do Especialista',
+        subtitle: 'R$489.000',
+        features: {
+          bedrooms: 3,
+          bathrooms: 2,
+          area: 68,
+          vagas: 1
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-3-quartos-68-m/AP0034-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu056z+5X7wp7qtowZbaQrAmCjpib+I6grBir-bH1lpD93u-ZbJ-b7qoPi-T-Tlz8iYpeH-UMKUphOeJzXyTLR4q+H312omeK+0vQQYcXcUtq4gcrkE5y1kq7eZ2U21s5yh+5KPH1twfVT6HYKHEBTbMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
+        title: 'Mobiliado de Alto Padrão',
+        subtitle: 'R$620.000',
+        features: {
+          bedrooms: 3,
+          bathrooms: 2,
+          area: 80,
+          vagas: 2
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-3-quartos-80-m/AP0018-ALPH'
+      }
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/barueri/alphaview'
+  },
+  singular: {
     id: 'singular',
     name: 'Singular',
     title: 'Casas Novas no Condomínio Singular',
@@ -93,7 +139,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/singular'
   },
-    tambore3: {
+  tambore3: {
     id: 'tambore3',
     name: 'Tamboré 3',
     title: 'Casas a Venda e Locação no Tamboré 3',
@@ -139,7 +185,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/tambore3'
   },
-    residencial9: {
+  residencial9: {
     id: 'residencial9',
     name: 'Alphaville Residencial 9',
     title: 'Casas a Venda e Locação no Residencial 9',
@@ -231,7 +277,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/casas-venda'
   },
-    genesis: {
+  genesis: {
     id: 'genesis12',
     name: 'Genesis I e II',
     title: 'Casas a Venda e Locação no Genesis 1 e 2',
@@ -277,7 +323,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/genesis'
   },
-    residencial5: {
+  residencial5: {
     id: 'residencial5',
     name: 'Alphaville Residencial 5',
     title: 'Casas a Venda e Locação no Residencial 5',
@@ -323,7 +369,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/residencial5'
   },
-    burlemarx: {
+  burlemarx: {
     id: 'burlemarx',
     name: 'Burle Marx',
     title: 'Casas a Venda e Locação no Burle Marx',
