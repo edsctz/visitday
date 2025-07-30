@@ -282,7 +282,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Alphaville Residencial 11',
     title: 'Casas a Venda no Residencial 11',
     subtitle: 'Descubra as melhores casas no Residencial 11 – veja fotos e preços, agende visitas ou receba uma seleção VIP',
-    heroImage: '/Residencial11.webp',
+    heroImage: '/residencial11.webp',
     showcaseProperties: [
       {
         image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1k4wtlq+kw1peUhTLmMnyWE4IOf+fOLlmGm5KP-iKj4ivKiZfbD+J9hwZPqTUKbjrA4WY0HEUl8X+1jQUL2TrejYVZBhQuRuFjzE7lFRDRx6DsVrBIAxHqCcZKv2g8zhi6VF-D79AiHUIHWME1uErMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
