@@ -562,7 +562,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     showcaseProperties: [
       {
         image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1s41d9r7As9g8MmVeCUgzW16dmv7delqmK806rdm+PCy9-1VZrakaZiw5HPAn-1r5lMRdACEmF7O8dYFBPoUd6SLUh3+CSDn3uSXblCX3J15hMOoQ4IngGlcJydzVwK4g63Vf+FjyO2cLjCBGcAScxHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
-        title: 'Recém Reformado',
+        title: '18 do Forte',
         subtitle: 'R$890.000',
         features: {
           bedrooms: 3,
