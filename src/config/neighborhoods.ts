@@ -4,8 +4,8 @@ export const neighborhoods: Record<string, Neighborhood> = {
   tambore11: {
     id: 'tambore11',
     name: 'Tamboré 11',
-    title: 'Casas a Venda e Locação no Tamboré 11',
-    subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
+    title: 'Casas a Venda no Tamboré 11',
+    subtitle: 'Descubra as melhores casas do Tamboré 11 – veja fotos e preços, agende visitas ou receba uma seleção VIP',
     heroImage: '/tambore11.webp',
     showcaseProperties: [
       {
