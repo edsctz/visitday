@@ -3,11 +3,6 @@ import SingleStepForm from './SingleStepForm';
 import { FormPreferences } from '../../types';
 
 export interface FormData {
-  budget: {
-    type: 'venda' | 'locacao';
-    min: number;
-    max: number;
-  };
   preferences: FormPreferences;
   contact: {
     name: string;
@@ -35,11 +30,6 @@ const FormContainer: React.FC<FormContainerProps> = ({ neighborhoodName }) => {
 
       // Create default form data with the provided contact info
       const formData: FormData = {
-        budget: {
-          type: 'venda',
-          min: 1000000,
-          max: 10000000
-        },
         preferences: {
           vagas: null,
           minArea: 100,
@@ -56,7 +46,6 @@ const FormContainer: React.FC<FormContainerProps> = ({ neighborhoodName }) => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          budget: formData.budget,
           preferences: formData.preferences,
           contact: contact,
           neighborhood: neighborhoodName,
@@ -73,8 +62,6 @@ const FormContainer: React.FC<FormContainerProps> = ({ neighborhoodName }) => {
         event: 'formSubmission',
         formType: 'diaVisitas',
         neighborhood: neighborhoodName,
-        propertyType: 'venda',
-        budgetRange: `${formData.budget.min}-${formData.budget.max}`,
       });
 
       setIsSuccess(true);
