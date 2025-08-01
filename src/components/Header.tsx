@@ -15,9 +15,14 @@ const Header: React.FC = () => {
   return (
     <header className="absolute w-full z-10 px-4 py-4 md:px-8">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white font-bold text-xl tracking-wider">
+        <a 
+          href="https://www.c21alpha.com.br" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-white font-bold text-xl tracking-wider hover:opacity-80 transition-opacity"
+        >
           <span className="text-[#BEAF87]">CENTURY 21</span> <span>Alpha</span>
-        </div>
+        </a>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6 text-white">
