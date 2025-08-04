@@ -1,12 +1,14 @@
 import React from 'react';
 import { BedDouble, Bath, Maximize, Car } from 'lucide-react';
 import { ShowcaseProperty } from '../types';
+import { addUtmParameters } from '../utils/utm';
 
 interface PropertyCardProps {
   property: ShowcaseProperty;
+  neighborhoodId: string;
 }
 
-const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
+const PropertyCard: React.FC<PropertyCardProps> = ({ property, neighborhoodId }) => {
   return (
     <div className="w-full bg-white rounded-lg shadow-lg overflow-hidden">
       <div className="relative h-48">
@@ -47,7 +49,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
         </div>
         
         <a
-          href={property.propertyUrl}
+          href={addUtmParameters(property.propertyUrl, neighborhoodId)}
           target="_blank"
           rel="noopener noreferrer"
           target="_blank"

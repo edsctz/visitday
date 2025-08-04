@@ -28,9 +28,10 @@ const LandingPage: React.FC<LandingPageProps> = ({ neighborhoodId }) => {
         <title>Century 21 Alpha | Imóveis no {neighborhood.name}</title>
         <meta name="description" content={`Encontre imóveis ${neighborhood.name}. Agende seu Dia de Visitas exclusivo e conheça as melhores opções disponíveis.`} />
       </Helmet>
-      <Header />
+      <Header neighborhoodId={neighborhood.id} />
       <Hero 
         neighborhoodName={neighborhood.name}
+        neighborhoodId={neighborhood.id}
         title={neighborhood.title}
         subtitle={neighborhood.subtitle}
         backgroundImage={neighborhood.heroImage}
@@ -43,7 +44,10 @@ const LandingPage: React.FC<LandingPageProps> = ({ neighborhoodId }) => {
       <HowItWorks neighborhoodName={neighborhood.name} />
       <GlobalPresence heroImage={neighborhood.heroImage} />
       <Testimonials neighborhoodName={neighborhood.name} />
-      <Footer neighborhoodName={neighborhood.name} />
+      <Footer 
+        neighborhoodName={neighborhood.name}
+        neighborhoodId={neighborhood.id}
+      />
     </div>
   );
 };
