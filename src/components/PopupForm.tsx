@@ -116,94 +116,97 @@ const PopupForm: React.FC<PopupFormProps> = ({
       />
       
       {/* Popup Content */}
-      <div className="relative bg-white rounded-2xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto">
+      <div className="relative bg-white rounded-2xl shadow-2xl max-w-md w-full">
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-10 p-2 bg-white rounded-full shadow-lg text-gray-600 hover:text-gray-800 hover:bg-gray-50 transition-all"
+          className="absolute top-3 right-3 z-10 p-1.5 bg-white rounded-full shadow-lg text-gray-600 hover:text-gray-800 hover:bg-gray-50 transition-all"
           aria-label="Fechar popup"
         >
-          <X size={24} />
+          <X size={20} />
         </button>
 
         {/* Badge */}
-        <div className="bg-gradient-to-r from-[#BEAF87] to-[#746649] text-white text-center py-3 px-6 rounded-t-2xl">
+        <div className="bg-gradient-to-r from-[#BEAF87] to-[#746649] text-white text-center py-2 px-4 rounded-t-2xl">
           <div className="flex items-center justify-center gap-2">
-            <Star size={16} />
-            <span className="text-sm font-semibold">Atendimento Exclusivo Century 21 Alpha</span>
+            <Star size={14} />
+            <span className="text-xs font-semibold">Atendimento Exclusivo Century 21 Alpha</span>
           </div>
         </div>
 
-        <div className="p-6">
+        <div className="p-4">
           {/* Main Title */}
-          <h2 className="text-2xl font-bold text-[#252526] text-center mb-3">
+          <h2 className="text-lg font-bold text-[#252526] text-center mb-2 leading-tight">
             Cansado de perder tempo buscando? Deixe nosso especialista filtrar para você!
           </h2>
 
           {/* Subtitle */}
-          <p className="text-[#727273] text-center mb-6 leading-relaxed">
+          <p className="text-sm text-[#727273] text-center mb-4 leading-relaxed">
             Receba uma curadoria personalizada de imóveis que se encaixam perfeitamente no seu perfil. Economize tempo e encontre o lar dos seus sonhos com rapidez e eficiência.
           </p>
 
           {/* Form */}
-          <form onSubmit={handleSubmit} className="space-y-4">
-            {/* Name Field */}
-            <div>
-              <label htmlFor="popup-name" className="block text-[#252526] font-medium mb-2">
-                Seu Nome
-              </label>
-              <input
-                type="text"
-                id="popup-name"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-                placeholder="Digite seu nome"
-                autoComplete="name"
-                className={`w-full px-4 py-3 border-2 rounded-lg focus:ring-2 focus:ring-[#BEAF87] focus:border-transparent transition-all ${
-                  errors.name ? 'border-red-500' : 'border-gray-200 hover:border-[#BEAF87]/50'
-                }`}
-                required
-              />
-              {errors.name && (
-                <p className="mt-1 text-red-500 text-sm">Por favor, insira seu nome.</p>
-              )}
-            </div>
+          <form onSubmit={handleSubmit} className="space-y-3">
+            {/* Form Fields - Mobile: Stacked, Desktop: Side by side */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {/* Name Field */}
+              <div>
+                <label htmlFor="popup-name" className="block text-[#252526] font-medium mb-1 text-sm">
+                  Seu Nome
+                </label>
+                <input
+                  type="text"
+                  id="popup-name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  placeholder="Digite seu nome"
+                  autoComplete="name"
+                  className={`w-full px-3 py-2 text-sm border-2 rounded-lg focus:ring-2 focus:ring-[#BEAF87] focus:border-transparent transition-all ${
+                    errors.name ? 'border-red-500' : 'border-gray-200 hover:border-[#BEAF87]/50'
+                  }`}
+                  required
+                />
+                {errors.name && (
+                  <p className="mt-1 text-red-500 text-xs">Por favor, insira seu nome.</p>
+                )}
+              </div>
 
-            {/* Phone Field */}
-            <div>
-              <label htmlFor="popup-phone" className="block text-[#252526] font-medium mb-2">
-                Seu WhatsApp
-              </label>
-              <input
-                type="tel"
-                id="popup-phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handlePhoneChange}
-                placeholder="(11) 99999-9999"
-                autoComplete="tel"
-                className={`w-full px-4 py-3 border-2 rounded-lg focus:ring-2 focus:ring-[#BEAF87] focus:border-transparent transition-all ${
-                  errors.phone ? 'border-red-500' : 'border-gray-200 hover:border-[#BEAF87]/50'
-                }`}
-                required
-              />
-              {errors.phone && (
-                <p className="mt-1 text-red-500 text-sm">Por favor, insira um WhatsApp válido no formato (XX) XXXXX-XXXX.</p>
-              )}
+              {/* Phone Field */}
+              <div>
+                <label htmlFor="popup-phone" className="block text-[#252526] font-medium mb-1 text-sm">
+                  Seu WhatsApp
+                </label>
+                <input
+                  type="tel"
+                  id="popup-phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handlePhoneChange}
+                  placeholder="(11) 99999-9999"
+                  autoComplete="tel"
+                  className={`w-full px-3 py-2 text-sm border-2 rounded-lg focus:ring-2 focus:ring-[#BEAF87] focus:border-transparent transition-all ${
+                    errors.phone ? 'border-red-500' : 'border-gray-200 hover:border-[#BEAF87]/50'
+                  }`}
+                  required
+                />
+                {errors.phone && (
+                  <p className="mt-1 text-red-500 text-xs">Por favor, insira um WhatsApp válido no formato (XX) XXXXX-XXXX.</p>
+                )}
+              </div>
             </div>
 
             {/* CTA Button */}
             <button
               type="submit"
               disabled={!isValid() || isSubmitting}
-              className={`w-full bg-gradient-to-r from-[#BEAF87] to-[#746649] hover:from-[#746649] hover:to-[#BEAF87] text-white font-bold py-4 px-6 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl ${
+              className={`w-full bg-gradient-to-r from-[#BEAF87] to-[#746649] hover:from-[#746649] hover:to-[#BEAF87] text-white font-bold py-3 px-4 rounded-lg text-base transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl ${
                 (!isValid() || isSubmitting) ? 'opacity-50 cursor-not-allowed transform-none hover:scale-100' : ''
               }`}
             >
               {isSubmitting ? (
                 <div className="flex items-center justify-center">
-                  <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                   </svg>
@@ -215,23 +218,23 @@ const PopupForm: React.FC<PopupFormProps> = ({
             </button>
 
             {/* Trust Seal */}
-            <div className="flex items-center justify-center gap-2 text-sm text-[#727273] mt-3">
-              <Shield size={16} className="text-[#BEAF87]" />
+            <div className="flex items-center justify-center gap-2 text-xs text-[#727273] mt-2">
+              <Shield size={14} className="text-[#BEAF87]" />
               <span>Privacidade total. Só sugerimos imóveis no seu perfil.</span>
             </div>
           </form>
 
           {/* Testimonial */}
-          <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+          <div className="mt-4 p-3 bg-gray-50 rounded-lg">
             <div className="flex items-start gap-3">
-              <div className="w-10 h-10 bg-[#BEAF87] rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-semibold text-sm">M</span>
+              <div className="w-8 h-8 bg-[#BEAF87] rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-white font-semibold text-xs">M</span>
               </div>
               <div>
-                <p className="text-sm text-[#727273] italic leading-relaxed">
+                <p className="text-xs text-[#727273] italic leading-relaxed">
                   "Recebi só imóveis que combinavam comigo, atendimento ágil e sem enrolação."
                 </p>
-                <p className="text-xs text-[#727273] mt-1 font-medium">
+                <p className="text-xs text-[#727273] mt-0.5 font-medium">
                   Marcela T. - Cliente Century 21 Alpha
                 </p>
               </div>
