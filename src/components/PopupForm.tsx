@@ -4,7 +4,7 @@ import { X, Star, Shield } from 'lucide-react';
 interface PopupFormProps {
   isOpen: boolean;
   onClose: () => void;
-  onSubmit: (data: { name: string; phone: string; message: string }) => Promise<void>;
+  onSubmit: (data: { name: string; phone: string }) => Promise<void>;
   neighborhoodName: string;
   isSubmitting: boolean;
 }
@@ -18,13 +18,11 @@ const PopupForm: React.FC<PopupFormProps> = ({
 }) => {
   const [formData, setFormData] = useState({
     name: '',
-    phone: '',
-    message: ''
+    phone: ''
   });
   const [errors, setErrors] = useState({
     name: false,
-    phone: false,
-    message: false
+    phone: false
   });
 
   if (!isOpen) return null;
@@ -47,8 +45,6 @@ const PopupForm: React.FC<PopupFormProps> = ({
     } else if (name === 'phone') {
       const phoneRegex = /^\(\d{2}\)\s\d{4,5}-\d{4}$/;
       isValid = phoneRegex.test(value);
-    } else if (name === 'message') {
-      isValid = value.trim().length >= 5;
     }
     
     setErrors(prev => ({
@@ -85,17 +81,15 @@ const PopupForm: React.FC<PopupFormProps> = ({
     const nameValid = formData.name.trim().length >= 2;
     const phoneRegex = /^\(\d{2}\)\s\d{4,5}-\d{4}$/;
     const phoneValid = phoneRegex.test(formData.phone);
-    const messageValid = formData.message.trim().length >= 5;
     
     const newErrors = {
       name: !nameValid,
-      phone: !phoneValid,
-      message: !messageValid
+      phone: !phoneValid
     };
     
     setErrors(newErrors);
     
-    if (nameValid && phoneValid && messageValid) {
+    if (nameValid && phoneValid) {
       try {
         await onSubmit(formData);
         onClose();
@@ -109,8 +103,7 @@ const PopupForm: React.FC<PopupFormProps> = ({
     return (
       formData.name.trim().length >= 2 &&
       /^\(\d{2}\)\s\d{4,5}-\d{4}$/.test(formData.phone) &&
-      formData.message.trim().length >= 5 &&
-      !errors.name && !errors.phone && !errors.message
+      !errors.name && !errors.phone
     );
   };
 
@@ -127,7 +120,7 @@ const PopupForm: React.FC<PopupFormProps> = ({
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-10 p-2 text-gray-400 hover:text-gray-600 transition-colors"
+          className="absolute top-4 right-4 z-10 p-2 bg-white rounded-full shadow-lg text-gray-600 hover:text-gray-800 hover:bg-gray-50 transition-all"
           aria-label="Fechar popup"
         >
           <X size={24} />
@@ -144,38 +137,16 @@ const PopupForm: React.FC<PopupFormProps> = ({
         <div className="p-6">
           {/* Main Title */}
           <h2 className="text-2xl font-bold text-[#252526] text-center mb-3">
-            Ainda não encontrou o imóvel ideal?
+            Cansado de buscar? Acesse imóveis exclusivos no {neighborhoodName} antes de todos!
           </h2>
 
           {/* Subtitle */}
           <p className="text-[#727273] text-center mb-6 leading-relaxed">
-            Conte rapidamente o que procura. Em até 30 minutos, nosso especialista envia imóveis selecionados, já disponíveis, direto no seu WhatsApp. Sem spam. Sem compromisso.
+            Receba uma curadoria personalizada de imóveis que se encaixam perfeitamente no seu perfil. Economize tempo e encontre o lar dos seus sonhos com rapidez e eficiência.
           </p>
 
           {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-4">
-            {/* Message Field */}
-            <div>
-              <label htmlFor="popup-message" className="block text-[#252526] font-medium mb-2">
-                O que você procura?
-              </label>
-              <textarea
-                id="popup-message"
-                name="message"
-                value={formData.message}
-                onChange={handleInputChange}
-                placeholder="Ex: Casa 3 quartos no Tamboré, até R$ 2M, com piscina..."
-                rows={3}
-                className={`w-full px-4 py-3 border-2 rounded-lg focus:ring-2 focus:ring-[#BEAF87] focus:border-transparent transition-all resize-none ${
-                  errors.message ? 'border-red-500' : 'border-gray-200 hover:border-[#BEAF87]/50'
-                }`}
-                required
-              />
-              {errors.message && (
-                <p className="mt-1 text-red-500 text-sm">Por favor, descreva o que procura (mínimo 5 caracteres).</p>
-              )}
-            </div>
-
             {/* Name Field */}
             <div>
               <label htmlFor="popup-name" className="block text-[#252526] font-medium mb-2">

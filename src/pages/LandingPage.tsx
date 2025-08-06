@@ -39,15 +39,14 @@ const LandingPage: React.FC<LandingPageProps> = ({ neighborhoodId }) => {
     setShowPopup(false);
   };
 
-  const handlePopupSubmit = async (data: { name: string; phone: string; message: string }) => {
+  const handlePopupSubmit = async (data: { name: string; phone: string }) => {
     setIsPopupSubmitting(true);
     
     try {
       await submitContactForm({
         name: data.name,
         phone: data.phone,
-        neighborhood: neighborhood.name,
-        message: data.message
+        neighborhood: neighborhood.name
       });
       
       setShowPopup(false);
