@@ -49,7 +49,8 @@ const LandingPage: React.FC<LandingPageProps> = ({ neighborhoodId }) => {
         neighborhood: neighborhood.name
       });
       
-      setShowPopup(false);
+      // Don't close immediately - let the popup component handle the success state
+      // The popup will show success message and then close itself
     } catch (error) {
       console.error('Error submitting popup form:', error);
       throw error;
