@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import SingleStepForm from './SingleStepForm';
+import { submitContactForm } from '../../utils/submitContactForm';
 
 interface FormContainerProps {
   neighborhoodName: string;
@@ -19,28 +20,10 @@ const FormContainer: React.FC<FormContainerProps> = ({ neighborhoodName }) => {
         throw new Error('Contact information is required');
       }
 
-      const response = await fetch('https://workflowwebhook.prospectz.com.br/webhook/c21-diavisitasintake', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: contact.name,
-          phone: contact.phone,
-          neighborhood: neighborhoodName,
-          submittedAt: new Date().toISOString()
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to submit form');
-      }
-
-      // Push form submission event to GTM
-      window.dataLayer?.push({
-        event: 'formSubmission',
-        formType: 'diaVisitas',
-        neighborhood: neighborhoodName,
+      await submitContactForm({
+        name: contact.name,
+        phone: contact.phone,
+        neighborhood: neighborhoodName
       });
 
       setIsSuccess(true);
