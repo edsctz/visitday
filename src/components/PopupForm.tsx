@@ -24,6 +24,7 @@ const PopupForm: React.FC<PopupFormProps> = ({
     name: false,
     phone: false
   });
+  const [isSuccess, setIsSuccess] = useState(false);
 
   if (!isOpen) return null;
 
@@ -92,7 +93,12 @@ const PopupForm: React.FC<PopupFormProps> = ({
     if (nameValid && phoneValid) {
       try {
         await onSubmit(formData);
-        onClose();
+        setIsSuccess(true);
+        // Close popup after showing success message for 2 seconds
+        setTimeout(() => {
+          setIsSuccess(false);
+          onClose();
+        }, 2000);
       } catch (error) {
         console.error('Error submitting popup form:', error);
       }
@@ -135,6 +141,27 @@ const PopupForm: React.FC<PopupFormProps> = ({
         </div>
 
         <div className="p-4">
+          {isSuccess ? (
+            /* Success State */
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h2 className="text-lg font-bold text-[#252526] mb-2">
+                🎉 Solicitação Enviada!
+              </h2>
+              <p className="text-sm text-[#727273] leading-relaxed">
+                Nossa equipe entrará em contato em até <strong>2 horas</strong> com uma seleção exclusiva de imóveis no {neighborhoodName}.
+              </p>
+              <div className="mt-3 text-xs text-[#BEAF87] font-medium">
+                ✅ Você está mais perto do seu lar ideal!
+              </div>
+            </div>
+          ) : (
+            /* Form State */
+            <>
           {/* Main Title */}
           <h2 className="text-lg font-bold text-[#252526] text-center mb-2 leading-tight">
             Cansado de perder tempo buscando? Deixe nosso especialista filtrar para você!
@@ -240,6 +267,8 @@ const PopupForm: React.FC<PopupFormProps> = ({
               </div>
             </div>
           </div>
+            </>
+          )}
         </div>
       </div>
     </div>
