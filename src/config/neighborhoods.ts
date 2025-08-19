@@ -80,15 +80,15 @@ export const neighborhoods: Record<string, Neighborhood> = {
       },
       {
         image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu056z+5X7wp7qtowZbaQrAmCjpib+I6grBir-bH1lpD93u-ZbJ-b7qoPi-T-Tlz8iYpeH-UMKUphOeJzXyTLR4q+H312omeK+0vQQYcXcUtq4gcrkE5y1kq7eZ2U21s5yh+5KPH1twfVT6HYKHEBTbMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
-        title: 'Mobiliado de Alto Padrão',
-        subtitle: 'R$620.000',
+        title: 'Baixou de Preço para Vender!',
+        subtitle: 'R$404.250',
         features: {
-          bedrooms: 3,
+          bedrooms: 2,
           bathrooms: 2,
-          area: 80,
-          vagas: 2
+          area: 72,
+          vagas: 1
         },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-3-quartos-80-m/AP0018-ALPH'
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-2-quartos-72-m/AP0023-ALPH'
       }
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/barueri/alphaview'
