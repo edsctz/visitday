@@ -2,9 +2,11 @@ import React from 'react';
 import { ExternalLink, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { ShowcaseProperty } from '../types';
 import PropertyCard from './PropertyCard';
+import { addUtmParameters } from '../utils/utm';
 
 interface HeroProps {
   neighborhoodName: string;
+  neighborhoodId: string;
   title: string;
   subtitle: string;
   backgroundImage: string;
@@ -14,6 +16,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ 
   neighborhoodName, 
+  neighborhoodId,
   title,
   subtitle,
   backgroundImage, 
@@ -80,7 +83,10 @@ const Hero: React.FC<HeroProps> = ({
               <div className="flex space-x-4 pb-4" style={{ width: 'max-content' }}>
                 {showcaseProperties.map((property, index) => (
                   <div key={index} className="w-80 flex-shrink-0">
-                    <PropertyCard property={property} />
+                    <PropertyCard 
+                      property={property} 
+                      neighborhoodId={neighborhoodId}
+                    />
                   </div>
                 ))}
               </div>
@@ -99,6 +105,7 @@ const Hero: React.FC<HeroProps> = ({
                 <PropertyCard
                   key={index}
                   property={showcaseProperties[index]}
+                  neighborhoodId={neighborhoodId}
                 />
               ))}
             </div>
@@ -108,7 +115,7 @@ const Hero: React.FC<HeroProps> = ({
         {/* Call-to-Action Buttons */}
         <div className="flex flex-col md:flex-row gap-3 max-w-4xl mx-auto">
           <a
-            href={listingPageUrl}
+            href={addUtmParameters(listingPageUrl, neighborhoodId)}
             target="_blank"
             rel="noopener noreferrer"
             target="_blank"

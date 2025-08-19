@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { addUtmParameters } from '../utils/utm';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  neighborhoodId: string;
+}
+
+const Header: React.FC<HeaderProps> = ({ neighborhoodId }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
@@ -15,9 +20,14 @@ const Header: React.FC = () => {
   return (
     <header className="absolute w-full z-10 px-4 py-4 md:px-8">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white font-bold text-xl tracking-wider">
+        <a 
+          href={addUtmParameters("https://www.c21alpha.com.br", neighborhoodId)}
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-white font-bold text-xl tracking-wider hover:opacity-80 transition-opacity"
+        >
           <span className="text-[#BEAF87]">CENTURY 21</span> <span>Alpha</span>
-        </div>
+        </a>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6 text-white">
