@@ -79,7 +79,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-3-quartos-68-m/AP0034-ALPH'
       },
       {
-        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu056z+5X7wp7qtowZbaQrAmCjpib+I6grBir-bH1lpD93u-ZbJ-b7qoPi-T-Tlz8iYpeH-UMKUphOeJzXyTLR4q+H312omeK+0vQQYcXcUtq4gcrkE5y1kq7eZ2U21s5yh+5KPH1twfVT6HYKHEBTbMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1h46o827C0TlpcVeLLj5ne454+OxseYimXJpozPmL3q9d-1d8SOxaAa6KXZN320noJmHfh+EGR7ZMdYTxbMfNiZJWBt+iihuk+cFp5KGVpq7xoxnAdM6FWQT7+PqUcI+zirM-H0sA6Xe5e6AmFlQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAzKErEdv0zuwIHHjPOuPhzVMVtr9LGa--q3b6ykHa3xOV+tlJwR+5zKJIRLK43kQSRVXWU1enAQqVy2teuL+hq5fw==.jpg',
         title: 'Baixou de Preço para Vender!',
         subtitle: 'R$404.250',
         features: {
