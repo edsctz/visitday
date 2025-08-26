@@ -607,19 +607,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     heroImage: '/Residencial9.webp',
     showcaseProperties: [
       {
-        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu34+5+lN+E0SktUYAb2k5Se5xbmj4uzJsECqoIvdrurm7s78Adjj0pwdw7LxN1Gm7f9rVOYXHXldOMB0dSLsUJaiAGBAhjvWoB7fb5tUQjBbgiM7yExx6gCzYoqQ-Fcghib5L8PJkR7Jb77fUAJgKLMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
-        title: 'Residencial 5',
-        subtitle: 'Pacote: R$16.348',
-        features: {
-          bedrooms: 4,
-          bathrooms: 4,
-          area: 480,
-          vagas: 3
-        },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-480-m/CA0086-ALPH'
-      },
-      {
-        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2lEj9li9D5vzssBRLSHvyWWhNm+yfSQnhmT3JH5ubiDxeDmDYLe5qcy9rDTIEWmkp9nS4E-LXgoSvFYHxzDQoiaAHZ4lDSlukPkVLYYaGsF2ygVrhd6xwWBR6f02wUV-h2DJdSIuA6RTJjAHnhTQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAvEGLFMu0zqlYLGg-atbkyGZVA897nN8afjOqj6Ef-xOUupjo0W5ISdfZoJdM-0XUdJQn52ZWBDplWm6tfGp02ncjSdth5HCl6OzpZqtXZrYEdR-9tU52I=.jpg',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2lEj9li9D5vzssBRLSHvyWWhNm+yfSQnhmT3JH5ubiDxeDmDYLe5qcy9rDTIEWmkp9nS4E-LXgoSvFYHxzDQoiaAHZ4lDSlukPkVLYYaGsF2ygVrhd6xwWBR6f02wUV-h2DJdSIuA6RTJjAHnhTQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAzKErEdv0zuwIHHjPOuPhzVMVtr9LGa--q3b6ykHa3xOV+tlJwR+5zKJIRLK43kQSRVXWU1enAQqVy2teuL+hq5fw==.jpg',
         title: 'Valville 1',
         subtitle: 'Pacote: R$14.900',
         features: {
@@ -631,16 +619,28 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-350-m/CA0069-ALPH'
       },
       {
-        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu35c1tJ16T5vjdAYf4+RkDup4LXE7ImIpk6Ez6LNgon228enTOLS97cU9--VN26wtZldSeEfOHBfe9tQWgzlB42tLVRKjHyTr3noFatne1NNjyozki5zlUarQqqK6kQT6XqDL6mFtHeCRfzXW01RKLMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
-        title: 'Residencial 1',
-        subtitle: 'Pacote: R$26.515',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu15L8Mhe3hEhi+9GYraTlROG-tq59Y2YgxS-wYHHmYTQz83hUtabz5sD9-KoLg61gf5dX+MAa0FfQctBYA3lVJybGHVejBedombBTrYdTWVF7jgYszsK6WK8Y7WW1E9p2H+oN87otRSASo25KA1DQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAzKErEdv0zuwIHHjPOuPhzVMVtr9LGa--q3b6ykHa3xOV+tlJwR+5zKJIRLK43kQSRVXWU1enAQqVy2teuL+hq5fw==.jpg',
+        title: 'Quintas do Tamboré',
+        subtitle: 'Pacote: R$15.000',
+        features: {
+          bedrooms: 3,
+          bathrooms: 3,
+          area: 168,
+          vagas: 2
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-3-quartos-168-m/CA0100-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0hogOMxxg8El+A1V-qmkBm1-aW7yvaFpmGu1IOK5Ljw9sS6XduD6aA9-qPiHnC9rLRoaf83b3x2Xbd2aga0XIybH0Z9-2SvqX7rFIJjUztu4RMXoUti6HzjcpOLznUAhR2vIO3DuhO2bLzbEXN8HrMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: 'Residencial 10',
+        subtitle: 'Pacote: R$16.121',
         features: {
           bedrooms: 4,
           bathrooms: 5,
-          area: 400,
-          vagas: 6
+          area: 403,
+          vagas: 4
         },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-barueri-4-quartos-400-m/CA0031-ALPH'
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-403-m/CA0105-ALPH'
       }
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/para-alugar/casa'
