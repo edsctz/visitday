@@ -515,28 +515,28 @@ export const neighborhoods: Record<string, Neighborhood> = {
     heroImage: '/resorttambore.webp',
     showcaseProperties: [
       {
-        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2Fi3e5r4k8HoM40Ub+-5Qql+pXKxdi88hm0wY-zuu6D6-HxU+r57YQijL79LHPw6qU7VuUEEkJFaPlgHgPKeYGDFUFSrxmsik-CQoJ2WDBa5RAzly4K62K5R5yr1m8Z3n6hC--l9C7cYIPiOlxBHqxWEpwj5l5T+BCpSRFyvwoX+onw-CDLaP7xaN-+32EVVkAor9y8W7T1nZDAIZonG6QpdHkcrVURUaIC3e2CAvpw9AUYpu-SCV-Fw1ib0a1xJZmsXI8azfAFlgiQGrNP6ki4x4bG1qz5PUvQO1pr9aXsraz1eby7DavxJjnp0ski+o3QLo8JdcfjXzZpXXF4biId7FK4+OvGswCzIDnYuBAKChPH1Jw1.jpg',
-        title: 'Resort Tamboré',
-        subtitle: 'Pacote: R$8.500',
-        features: {
-          bedrooms: 3,
-          bathrooms: 3,
-          area: 113,
-          vagas: 2
-        },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-santana-de-parnaiba-3-quartos-113-m/AP0038-ALPH'
-      },
-      {
-        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtuxl90cts6CduqsMlBIK3nCKNw4+b4POnoR+P0onmmJ--y9jnbJbZzp4g7vbOOHGnmP9sZuM8DElEfcVofgHnQ42hP1R8uhOi-Uv0c6p9X3dygy4QgRFWmmmSeYeR3lQy-TigM6vIgBSRYpi2BURwHrMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu3l63PZ-vzM0jPU7UuOsmxSZ0bfI3dib-FyfxbPLpeLiiP-gA9ff9qoe3ZXEMXuliqhbF9UIFBl8RPh+XjrUZYqSBncLvjjWmxrsV+RFBjV0jh40nDRw7l+QfqKW3U867CaiVsn5hCyjfY3HHm5TX6JYR8k77V1Z8AynGkJqsg0L9NzqszjTIuLxbNy3ymFZUUp3sISrVq3ln5bIKdVqF6ZqOGlB5VMZWbAYwPzIWuxl5RIHqvzLTUbBxFSWyrF8K5n8C4wdmqYDn1nBSuMd6Bbtx43Cg62qPB-QNlc96N-OvKfzYa+wQ7exem-uzNsT+Y6adYhYZ8bkAnYHCC4nPQ==.jpg',
         title: 'Green Valley',
-        subtitle: 'Pacote: R$7.500',
+        subtitle: 'Pacote: R$4.978',
         features: {
           bedrooms: 2,
           bathrooms: 2,
-          area: 69,
+          area: 53,
           vagas: 2
         },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-2-quartos-69-m/AP0039-ALPH'
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-2-quartos-55-m/AP0076-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0pa3dY1xzVmndMoTKa6jQS3x4ix+4qy6XyX4srnreL-yp6lVvjG-6Ng3J6oC1OOroF+F4QqbhFmTvVWRCuvWoGkI190iBOUmXiSQ4VoT1B5w1gosRhRw1aUDMHx-A4W+TOGVuv87yKrdovLJ35QTbMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: 'Alameda Grajaú',
+        subtitle: 'Pacote: R$6.185',
+        features: {
+          bedrooms: 3,
+          bathrooms: 2,
+          area: 86,
+          vagas: 2
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-3-quartos-86-m/AP0026-ALPH'
       },
       {
         image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu15s89B83Ro1gMsBcuGYjDHb0au7uP61o13JobOPsrni9p7iQ-vgwt4T3433KF6yvrJMedAjFUUlX-ZkQjPER4zdM1R2uTClmkLUYrBGZWxlhQ4QsEh1432pUaSyyA8K8X2ZLNqJhS+TCa3RE3BdMPtHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
@@ -551,7 +551,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-1-quarto-40-m/AP0017-ALPH'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/apartamentos-alugar'
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/para-alugar/apartamento'
   },
   apartamentovenda: {
     id: 'apartamentovenda',
