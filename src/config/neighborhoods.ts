@@ -374,7 +374,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Alphaville Residencial 10',
     title: 'Casas a Venda no Residencial 10',
     subtitle: 'Descubra as melhores casas no Residencial 10 – veja fotos e preços, agende visitas ou receba uma seleção VIP',
-    heroImage: '/Residencial9.webp',
+    heroImage: '/alphaville10.webp',
     showcaseProperties: [
       {
         image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2Y9zft8vRNvkcMBbJ+sky2V0IqV1+jE9kaT4M-thJ6C8-v0Yej4wd8GgaXXFmyBqIVnYMUqOFlwbPhkZyC7VY2yeUlD+zWoj2viU6pnRFhi-gA+zQpQ72mVU8CC2gQ52Rn1PLbVpBWHQ7zfHnZeGNhHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcGLtH6U3ulNHBgaWkOU-XYgA--e6e8fe2NPihSv-0IDjht5gX84-VLthQa5qoCiQJEGZ4M3BJqRO29rnGsACzOmqH.jpg',
@@ -788,7 +788,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Alphaville',
     title: 'Casas para Alugar em Alphaville',
     subtitle: 'Conheça as melhores casas disponíveis para alugar em Alphaville',
-    heroImage: '/alphaville10.webp',
+    heroImage: '/Residencial5.webp',
     showcaseProperties: [
       {
         image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2lEj9li9D5vzssBRLSHvyWWhNm+yfSQnhmT3JH5ubiDxeDmDYLe5qcy9rDTIEWmkp9nS4E-LXgoSvFYHxzDQoiaAHZ4lDSlukPkVLYYaGsF2ygVrhd6xwWBR6f02wUV-h2DJdSIuA6RTJjAHnhTQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAzKErEdv0zuwIHHjPOuPhzVMVtr9LGa--q3b6ykHa3xOV+tlJwR+5zKJIRLK43kQSRVXWU1enAQqVy2teuL+hq5fw==.jpg',
