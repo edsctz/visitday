@@ -723,7 +723,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-3-quartos-86-m/AP0026-ALPH'
       },
       {
-        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu15s89B83Ro1gMsBcuGYjDHb0au7uP61o13JobOPsrni9p7iQ-vgwt4T3433KF6yvrJMedAjFUUlX-ZkQjPER4zdM1R2uTClmkLUYrBGZWxlhQ4QsEh1432pUaSyyA8K8X2ZLNqJhS+TCa3RE3BdMPtHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu15s89B83Ro1gMsBcuGYjDHb0au7uP61o13JobOPsrni9p7iQ-vgwt4T3433KF6yvrJMedAjFUUlX-ZkQjPER4zdM1R2uTClmkLUYrBGZWxlhQ4QsEh1432pUaSyyA8K8X2ZLNqJhS+TCa3RE3BdMPtHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcGLtH6U3ulNHBgaWkOU-XYgA--e6e8fe2NPihSv-0IDjht5gX84-VLthQa5qoCiQJEGZ4M3BJqRO29rnGsACzOmqH.jpg',
         title: '18 do Forte',
         subtitle: 'Pacote: R$4.350',
         features: {
