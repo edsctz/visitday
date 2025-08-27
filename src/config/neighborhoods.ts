@@ -47,6 +47,52 @@ export const neighborhoods: Record<string, Neighborhood> = {
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/tambore11'
   },
+    tambore10: {
+    id: 'tambore10',
+    name: 'Tamboré 10',
+    title: 'Casas a Venda no Tamboré 10',
+    subtitle: 'Descubra as melhores casas do Tamboré 10 – veja fotos e preços, agende visitas ou receba uma seleção VIP',
+    heroImage: '/tambore11.webp',
+    showcaseProperties: [
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtuxdXjNxIzxo9iNhDUZ+ntg6e+ryR2dGZtES85tb9ja6DyP3QReXC-7dv5q3UAkCxvbFPGuw+AUNVNtJaRTHxZoG5GlxVjRKjiVrDdOtIHVVEzjEJokxXyGGLRqaV0Hsq8X+ZUdH3sBSvTJH2LQ1XRbMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: 'Design Neoclássico Leonice Alves',
+        subtitle: 'R$7.900.000',
+        features: {
+          bedrooms: 4,
+          bathrooms: 6,
+          area: 544,
+          vagas: 4
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-544-m/CA0035-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtux0-iuw1-jgDlpQ0A5Tugmykh4WYxearkhycxJ6Tn6r-+PqlBuDa0Yo9i7zpIGW1uq5dee0MPV53StYkTEXvUaKlI3J2pzuz+mSUVL8fe2l55SgszUoI+Vbnb6OB+H013ziDBtjarCugVf3JJQV1HNRHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcGLtH6U3ulNHBgaWkOU-XYgA--e6e8fe2NPihSv-0IDjht5gX84-VLthQa5qoCiQJEGZ4M3BJqRO29rnGsACzOmqH.jpg',
+        title: 'Salas Integradas com Área de Lazer',
+        subtitle: 'R$5.500.000',
+        features: {
+          bedrooms: 4,
+          bathrooms: 6,
+          area: 525,
+          vagas: 4
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-525-m/CA0096-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu3d4wO5z4zEApco0WLG34HeY2r-Exsmrnm22pInJku-f5fS6QZbj47487qn-VweAq7M4esQGbUd9YOQiHRXQW7eyZ3FTqQu1q07dUYpgfUlo1ThujDZe80WpRqeA0nhvhj+BFaiJqQu3TZvJXgZSSbMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: 'Sala com Vista Permanente para a Natureza',
+        subtitle: 'R$5.500.000',
+        features: {
+          bedrooms: 4,
+          bathrooms: 7,
+          area: 468,
+          vagas: 9
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-468-m/CA0023-ALPH'
+      }
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/santana-de-parnaiba/tambore-10'
+  },
   alphaview: {
     id: 'alphaview',
     name: 'Alphaview',
@@ -137,7 +183,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-3-quartos-240-m/CA0084-ALPH'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/santana-de-parnaiba/new-ville'
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/a-venda/casa/santana-de-parnaiba/new-ville'
   },
   singular: {
     id: 'singular',
@@ -464,48 +510,94 @@ export const neighborhoods: Record<string, Neighborhood> = {
   residencial5: {
     id: 'residencial5',
     name: 'Alphaville Residencial 5',
-    title: 'Casas a Venda e Locação no Residencial 5',
-    subtitle: 'Imóveis selecionados e perfeitamente alinhados com o seu estilo de vida e preferências',
+    title: 'Casas a Venda Alphaville Residencial 5',
+    subtitle: 'Descubra as melhores casas do Residencial 5 – veja fotos e preços, agende visitas ou receba uma seleção VIP',
     heroImage: '/Residencial5.webp',
     showcaseProperties: [
       {
-        image: 'http://images.ingaiasites.com.br/7414a22a49b9c2e05e35c781712cfd2f.jpg',
-        title: 'Casa Pronta para Morar',
-        subtitle: 'Residencial 5 - Para Venda ou Alugar',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2B8zONI0TEXsMVCe+SviziY4Kur--6nqhmIz5TUoerq3pjjZYLfzoEW9rHSHmaqiKJUd9gALUF9VtRFGDW6RaiPBFhLvWeNqxjtT6ZCaV1W2RowsU5322upQb2F8AEbgS64JPfIkT+PQqXLM2xzJLMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: 'O Menor Valor por m2',
+        subtitle: 'R$1.900.000',
         features: {
           bedrooms: 4,
-          bathrooms: 3,
-          area: 290,
-          vagas: 2
-        },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-pronta-residencial5'
-      },
-      {
-        image: 'http://images.ingaiasites.com.br/75bf1c83679aa64dcc8de075afacbee9.jpg',
-        title: 'Residência Familiar',
-        subtitle: 'Espaços Amplos e Bem Distribuídos',
-        features: {
-          bedrooms: 3,
           bathrooms: 4,
-          area: 320,
-          vagas: 3
+          area: 326,
+          vagas: 4
         },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/residencia-familiar-residencial5'
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-326-m/CA0022-ALPH'
       },
       {
-        image: 'http://images.ingaiasites.com.br/00da1739efe5b0364c1a0ce63ff88719.jpg',
-        title: 'Casa com Quintal Amplo',
-        subtitle: 'Ideal para Famílias',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1dkivFNwywHleULXaSxlguN2dzRvY6CpXWGoaLGm4TR5OzcbcP7w4Fv1Y7tPEexuvc5XYMuFR5lUOQkXTGxBNneInNXvAuor0DUQrtKHlFu5x0uykhdm1CjU5qD-UZtwwSaOfzBkRS0fqv6XFIGKLMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: 'Excelente Oportunidade',
+        subtitle: 'R$2.449.000',
         features: {
-          bedrooms: 3,
-          bathrooms: 3,
-          area: 275,
-          vagas: 2
+          bedrooms: 5,
+          bathrooms: 6,
+          area: 370,
+          vagas: 4
         },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-quintal-residencial5'
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-5-quartos-370-m/CA0090-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0d8i95W-00Eu5NAdoCvuyab-Yyv+tizsGOK2taMvLD38++vR9378rlm06KvF2zztY06fIYND39XNu5fTyfrcaqwOiN7gT6ygV+RS71bW0BswDEwrRtC+lGUXLaL2FkJ0mS5C9L6lSWeQoD+Am0GCrMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: '850m2 de Terreno com Amplo Espaço',
+        subtitle: 'R$4.000.000',
+        features: {
+          bedrooms: 4,
+          bathrooms: 8,
+          area: 620,
+          vagas: 6
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-620-m/CA0087-ALPH'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/residencial5'
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/santana-de-parnaiba/residencial-cinco-alphaville'
+  },
+  tambore1: {
+    id: 'tambore1',
+    name: 'Tamboré 1',
+    title: 'Casas a Venda no Tamboré 1',
+    subtitle: 'Descubra as melhores casas do Tamboré 1 – veja fotos e preços, agende visitas ou receba uma seleção VIP',
+    heroImage: '/Residencial9.webp',
+    showcaseProperties: [
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1h50Mtqwi8TnPNBDJ+g4hOp+qG34P2Dhn7P6pfXvJza2f-uWNmO6aMzja3TTkSWmohhW-E-HWR9IqwhRRLyW4GOAGcKhTOT+lT0YbEcWDZpjiw3kzIIwnmoVqib-HMB2HCjMOr0jyWzU5vmBnB1QPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAzKErEdv0zuwIHHjPOuPhzVMVtr9LGa--q3b6ykHa3xOV+tlJwR+5zKJIRLK43kQSRVXWU1enAQqVy2teuL+hq5fw==.jpg',
+        title: 'Vista Livre Permanente',
+        subtitle: 'R$8.500.000',
+        features: {
+          bedrooms: 4,
+          bathrooms: 4,
+          area: 860,
+          vagas: 4
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-barueri-4-quartos-860-m/CA0061-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1k9-s12xyUivekwWeCZhXKJ+qyG39G9hwG8oLeJr4PGhJ-QQp-75YUijIntDgGorIFgVNADI2p+Z8R4bizuR9isE0pSgjKho16Xb+ZtWVNY2RAKmxBZ81++BcD9+Fsfyg75VfHq8yKpcpzFPU11QPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAzKErEdv0zuwIHHjPOuPhzVMVtr9LGa--q3b6ykHa3xOV+tlJwR+5zKJIRLK43kQSRVXWU1enAQqVy2teuL+hq5fw==.jpg',
+        title: 'Integração Completa de Ambientes',
+        subtitle: 'R$15.000.000',
+        features: {
+          bedrooms: 5,
+          bathrooms: 5,
+          area: 1067,
+          vagas: 5
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-barueri-5-quartos-1-067-m/CA0060-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1tNzY1f2TUjjs84dq3nsQ6L25eIydaQpXiW35fanJ3h1JrHX+XUk4YUzKHtMGOX7-5YZeAWFEp5W+pWZD+wT7eNZ1Nvhxex+0LDEIF7eHpU9hkAgE1sw1abAqaD6V0V3XueNarVoXOXcZ3MHXh+FdZHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcGLtH6U3ulNHBgaWkOU-XYgA--e6e8fe2NPihSv-0IDjht5gX84-VLthQa5qoCiQJEGZ4M3BJqRO29rnGsACzOmqH.jpg',
+        title: 'Cercada de Natureza',
+        subtitle: 'R$8.500.000',
+        features: {
+          bedrooms: 5,
+          bathrooms: 4,
+          area: 850,
+          vagas: 2
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-barueri-5-quartos-850-m/CA0103-ALPH'
+      }
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/barueri/tambore-01'
   },
   burlemarx: {
     id: 'burlemarx',
@@ -528,7 +620,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
       },
       {
         image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1s24fky-xIMncNBZqek4yO58666xtu18XSG6Z3u4ZzQi-3mbOGB7YkR9-bYJUTy47ZuSdF8PWByWO1AdC3LYYa4IiRJkziAlFjvVesDZFt2gh9ptzhtxVqERJedrXoZ33+uMOvB9RGFaYbjP0dDQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAvEGLFMu0zqlYLGg-atbkyGZVA897nN8afjOqj6Ef-xOUupjo0W5ISdfZoJdM-0XUdJQn52ZWBDplWm6tfGp02ncjSdth5HCl6OzpZqtXZrYEdR-9tU52I=.jpg',
-        title: 'Casa Fácil de Manter',
+        title: 'Indicação do Especialista',
         subtitle: 'R$3.300.000',
         features: {
           bedrooms: 3,
@@ -552,6 +644,52 @@ export const neighborhoods: Record<string, Neighborhood> = {
       }
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/santana-de-parnaiba/burle-marx'
+  },
+  valville: {
+    id: 'valville',
+    name: 'Valville',
+    title: 'Casas a Venda no Valville 1 e 2',
+    subtitle: 'Descubra as melhores casas do Valville – veja fotos e preços, agende visitas ou receba uma seleção VIP',
+    heroImage: '/BurleMarx.webp',
+    showcaseProperties: [
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2dI9PBxxTVgsP0zWbuDuAqoxtq74s+IokqEppX67uLy8tvYZZrczYFhz67LI3OC7JUgXOMZKX9gOc5cbCT3U7+JDmNO+xihg37Sdr5lbXpkj1AAzhVo-wC5Xoq+3GVs3z2-U+jVoRPSQYLlPFFSMLMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: 'Recém Construída - Alto Padrão',
+        subtitle: 'R$2.300.000',
+        features: {
+          bedrooms: 4,
+          bathrooms: 6,
+          area: 280,
+          vagas: 2
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-280-m/CA0053-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1xczY1+5yc0uPIma4jhl3fdx6LN49OQsh+VoqvbsprV6OflW5blz7glzarpNQeFuet7YuYpHH5HR8pedUH1dbagGylXgjiUpGPoRbpBaVsPwjAVrwVvnUSEVJ+30loagjqoJ6zakTOxY5vpBAV8MchHR9o47l9MqBG1U1ByqR9Q9JGypDLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: 'Sugestão do Especialista',
+        subtitle: 'R$2.900.000',
+        features: {
+          bedrooms: 4,
+          bathrooms: 5,
+          area: 320,
+          vagas: 4
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-320-m/CA0109-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2lEj9li9D5vzssBRLSHvyWWhNm+yfSQnhmT3JH5ubiDxeDmDYLe5qcy9rDTIEWmkp9nS4E-LXgoSvFYHxzDQoiaAHZ4lDSlukPkVLYYaGsF2ygVrhd6xwWBR6f02wUV-h2DJdSIuA6RTJjAHnhTQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAzKErEdv0zuwIHHjPOuPhzVMVtr9LGa--q3b6ykHa3xOV+tlJwR+5zKJIRLK43kQSRVXWU1enAQqVy2teuL+hq5fw==.jpg',
+        title: 'Espaço Gourmet Integrado',
+        subtitle: 'R$2.550.000',
+        features: {
+          bedrooms: 4,
+          bathrooms: 4,
+          area: 350,
+          vagas: 4
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-350-m/CA0069-ALPH'
+      }
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/santana-de-parnaiba/valville-1'
   },
   apartamentoalugar: {
     id: 'apartamentoalugar',
