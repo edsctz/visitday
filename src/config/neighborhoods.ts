@@ -323,6 +323,52 @@ export const neighborhoods: Record<string, Neighborhood> = {
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/santana-de-parnaiba/alphaville-11'
   },
+    residencial10: {
+    id: 'residencial10',
+    name: 'Alphaville Residencial 10',
+    title: 'Casas a Venda no Residencial 10',
+    subtitle: 'Descubra as melhores casas no Residencial 10 – veja fotos e preços, agende visitas ou receba uma seleção VIP',
+    heroImage: '/Residencial9.webp',
+    showcaseProperties: [
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2Y9zft8vRNvkcMBbJ+sky2V0IqV1+jE9kaT4M-thJ6C8-v0Yej4wd8GgaXXFmyBqIVnYMUqOFlwbPhkZyC7VY2yeUlD+zWoj2viU6pnRFhi-gA+zQpQ72mVU8CC2gQ52Rn1PLbVpBWHQ7zfHnZeGNhHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcGLtH6U3ulNHBgaWkOU-XYgA--e6e8fe2NPihSv-0IDjht5gX84-VLthQa5qoCiQJEGZ4M3BJqRO29rnGsACzOmqH.jpg',
+        title: 'Destaque do Especialista',
+        subtitle: 'R$2.500.000',
+        features: {
+          bedrooms: 3,
+          bathrooms: 5,
+          area: 320,
+          vagas: 4
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-3-quartos-320-m/CA0058-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0hogOMxxg8El+A1V-qmkBm1-aW7yvaFpmGu1IOK5Ljw9sS6XduD6aA9-qPiHnC9rLRoaf83b3x2Xbd2aga0XIybH0Z9-2SvqX7rFIJjUztu4RMXoUti6HzjcpOLznUAhR2vIO3DuhO2bLzbEXN8HrMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: 'Menor Valor por m2',
+        subtitle: 'R$2.800.000',
+        features: {
+          bedrooms: 4,
+          bathrooms: 5,
+          area: 403,
+          vagas: 4
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-403-m/CA0105-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1p5zIl8uxRvrJdcW5+0lzCXxIi44oin936N2KGOh+Pr-srmbvrFwdw50uvST2SAsK9adMcOYmlIerklHSfdZKOuBXN1kmeVmFrRYrdHXDtzwi0-myBx9Fr8Qrfx6lEX0A2uENDx9WuRSIe+XwlDTLdIAMZp7V9Z8AKpSRdyvwwV7purs3PTcKG1MI36iGwAF0wy6oK5APevm5PPedV-GacxP3wP61NeW6wcmvuVAupw6QEZovrFTQeShQjQiOM3eYWpXNtBmLwAngbASOccvxi+xoyRhvT9PE+OZVI08L+X-qHjavv2GLSWdXypkpQC5JaWP8RcZ8bkHWlWECw1I3BfqR-k+KGR8F8=.jpg',
+        title: 'Vista Incrível para o Verde',
+        subtitle: 'R$6.250.000',
+        features: {
+          bedrooms: 3,
+          bathrooms: 5,
+          area: 460,
+          vagas: 6
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-3-quartos-460-m/CA0098-ALPH'
+      }
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/santana-de-parnaiba/alphaville-10'
+  },
   casaavenda: {
     id: 'casaavenda',
     name: 'Alphaville',
