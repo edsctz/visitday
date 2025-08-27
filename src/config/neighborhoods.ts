@@ -52,7 +52,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Tamboré 10',
     title: 'Casas a Venda no Tamboré 10',
     subtitle: 'Descubra as melhores casas do Tamboré 10 – veja fotos e preços, agende visitas ou receba uma seleção VIP',
-    heroImage: '/tambore11.webp',
+    heroImage: '/tambore10.webp',
     showcaseProperties: [
       {
         image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtuxdXjNxIzxo9iNhDUZ+ntg6e+ryR2dGZtES85tb9ja6DyP3QReXC-7dv5q3UAkCxvbFPGuw+AUNVNtJaRTHxZoG5GlxVjRKjiVrDdOtIHVVEzjEJokxXyGGLRqaV0Hsq8X+ZUdH3sBSvTJH2LQ1XRbMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
@@ -650,7 +650,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Valville',
     title: 'Casas a Venda no Valville 1 e 2',
     subtitle: 'Descubra as melhores casas do Valville – veja fotos e preços, agende visitas ou receba uma seleção VIP',
-    heroImage: '/BurleMarx.webp',
+    heroImage: '/valville.webp',
     showcaseProperties: [
       {
         image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2dI9PBxxTVgsP0zWbuDuAqoxtq74s+IokqEppX67uLy8tvYZZrczYFhz67LI3OC7JUgXOMZKX9gOc5cbCT3U7+JDmNO+xihg37Sdr5lbXpkj1AAzhVo-wC5Xoq+3GVs3z2-U+jVoRPSQYLlPFFSMLMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
@@ -788,7 +788,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     name: 'Alphaville',
     title: 'Casas para Alugar em Alphaville',
     subtitle: 'Conheça as melhores casas disponíveis para alugar em Alphaville',
-    heroImage: '/Residencial9.webp',
+    heroImage: '/alphaville10.webp',
     showcaseProperties: [
       {
         image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2lEj9li9D5vzssBRLSHvyWWhNm+yfSQnhmT3JH5ubiDxeDmDYLe5qcy9rDTIEWmkp9nS4E-LXgoSvFYHxzDQoiaAHZ4lDSlukPkVLYYaGsF2ygVrhd6xwWBR6f02wUV-h2DJdSIuA6RTJjAHnhTQPlLCdkx8QdQ8Bi1SUxy8h8d55m-oS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAzKErEdv0zuwIHHjPOuPhzVMVtr9LGa--q3b6ykHa3xOV+tlJwR+5zKJIRLK43kQSRVXWU1enAQqVy2teuL+hq5fw==.jpg',
