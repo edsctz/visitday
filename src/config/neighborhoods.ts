@@ -462,7 +462,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/a-venda/casa'
   },
   genesis: {
-    id: 'genesis12',
+    id: 'genesis',
     name: 'Genesis I e II',
     title: 'Casas a Venda no Genesis 1 e 2',
     subtitle: 'Descubra as melhores casas do Genesis 1 e 2 – veja fotos e preços, agende visitas ou receba uma seleção VIP',
