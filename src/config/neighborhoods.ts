@@ -285,16 +285,16 @@ export const neighborhoods: Record<string, Neighborhood> = {
     heroImage: '/Residencial9.webp',
     showcaseProperties: [
       {
-        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2Ei+4ky2RsOi+sCY7yj5CbC36qr6tjcrVm05siNsbyAkNPHB-ffkbk-+JSuCmD3koIgX+F5a3pZeLEiSgfHU7qNAmVJkiagt0bvYbhCaHRe6B0oujhn4weEZ7iu-UNg2D+JUfz5iS-UdIPJPVd7BMFHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
-        title: 'Para Retrofit - Alta Valorização',
-        subtitle: 'R$2.380.000',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2Ns+c1o+hBlnewoBuKfkje157qM6vGSr2bT1a6GrYv7jczdV-v5xbgFyIfZH1L2n5k4F8B6amwlefJnGTLheqzcYX0U8xeMiWKVb4l2GUlYxi84tRtCwgqYV56b1GFu9X26EvT1lyOoEpDALX8MF95HR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcGLtH6U3ulNHBgaWkOU-XYgA--e6e8fe2NPihSv-0IDjht5gX84-VLthQa5qoCiQJEGZ4M3BJqRO29rnGsACzOmqH.jpg',
+        title: 'Lindo Espaço Gourmet',
+        subtitle: 'R$2.390.000',
         features: {
           bedrooms: 4,
-          bathrooms: 6,
-          area: 506,
-          vagas: 9
+          bathrooms: 5,
+          area: 305,
+          vagas: 6
         },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-506-m/CA0070-ALPH'
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-305-m/CA0017-ALPH'
       },
       {
         image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2pO+vd-6U4movU2dpGT+S2A19+wt42giHbG0bHp4+vdiN2lQMHY-7g+8-HyDW71tYJYb-s3E3h-eNtVRyK2dK2ZJmpPgiCwiBnmaoBWUTFa3z53zAZAlXiTUL2n8Gxh-Aj1UOvWlh+JXpDPO39EOddHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
