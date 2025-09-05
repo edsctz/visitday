@@ -1,7 +1,8 @@
 import React from 'react';
-import { ExternalLink, Star, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ExternalLink, Star, ChevronLeft, ChevronRight, Gift, Sparkles } from 'lucide-react';
 import { ShowcaseProperty } from '../types';
 import PropertyCard from './PropertyCard';
+import PromotionModal from './PromotionModal';
 import { addUtmParameters } from '../utils/utm';
 
 interface HeroProps {
@@ -24,6 +25,7 @@ const Hero: React.FC<HeroProps> = ({
   listingPageUrl 
 }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
+  const [showPromotionModal, setShowPromotionModal] = React.useState(false);
 
   const scrollToForm = () => {
     const formElement = document.getElementById('form-section');
@@ -46,6 +48,14 @@ const Hero: React.FC<HeroProps> = ({
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
+  };
+
+  const openPromotionModal = () => {
+    setShowPromotionModal(true);
+  };
+
+  const closePromotionModal = () => {
+    setShowPromotionModal(false);
   };
 
   return (
@@ -113,33 +123,70 @@ const Hero: React.FC<HeroProps> = ({
         </div>
 
         {/* Call-to-Action Buttons */}
-        <div className="flex flex-col md:flex-row gap-3 max-w-4xl mx-auto">
-          <a
-            href={addUtmParameters(listingPageUrl, neighborhoodId)}
-            target="_blank"
-            rel="noopener noreferrer"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 bg-white hover:bg-gray-50 text-[#252526] font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 group text-sm md:text-base"
-          >
-            <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform" />
-            Ver Todos Imóveis Disponíveis
-          </a>
-          
-          <button
-            onClick={scrollToForm}
-            className="flex-1 bg-[#BEAF87] hover:bg-[#746649] text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 group text-sm md:text-base"
-          >
-            <Star className="w-5 h-5 group-hover:scale-110 transition-transform" />
-            <span className="text-center">
-              <span className="block text-sm md:text-base">Seleção VIP Personalizada</span>
-              <span className="block text-xs md:text-sm font-normal opacity-90">
-                Um especialista envia as melhores opções para você
+        <div className="flex flex-col gap-3 max-w-4xl mx-auto">
+          {/* Primary CTA Buttons Row */}
+          <div className="flex flex-col md:flex-row gap-3">
+            <a
+              href={addUtmParameters(listingPageUrl, neighborhoodId)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 bg-white hover:bg-gray-50 text-[#252526] font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 group text-sm md:text-base"
+            >
+              <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              Ver Todos Imóveis Disponíveis
+            </a>
+            
+            <button
+              onClick={scrollToForm}
+              className="flex-1 bg-[#BEAF87] hover:bg-[#746649] text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 group text-sm md:text-base"
+            >
+              <Star className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              <span className="text-center">
+                <span className="block text-sm md:text-base">Seleção VIP Personalizada</span>
+                <span className="block text-xs md:text-sm font-normal opacity-90">
+                  Um especialista envia as melhores opções para você
+                </span>
               </span>
-            </span>
+            </button>
+          </div>
+
+          {/* Promotion Call-out Button */}
+          <button
+            onClick={openPromotionModal}
+            className="relative bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 group overflow-hidden"
+          >
+            {/* Animated Background Effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/20 to-orange-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            
+            {/* Sparkle Animation */}
+            <div className="absolute top-2 right-4 opacity-70 group-hover:opacity-100 transition-opacity">
+              <Sparkles className="w-4 h-4 text-yellow-300 animate-pulse" />
+            </div>
+            
+            <div className="relative flex items-center justify-center gap-3">
+              <Gift className="w-6 h-6 group-hover:scale-110 transition-transform" />
+              <div className="text-center">
+                <div className="text-lg md:text-xl font-bold">
+                  🎁 Promoção Comprou-Ganhou
+                </div>
+                <div className="text-sm md:text-base font-medium opacity-95">
+                  Compre um Imóvel no {neighborhoodName} e Ganhe uma TV
+                </div>
+              </div>
+            </div>
+            
+            {/* Pulse Effect */}
+            <div className="absolute inset-0 rounded-lg bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
           </button>
         </div>
       </div>
+
+      {/* Promotion Modal */}
+      <PromotionModal
+        isOpen={showPromotionModal}
+        onClose={closePromotionModal}
+        neighborhoodName={neighborhoodName}
+      />
     </section>
   );
 };
