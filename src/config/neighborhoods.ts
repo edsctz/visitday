@@ -735,7 +735,7 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-350-m/CA0069-ALPH'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/santana-de-parnaiba/nova-jaguari'
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/santana-de-parnaiba?localidade=-23.417275493470427,-46.87445347305194,-23.425377806848957,-46.864234256705004'
   },
   apartamentoalugar: {
     id: 'apartamentoalugar',
