@@ -691,6 +691,52 @@ export const neighborhoods: Record<string, Neighborhood> = {
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/santana-de-parnaiba/valville-1'
   },
+  novajaguari: {
+    id: 'novajaguari',
+    name: 'Nova Jaguari',
+    title: 'Casas a Venda no Nova Jaguari',
+    subtitle: 'Descubra as melhores casas do Nova Jaguari – veja fotos e preços, agende visitas ou receba uma seleção VIP',
+    heroImage: '/novajaguari.webp',
+    showcaseProperties: [
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0Jc4NA+vi0ystcmTu6vpne8xL2IufjchmvG+6iJ4YyE3sLGQ+DvlZ8V1Iu2Ag+uqqd4TdwIKWdXVflTSQXLQ47cMlFM5mSyvhnvRf5JeGNM9jAtrUt7nFShRrOJrAQV1zGqU8T9qCOUV4zrRF5NKLMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: 'Recém Construída',
+        subtitle: 'R$900.000',
+        features: {
+          bedrooms: 3,
+          bathrooms: 4,
+          area: 100,
+          vagas: 2
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-3-quartos-100-m/CA0066-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0Fd6oxDyU0Oo+4WdoXimzm5j4yr4vHB8UeZysiLj7Pp88XAeeb8jYov7PT9Ahubi49CVuwEDEJVaddFWx3DZZqbHGYIpSa8v2TDUeQDEi9W5Flir09-nnuSf5erxkNr4zGlNe6GlRWrRbijX2duLLMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: 'Sugestão do Especialista',
+        subtitle: 'R$1.160.000',
+        features: {
+          bedrooms: 3,
+          bathrooms: 2,
+          area: 125,
+          vagas: 2
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-3-quartos-125-m/CA0080-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2Bei8oz4QY1ycAuQJPipSuD95y9+M+prByzvavIgovA8MnFUMOP6J5j7I-4FXypiZB3H4Q6bmloa9VTakfNQ5WBY1RPnxeShmDNb4xFalty2QEFjSle6WuFYZ-wpwI8+Ai-Oav4tg+ud4TKL2ZFRMpHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcGLtH6U3ulNHBgaWkOU-XYgA--e6e8fe2NPihSv-0IDjht5gX84-VLthQa5qoCiQJEGZ4M3BJqRO29rnGsACzOmqH.jpg',
+        title: 'Espaço Gourmet Integrado',
+        subtitle: 'R$1.180.000',
+        features: {
+          bedrooms: 3,
+          bathrooms: 2,
+          area: 141,
+          vagas: 2
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/casa-santana-de-parnaiba-4-quartos-350-m/CA0069-ALPH'
+      }
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/santana-de-parnaiba/nova-jaguari'
+  },
   apartamentoalugar: {
     id: 'apartamentoalugar',
     name: 'Alphaville',
