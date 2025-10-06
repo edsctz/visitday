@@ -829,6 +829,52 @@ export const neighborhoods: Record<string, Neighborhood> = {
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/a-venda/apartamento'
   },
+  apartamento18doforte: {
+    id: 'apartamento18doforte',
+    name: '18 do Forte',
+    title: 'Apartamentos a Venda no 18 do Forte',
+    subtitle: 'Conheça os melhores apartamentos disponíveis a venda no 18 do Forte',
+    heroImage: '/resorttambore.webp',
+    showcaseProperties: [
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2B-1-dExxFnvdsZWYaA5Xe19aK2xMawlB+I57TpnI-518nRXZ39mIAmjorQGACxvOt5XsAKE3EnV9liGifycJqbIn9TvCKvpUTASetCaXVNxQAQzEdPx2C2RbKxqUQ28RqYCqqH8yStXPvmXmRBHrMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: 'Em Frente ao Cabana',
+        subtitle: 'R$1.065.000',
+        features: {
+          bedrooms: 2,
+          bathrooms: 2,
+          area: 79,
+          vagas: 1
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-2-quartos-79-m/AP0099-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1s41d9r7As9g8MmVeCUgzW16dmv7delqmK806rdm+PCy9-1VZrakaZiw5HPAn-1r5lMRdACEmF7O8dYFBPoUd6SLUh3+CSDn3uSXblCX3J15hMOoQ4IngGlcJydzVwK4g63Vf+FjyO2cLjCBGcAScxHR9o47l9MqBG1U1ByqR9Q9JGypDLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: 'Recomendação do Especialista',
+        subtitle: 'R$890.000',
+        features: {
+          bedrooms: 3,
+          bathrooms: 2,
+          area: 87,
+          vagas: 2
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-2-quartos-52-m/AP0011-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2Fu1tJD9jE4ic8LTJ+Dpiiaw7SL-ea5-R6axYjshKmA7eDjZ+z4mbIS0avoImyW66R6X-oCYndUZdVedTfLYaamY19LmWa3nGzyZJ9+XjMQwwJuyipx4VG7GMmS-QYI5H21TqrUphSITYXKDEZdK+9HR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
+        title: 'No Melville Empresarial',
+        subtitle: 'R$670.000',
+        features: {
+          bedrooms: 2,
+          bathrooms: 2,
+          area: 62,
+          vagas: 1
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-2-quartos-62-m/AP0019-ALPH'
+      }
+    ],
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/a-venda/apartamento/barueri?finalidade=residencial&localidade=-23.470411550002027,-46.86162626884277,-23.486609162835236,-46.8411878361496'
+  },
   casaalugar: {
     id: 'casaalugar',
     name: 'Alphaville',
