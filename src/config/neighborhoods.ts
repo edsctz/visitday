@@ -787,47 +787,47 @@ export const neighborhoods: Record<string, Neighborhood> = {
     id: 'apartamentovenda',
     name: 'Alphaville',
     title: 'Apartamentos a Venda em Alphaville',
-    subtitle: 'Conheça os melhores apartamentos disponíveis a venda em Alphaville',
+    subtitle: 'Negociamos por você para garantir o melhor preço do metro quadrado em Alphaville. Confira apartamentos com condições exclusivas e negociações que cabem no seu orçamento.',
     heroImage: '/resorttambore.webp',
     showcaseProperties: [
       {
-        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1s41d9r7As9g8MmVeCUgzW16dmv7delqmK806rdm+PCy9-1VZrakaZiw5HPAn-1r5lMRdACEmF7O8dYFBPoUd6SLUh3+CSDn3uSXblCX3J15hMOoQ4IngGlcJydzVwK4g63Vf+FjyO2cLjCBGcAScxHR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
-        title: '18 do Forte',
-        subtitle: 'R$890.000',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0B3-OpF1wYdnfA+ApGAvQi48d+ay8uI9h7Pz52Lhq7Q4sP5UNv-xYE+gPD6OWOoo5ZlV4MsbHAoXc5BXgDPf6WsBCYPvRCRjGTKb7FlRmNv+CAstCBymkXlcZyh711rxn37W-GHs3WsE5HoOnJ3ErMNAdIz7EIJ8RC9W0J8p0oF7J6yoS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAzKErEdv0zuwIHHjPOuPhzVMVtr9LGa--q3b6ykHa3xOV+tlJwR+5zKJIRLK43kQSRVXWU1enAQqVy2teuL+hq5fw==.jpg',
+        title: 'Tamboré - Garden Hill',
+        subtitle: 'R$600.000',
+        features: {
+          bedrooms: 2,
+          bathrooms: 1,
+          area: 58,
+          vagas: 1
+        },
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-2-quartos-58-m/AP0068-ALPH'
+      },
+      {
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1s41d9r7As9g8MmVeCUgzW16dmv7delqmK806rdm+PCy9-1VZrakaZiw5HPAn-1r5lMRdACEmF7O8dYFBPoUd6SLUh3+CSDn3uSXblCX3J15hMOoQ4IngGlcJydzVwK4g63Vf+FjyO2cLjCBGcAScxHR9o47l9MqBG1U1ByqR9Q9JGypDLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: '18 do Forte - Barueri',
+        subtitle: 'R$830.000',
         features: {
           bedrooms: 3,
           bathrooms: 2,
-          area: 87,
+          area: 57,
           vagas: 2
         },
         propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-3-quartos-87-m/AP0043-ALPH'
       },
       {
-        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2ZI+st07wgvvucFBYGFkxG126rPu-6a8RSJo53fuJfx5Z72Vebyl4Mcjp+oFA-8nrFsT9AjEBxISrV8WQXBboqDInZXpgXX42PrXepiRDVlzx9qykoL42ehAb3wp0Ux3CapCeHEmiuud-HKBVgCKLMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDHHLFN6E-pl9fBhaL-bkyHMwU+9LqeqvvkbvikEKCnJCWPhZcX44-BapgLd9vjXzZkXmZ-IXdBu12x6Kvlr0XmLCqU8xBJWEGSn45y9DdlbgpOrcNW7y-n.jpg',
-        title: 'Alphaville Empresarial',
-        subtitle: 'R$580.000',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0ta9IxS7w0dtdBBbfq9pzu6w4+p+Iqco03OppTGlur68MjhdubR9Yot9J6jLkCjqvNEVt9iIhFabsZAfUT1AKS+M3xhniPT+RzpZKtmc1B7+j02nTdzlFycf4WpzRsf0j+mLeH38iCLcvHjDm0NO8RHR9o47l9MqBG1U1ByqR9Q9JGypDLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: 'Resort Tamboré - Condomínio Clube',
+        subtitle: 'R$1.300.000',
         features: {
           bedrooms: 2,
-          bathrooms: 1,
-          area: 52,
-          vagas: 1
+          bathrooms: 3,
+          area: 113,
+          vagas: 2
         },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-2-quartos-52-m/AP0011-ALPH'
-      },
-      {
-        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2Fu1tJD9jE4ic8LTJ+Dpiiaw7SL-ea5-R6axYjshKmA7eDjZ+z4mbIS0avoImyW66R6X-oCYndUZdVedTfLYaamY19LmWa3nGzyZJ9+XjMQwwJuyipx4VG7GMmS-QYI5H21TqrUphSITYXKDEZdK+9HR9o47l9MqBG1U1ByqR9Q9JG2ozrBZrT0PpW61WIYQklkpNCiTqzwi82OZ5htFvpqLHoC91cXWaoQmvqIQKNz8k8NqufBERmHlELVhPYgYMf+HIVXmqEGngvcH7VN6RzqlNWUgqSrPEyHMlNr9rmd+aC4aaz0TqH4cjjho5wN4ojKNo8Jddj3SDQVc3pnKDNWuUC5-6mZjE3ubXSK+lVHVhONg99q7HYkYAQDspFO7Seqxg==.jpg',
-        title: '18 do Forte',
-        subtitle: 'R$670.000',
-        features: {
-          bedrooms: 2,
-          bathrooms: 2,
-          area: 62,
-          vagas: 1
-        },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-2-quartos-62-m/AP0019-ALPH'
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-santana-de-parnaiba-2-quartos-113-m/AP0106-ALPH'
       }
     ],
-    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/a-venda/apartamento'
+    listingPageUrl: 'https://www.c21alpha.com.br/imoveis/a-venda/apartamento/barueri+santana-de-parnaiba?preco-de-venda=579000+&ordenar=menor-valor'
   },
   apartamento18doforte: {
     id: 'apartamento18doforte',
