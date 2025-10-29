@@ -803,28 +803,28 @@ export const neighborhoods: Record<string, Neighborhood> = {
         propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-2-quartos-58-m/AP0068-ALPH'
       },
       {
-        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1s41d9r7As9g8MmVeCUgzW16dmv7delqmK806rdm+PCy9-1VZrakaZiw5HPAn-1r5lMRdACEmF7O8dYFBPoUd6SLUh3+CSDn3uSXblCX3J15hMOoQ4IngGlcJydzVwK4g63Vf+FjyO2cLjCBGcAScxHR9o47l9MqBG1U1ByqR9Q9JGypDLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtux5B7vBg6ToenNdAUY3igne13dzF+vqSoGOH45-Sn6nc6fL5fujaxJA80ZfBH26s4oxZGMcEK3xCauUjdBD1c4e5Nk9DhnzXnmzQUrIYRFgJ4iE0q0xMyUrmesfw9Hgr8Q6eGdKDjxShXIe2EW0GGrMNAdIz7EIJ8RC9W0J8p0oF7J6yoS7TO7S-K5+hxzlXFx5k9oa+Squ619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0QdhKmaoHiAzKErEdv0zuwIHHjPOuPhzVMVtr9LGa--q3b6ykHa3xOV+tlJwR+5zKJIRLK43kQSRVXWU1enAQqVy2teuL+hq5fw==.jpg',
         title: '18 do Forte - Barueri',
-        subtitle: 'R$830.000',
+        subtitle: 'R$874.900',
         features: {
           bedrooms: 3,
           bathrooms: 2,
           area: 57,
           vagas: 2
         },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-3-quartos-87-m/AP0043-ALPH'
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-3-quartos-90-m/AP0131-ALPH?'
       },
       {
-        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu0ta9IxS7w0dtdBBbfq9pzu6w4+p+Iqco03OppTGlur68MjhdubR9Yot9J6jLkCjqvNEVt9iIhFabsZAfUT1AKS+M3xhniPT+RzpZKtmc1B7+j02nTdzlFycf4WpzRsf0j+mLeH38iCLcvHjDm0NO8RHR9o47l9MqBG1U1ByqR9Q9JGypDLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
-        title: 'Resort Tamboré - Condomínio Clube',
-        subtitle: 'R$1.300.000',
+        image: 'https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu2Z2zYh15jtjqOgZV5a4nA2thJuq5JKTl06L9rfumJ7Z-OymVeb88Lkx4-OtEniHqZlOWd8OKWpVY+1KWDXqb4GMPkAK8xq2+Un3TpEbYkZ-2gs1zg9cgVCCbJaLy2E23AKGCNj3pQehZ5n2LAB9DPxHR9o47l9MqBG1U1ByqR9Q9JGypDLdaOenJpi9yWxNWAZ8vJq+TqjzwtiOK59nSeUyO3cb51URUaJf1-aKA+9jrwcLou-TCwSW3hrDkec3f8vtBcFOnqYKkxDAErtNuUvpk4LChK36bRzXYFE1o7mW-fW5Oq2gTqz1JCWbgY0G5JDZPcEVNYShTyoHQnlkYmhR6FK4+PTZ4hixMic=.jpg',
+        title: 'Alphagran - Preço de Lançamento',
+        subtitle: 'R$1.740.000',
         features: {
-          bedrooms: 2,
+          bedrooms: 3,
           bathrooms: 3,
-          area: 113,
+          area: 114,
           vagas: 2
         },
-        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-santana-de-parnaiba-2-quartos-113-m/AP0106-ALPH'
+        propertyUrl: 'https://www.c21alpha.com.br/imovel/apartamento-barueri-3-quartos-114-m/AP0027-ALPH'
       }
     ],
     listingPageUrl: 'https://www.c21alpha.com.br/imoveis/a-venda/apartamento/barueri+santana-de-parnaiba?preco-de-venda=579000+&ordenar=menor-valor'
